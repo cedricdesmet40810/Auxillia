@@ -1,5 +1,7 @@
 # Auxilia — gedeelde context voor alle agents
 
+Laatst bijgewerkt: 2026-06-12
+
 > Dit bestand is de gedeelde waarheid voor het hele agent-team. **Elke agent leest dit
 > eerst.** Feiten hieronder zijn niet ter discussie tenzij Cedric ze wijzigt. Vragen met ❓
 > zijn open en moeten door Cedric beantwoord worden — agents mogen er geen aannames over
@@ -16,7 +18,7 @@
   dan sturen we bij zonder extra kost tot het doet wat afgesproken is.
 - **Daarnaast:** doorlopende AI-opleiding voor medewerkers (lokaal te verkopen cursussen,
   in-company en open formats — invulling is het domein van de opleidingsontwerper).
-- **Regio:** de Kempen; bewust lokaal en bereikbaar ("dicht bij de bedrijven die we helpen").
+- **Regio:** doelmarkt zijn Vlaamse kmo's; uitvalsbasis is de Kempen en daar starten we lokaal ("dicht bij de bedrijven die we helpen").
 - **Statuut:** gestart als **zelfstandige in bijberoep**, met een pad naar voltijds zodra
   de omzet dat bewijst.
 - **Website:** statische one-pager in deze repo (`index.html`), Nederlands.
@@ -26,8 +28,9 @@
 - De site toont twee profielen: **Jonas Mertens** (automatisering & implementatie) en
   **Lien Vandereyt** (proces & opleiding).
 - ❓ De eigenaar van deze repo is **Cedric De Smet** — kloppen de namen op de site nog, en
-  wat is de precieze rolverdeling? (Aanname tot dan: tweekoppig team, één technisch
-  profiel, één proces/opleidingsprofiel.)
+  wat is de precieze rolverdeling?
+- **Aanname tot Cedric dit beantwoordt:** tweekoppig team, één technisch profiel, één
+  proces/opleidingsprofiel.
 
 ## Positionering
 
@@ -43,6 +46,10 @@
   middelgrote 20%.
 - Auxilia is **nog niet geregistreerd** als dienstverlener (DV.O-nummer via VLAIO-audit
   vereist) — staat op de checklist in `README.md`.
+- ❓ De website belooft nu al "We helpen je nagaan of je in aanmerking komt en loodsen je
+  door de aanvraag" — zolang de DV.O-registratie er niet is, moet die communicatie
+  voorzichtig blijven. Hoe Auxilia dit eerlijk verwoordt is een open punt (zie ook
+  staande vraag 8 van de subsidie-specialist).
 
 ## Beslissingen
 
