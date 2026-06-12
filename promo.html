@@ -334,7 +334,8 @@ function SceneOutro(){
       {({localTime:t}) => {
         const inOp  = animate({from:0, to:1, start:0.5, end:1.2, ease:Easing.easeOutCubic})(t);
         const tagIn = animate({from:0, to:1, start:1.7, end:2.4, ease:Easing.easeOutCubic})(t);
-        const urlIn = animate({from:0, to:1, start:2.4, end:3.1, ease:Easing.easeOutCubic})(t);
+        const ctaIn = animate({from:0, to:1, start:2.3, end:3.0, ease:Easing.easeOutCubic})(t);
+        const urlIn = animate({from:0, to:1, start:2.9, end:3.6, ease:Easing.easeOutCubic})(t);
         const drift = animate({from:1, to:1.03, start:1, end:5.5, ease:Easing.linear})(t);
         return (
           <div style={{position:"absolute", inset:0, background:C.sand}}>
@@ -345,6 +346,9 @@ function SceneOutro(){
               </div>
               <div style={{fontFamily:SANS, fontWeight:500, fontSize:42, color:C.inkSoft, whiteSpace:"nowrap", opacity:tagIn, transform:`translateY(${(1-tagIn)*18}px)`}}>
                 AI-versterking voor kmo's. Werkend opgeleverd.
+              </div>
+              <div style={{fontFamily:SANS, fontWeight:600, fontSize:32, color:C.ink, whiteSpace:"nowrap", opacity:ctaIn, transform:`translateY(${(1-ctaIn)*16}px)`}}>
+                Plan een vrijblijvende kennismaking
               </div>
               <div style={{
                 fontFamily:SANS, fontWeight:700, fontSize:32, color:C.teal, letterSpacing:"0.02em",
