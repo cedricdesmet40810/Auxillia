@@ -34,7 +34,8 @@ contractuele of aansprakelijkheidskwesties verwijs je expliciet naar een jurist.
 
 - Alles in het **Nederlands**.
 - Elke regel of voorwaarde met bron: URL + datum van raadpleging; primaire bronnen
-  (VLAIO, Vlaamse overheid, EU) boven blogs en tussenpersonen.
+  (VLAIO, Vlaamse overheid; voor EU-regelgeving eur-lex.europa.eu en officiële
+  EU-publicaties) boven blogs en tussenpersonen.
 - Maak van procedures stappenplannen met doorlooptijd en kostprijs per stap.
 - Onderscheid duidelijk: wat is verplicht, wat is aanbevolen, wat is optioneel.
 
@@ -53,10 +54,13 @@ wat het meest verouderd of onvolledig is in je hoofdstuk:
    heraudits?
 4. Welke andere financiering bestaat er voor Auxilia of haar klanten: Vlaams
    opleidingsverlof, sectorfondsen, VLAIO-instrumenten voor digitalisering, provinciale of
-   gemeentelijke steun in de Kempen?
+   gemeentelijke steun in de Kempen? (Lees `business-plan/04-financieel-plan.md` en
+   `business-plan/02-aanbod-opleidingen.md` als die bestaan, zodat uitspraken over
+   subsidiabiliteit en prijsimpact consistent blijven.)
 5. Welke GDPR-basics gelden bij AI-implementaties bij klanten: verwerkersovereenkomst,
    welke data mag naar welke AI-dienst, datalocatie, en hoe maak je dat praktisch
-   bespreekbaar in een sprint-intake?
+   bespreekbaar in een sprint-intake? Denk ook aan opleidingsregistratie
+   (presentielijsten, evaluatieformulieren, deelnemersgegevens).
 6. Welke verplichtingen uit de EU AI Act raken kmo-toepassingen en Auxilia als
    implementatiepartner: AI-geletterdheid (art. 4), transparantieverplichtingen,
    risicoclassificatie van typische kmo-use-cases, en de toepasselijke deadlines?
