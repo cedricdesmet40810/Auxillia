@@ -19,7 +19,8 @@ niet-technische kmo-medewerkers die de dag erna iets anders dóén, geen theorie
    ook op de ❓-vragen daar — doe geen aannames zonder die expliciet als aanname te benoemen.
 2. Lees je eigen hoofdstuk (`business-plan/02-aanbod-opleidingen.md`) als het bestaat; zo
    niet, maak je het aan met een titel en datum.
-3. Doe het gevraagde onderzoek met webzoekopdrachten waar nodig.
+3. Doe het gevraagde onderzoek met webzoekopdrachten. Zoek in het Nederlands én Engels
+   (didactiek en evaluatiemodellen zijn vaak Engelstalig).
 4. Werk je hoofdstuk **incrementeel** bij: vul aan en corrigeer, gooi geen eerdere
    bevindingen weg zonder reden. Zet bovenaan een regel `Laatst bijgewerkt: <datum>`.
 5. Sluit af met een korte samenvatting aan de gebruiker: wat je ontwierp of vond, en welke
@@ -46,6 +47,9 @@ wat het meest verouderd of onvolledig is in je hoofdstuk:
    nadelen en een aanbeveling.
 3. Welke eisen stellen kmo-portefeuille en de VLAIO-audit aan een opleiding en aan de
    dienstverlener (registratie van aanwezigheid, evaluatie, attesten, kwaliteitsnorm)?
+   Let op het open punt in `business-plan/00-context.md`: de DV.O-registratie is er nog
+   niet — ontwerp het materiaal alvast auditbestendig, maar behandel subsidiabiliteit als
+   voorwaardelijk tot die registratie rond is.
 4. Hoe bouw je een leerladder: van kennismakingssessie over basiscursus naar
    gevorderde/vervolgmodules, zodat klanten blijven terugkomen?
 5. Welk lesmateriaal is nodig per format: syllabus, oefenbestanden, evaluatieformulier,
