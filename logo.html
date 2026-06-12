@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Auxilia — Logo &amp; merk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --sand:#FAF7F2;--sand-deep:#F1EADE;--paper:#FFFFFF;
+    --teal:#0F5C5A;--teal-700:#0B4543;--clay:#D2691E;--clay-soft:#F4DEC8;
+    --ink:#1C2422;--ink-soft:#52605C;--ink-faint:#8A968F;
+    --line:rgba(28,36,34,.12);--line-soft:rgba(28,36,34,.07);
+    --r:18px;--shadow:0 1px 2px rgba(28,36,34,.04),0 22px 48px -30px rgba(28,36,34,.28);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--sand);color:var(--ink);font-family:"Hanken Grotesk",system-ui,sans-serif;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,.wm{font-family:"Spectral",Georgia,serif;font-weight:500;letter-spacing:-.022em;margin:0;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 32px;}
+  .eyebrow{font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--teal);display:flex;align-items:center;gap:12px;}
+  .eyebrow::before{content:"";width:26px;height:1.5px;background:var(--clay);}
+
+  /* page head */
+  .top{padding:72px 0 12px;}
+  .top h1{font-size:clamp(2.2rem,4vw,3.2rem);margin:22px 0 14px;}
+  .top p{color:var(--ink-soft);font-size:1.12rem;max-width:60ch;}
+
+  section{padding:30px 0;}
+  .sec-label{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--ink-faint);margin-bottom:20px;}
+
+  /* primary lockup stage */
+  .stage{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);display:grid;place-items:center;padding:90px 24px;position:relative;overflow:hidden;}
+  .stage .corner{position:absolute;top:18px;left:22px;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;}
+
+  /* lockup */
+  .lockup{display:flex;align-items:center;gap:22px;}
+  .lockup .wm{font-weight:600;font-size:3.4rem;color:var(--teal);line-height:1;}
+  .lockup.stacked{flex-direction:column;gap:20px;}
+  .lockup.sm .wm{font-size:2rem;}
+  .lockup.sm{gap:15px;}
+  .mark{flex:0 0 auto;display:block;}
+
+  /* variations grid */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .tile{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:44px 28px;display:grid;place-items:center;min-height:200px;position:relative;}
+  .tile .cap{position:absolute;bottom:16px;left:0;right:0;text-align:center;font-size:.82rem;color:var(--ink-faint);}
+  .tile.teal{background:var(--teal);border-color:var(--teal);}
+  .tile.teal .cap{color:rgba(250,247,242,.6);}
+  .tile.ink{background:var(--ink);border-color:var(--ink);}
+  .tile.ink .cap{color:rgba(250,247,242,.5);}
+  .tile.deep{background:var(--sand-deep);}
+  .wm.on-teal{color:var(--sand);}
+  .wm.on-ink{color:var(--sand);}
+  .wm.mono-ink{color:var(--ink);}
+
+  /* app icon */
+  .appicon{width:104px;height:104px;border-radius:24px;background:var(--teal);display:grid;place-items:center;box-shadow:0 18px 36px -20px rgba(11,69,67,.7);}
+  .appicon.alt{background:var(--ink);}
+  .favs{display:flex;align-items:flex-end;gap:26px;}
+  .fav{display:grid;place-items:center;gap:10px;}
+  .fav .ic{border-radius:8px;background:var(--teal);display:grid;place-items:center;}
+  .fav small{color:var(--ink-faint);font-size:.78rem;}
+
+  /* concept */
+  .concept{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:52px;}
+  .concept h2{font-size:1.9rem;margin-bottom:16px;}
+  .concept p{color:var(--ink-soft);margin-bottom:14px;}
+  .concept .demo{display:grid;place-items:center;}
+  .anatomy{display:flex;gap:30px;align-items:center;flex-wrap:wrap;justify-content:center;}
+  .anatomy .bit{display:grid;place-items:center;gap:12px;}
+  .anatomy .bit small{color:var(--ink-faint);font-size:.8rem;max-width:14ch;text-align:center;}
+
+  /* clearspace */
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  .pad-demo{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:48px;display:grid;place-items:center;}
+  .pad-box{position:relative;padding:36px;}
+  .pad-box::before{content:"";position:absolute;inset:0;border:1.5px dashed rgba(210,105,30,.5);border-radius:8px;}
+
+  /* colors */
+  .sw-row{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+  .sw{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--paper);}
+  .sw .chip{height:96px;}
+  .sw .meta{padding:14px 16px;}
+  .sw .meta b{display:block;font-size:.92rem;}
+  .sw .meta span{display:block;font-size:.82rem;color:var(--ink-faint);font-variant-numeric:tabular-nums;}
+
+  /* misuse */
+  .dont{display:grid;place-items:center;gap:12px;}
+  .dont .x{position:absolute;top:14px;right:16px;width:22px;height:22px;border-radius:50%;background:rgba(210,105,30,.12);color:var(--clay);display:grid;place-items:center;font-size:.8rem;font-weight:700;}
+
+  footer{padding:60px 0 80px;color:var(--ink-faint);font-size:.9rem;text-align:center;}
+
+  @media(max-width:860px){
+    .grid{grid-template-columns:1fr 1fr;}
+    .concept{grid-template-columns:1fr;gap:32px;padding:36px;}
+    .two,.sw-row{grid-template-columns:1fr 1fr;}
+    .lockup .wm{font-size:2.6rem;}
+  }
+  @media(max-width:560px){
+    .grid,.sw-row{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<!-- reusable mark templates kept inline per-use for portability -->
+
+<div class="wrap">
+  <header class="top">
+    <span class="eyebrow">Auxilia · Visuele identiteit</span>
+    <h1>Het Auxilia-logo</h1>
+    <p>Een rustig, premium merk voor een AI-partner die je team komt versterken. Het beeldmerk vormt de letter A uit een opwaartse chevron — een teken van versterking en vooruitgang — met een terracotta dwarsbalk als warm accent.</p>
+  </header>
+
+  <!-- PRIMARY LOCKUP -->
+  <section>
+    <div class="sec-label">Hoofdlogo</div>
+    <div class="stage">
+      <span class="corner">Primair — horizontaal</span>
+      <div class="lockup">
+        <svg class="mark" width="84" height="84" viewBox="0 0 64 64" fill="none" aria-label="Auxilia beeldmerk">
+          <path d="M13 50 L32 14 L51 50" stroke="#0F5C5A" stroke-width="7.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21.6 39 H42.4" stroke="#D2691E" stroke-width="7.2" stroke-linecap="round"/>
+        </svg>
+        <span class="wm">Auxilia</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- VARIATIONS -->
+  <section>
+    <div class="sec-label">Varianten</div>
+    <div class="grid">
+      <!-- stacked -->
+      <div class="tile">
+        <div class="lockup stacked">
+          <svg class="mark" width="58" height="58" viewBox="0 0 64 64" fill="none">
+            <path d="M13 50 L32 14 L51 50" stroke="#0F5C5A" stroke-width="7.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21.6 39 H42.4" stroke="#D2691E" stroke-width="7.2" stroke-linecap="round"/>
+          </svg>
+          <span class="wm" style="font-size:2.1rem;color:var(--teal);">Auxilia</span>
+        </div>
+        <span class="cap">Gestapeld</span>
+      </div>
+      <!-- mark only -->
+      <div class="tile">
+        <svg class="mark" width="76" height="76" viewBox="0 0 64 64" fill="none">
+          <path d="M13 50 L32 14 L51 50" stroke="#0F5C5A" stroke-width="7.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M21.6 39 H42.4" stroke="#D2691E" stroke-width="7.2" stroke-linecap="round"/>
+        </svg>
+        <span class="cap">Beeldmerk</span>
+      </div>
+      <!-- app icon -->
+      <div class="tile deep">
+        <div class="appicon">
+          <svg width="60" height="60" viewBox="0 0 64 64" fill="none">
+            <path d="M13 50 L32 14 L51 50" stroke="#FAF7F2" stroke-width="7.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21.6 39 H42.4" stroke="#D2691E" stroke-width="7.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="cap">App-icoon</span>
+      </div>
+      <!-- reversed on teal -->
+      <div class="tile teal">
+        <div class="lockup sm">
+          <svg class="mark" width="48" height="48" viewBox="0 0 64 64" fill="none">
+            <path d="M13 50 L32 14 L51 50" stroke="#FAF7F2" stroke-width="7.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21.6 39 H42.4" stroke="#D2691E" stroke-width="7.2" stroke-linecap="round"/>
+          </svg>
+          <span class="wm on-teal">Auxilia</span>
+        </div>
+        <span class="cap">Op teal (reversed)</span>
+      </div>
+      <!-- mono ink -->
+      <div class="tile">
+        <div class="lockup sm">
+          <svg class="mark" width="48" height="48" viewBox="0 0 64 64" fill="none">
+            <path d="M13 50 L32 14 L51 50" stroke="#1C2422" stroke-width="7.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21.6 39 H42.4" stroke="#1C2422" stroke-width="7.2" stroke-linecap="round"/>
+          </svg>
+          <span class="wm mono-ink">Auxilia</span>
+        </div>
+        <span class="cap">Monochroom (inkt)</span>
+      </div>
+      <!-- mono reversed -->
+      <div class="tile ink">
+        <div class="lockup sm">
+          <svg class="mark" width="48" height="48" viewBox="0 0 64 64" fill="none">
+            <path d="M13 50 L32 14 L51 50" stroke="#FAF7F2" stroke-width="7.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21.6 39 H42.4" stroke="#FAF7F2" stroke-width="7.2" stroke-linecap="round"/>
+          </svg>
+          <span class="wm on-ink">Auxilia</span>
+        </div>
+        <span class="cap">Monochroom omgekeerd</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONCEPT / ANATOMY -->
+  <section>
+    <div class="sec-label">Het idee</div>
+    <div class="concept">
+      <div>
+        <h2>Versterking, in één teken</h2>
+        <p>Auxilia betekent "versterking". De twee diagonalen komen samen in een opwaartse punt — een chevron die staat voor steun, momentum en vooruitgang. Samen vormen ze de A van Auxilia.</p>
+        <p>De teal dragende vorm staat voor vertrouwen en bestendigheid; de terracotta dwarsbalk is de menselijke, warme hand die het geheel verbindt. Eén gewicht, ronde uiteinden, geen ruis.</p>
+      </div>
+      <div class="demo">
+        <div class="anatomy">
+          <div class="bit">
+            <svg width="84" height="84" viewBox="0 0 64 64" fill="none">
+              <path d="M13 50 L32 14 L51 50" stroke="#0F5C5A" stroke-width="7.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <small>Chevron = versterking</small>
+          </div>
+          <div class="bit">
+            <svg width="84" height="84" viewBox="0 0 64 64" fill="none">
+              <path d="M21.6 39 H42.4" stroke="#D2691E" stroke-width="7.2" stroke-linecap="round"/>
+            </svg>
+            <small>Balk = de menselijke hand</small>
+          </div>
+          <div class="bit">
+            <svg width="84" height="84" viewBox="0 0 64 64" fill="none">
+              <path d="M13 50 L32 14 L51 50" stroke="#0F5C5A" stroke-width="7.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M21.6 39 H42.4" stroke="#D2691E" stroke-width="7.2" stroke-linecap="round"/>
+            </svg>
+            <small>Samen = de A</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLEARSPACE + MIN SIZE -->
+  <section>
+    <div class="sec-label">Ademruimte &amp; klein gebruik</div>
+    <div class="two">
+      <div class="pad-demo">
+        <div class="pad-box">
+          <div class="lockup sm">
+            <svg class="mark" width="46" height="46" viewBox="0 0 64 64" fill="none">
+              <path d="M13 50 L32 14 L51 50" stroke="#0F5C5A" stroke-width="7.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M21.6 39 H42.4" stroke="#D2691E" stroke-width="7.2" stroke-linecap="round"/>
+            </svg>
+            <span class="wm" style="font-size:1.9rem;color:var(--teal);">Auxilia</span>
+          </div>
+        </div>
+        <span class="cap" style="position:absolute;bottom:16px;left:0;right:0;text-align:center;font-size:.82rem;color:var(--ink-faint);">Vrije ruimte = hoogte van het beeldmerk</span>
+      </div>
+      <div class="pad-demo">
+        <div class="favs">
+          <div class="fav">
+            <div class="ic" style="width:48px;height:48px;">
+              <svg width="30" height="30" viewBox="0 0 64 64" fill="none"><path d="M13 50 L32 14 L51 50" stroke="#FAF7F2" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><path d="M21.6 39 H42.4" stroke="#D2691E" stroke-width="8" stroke-linecap="round"/></svg>
+            </div>
+            <small>48 px</small>
+          </div>
+          <div class="fav">
+            <div class="ic" style="width:32px;height:32px;border-radius:7px;">
+              <svg width="20" height="20" viewBox="0 0 64 64" fill="none"><path d="M13 50 L32 14 L51 50" stroke="#FAF7F2" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M21.6 39 H42.4" stroke="#D2691E" stroke-width="9" stroke-linecap="round"/></svg>
+            </div>
+            <small>32 px</small>
+          </div>
+          <div class="fav">
+            <div class="ic" style="width:20px;height:20px;border-radius:5px;">
+              <svg width="13" height="13" viewBox="0 0 64 64" fill="none"><path d="M13 50 L32 14 L51 50" stroke="#FAF7F2" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <small>16 px</small>
+          </div>
+        </div>
+        <span class="cap" style="position:absolute;bottom:16px;left:0;right:0;text-align:center;font-size:.82rem;color:var(--ink-faint);">Favicon — onder 20 px valt de balk weg</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLORS -->
+  <section>
+    <div class="sec-label">Merkkleuren</div>
+    <div class="sw-row">
+      <div class="sw"><div class="chip" style="background:#0F5C5A;"></div><div class="meta"><b>Diep teal</b><span>#0F5C5A</span></div></div>
+      <div class="sw"><div class="chip" style="background:#D2691E;"></div><div class="meta"><b>Terracotta</b><span>#D2691E</span></div></div>
+      <div class="sw"><div class="chip" style="background:#FAF7F2;border-bottom:1px solid var(--line);"></div><div class="meta"><b>Zand</b><span>#FAF7F2</span></div></div>
+      <div class="sw"><div class="chip" style="background:#1C2422;"></div><div class="meta"><b>Inkt</b><span>#1C2422</span></div></div>
+    </div>
+  </section>
+
+  <!-- ALTERNATE DIRECTION -->
+  <section>
+    <div class="sec-label">Alternatieve richting</div>
+    <div class="concept">
+      <div>
+        <h2>Het schild</h2>
+        <p>Als je liever expliciet vertrouwen en bescherming uitstraalt, is er de schildvariant — het beeldmerk dat nu al in de website zit. Een schild met een opwaartse vink: versterking die je rugdekking geeft.</p>
+        <p>Beide richtingen delen dezelfde kleuren en hetzelfde wordmark, dus je kan zonder moeite wisselen. Laat me weten welke richting je voelt, dan werk ik die volledig af.</p>
+      </div>
+      <div class="demo">
+        <div class="lockup stacked">
+          <svg width="76" height="76" viewBox="0 0 24 24" fill="none">
+            <path d="M12 3L4 7v5c0 4.5 3.2 7.6 8 9 4.8-1.4 8-4.5 8-9V7l-8-4z" stroke="#0F5C5A" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M9 12l2 2 4-4.5" stroke="#D2691E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="wm" style="font-size:2.1rem;color:var(--teal);">Auxilia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Auxilia — logo &amp; merk · Spectral (wordmark) + Hanken Grotesk · teal #0F5C5A · terracotta #D2691E
+  </footer>
+</div>
+
+</body>
+</html>
