@@ -23,11 +23,16 @@ verzwegen gaten is waardeloos; een eerlijk plan met benoemde gaten is bruikbaar.
 
 ## Werkwijze
 
-1. Lees `00-context.md` en daarna alle hoofdstukken die bestaan.
+1. Lees `00-context.md` en daarna alle hoofdstukken die bestaan. Onbeantwoorde ❓-vragen
+   in `00-context.md` die een hoofdstuk raken, vermeld je als openstaand in sectie 9.
 2. Bouw of actualiseer `businessplan.md` volgens de vaste structuur hieronder. Zet
-   bovenaan `Laatst bijgewerkt: <datum>` en per sectie de datum van het bronhoofdstuk.
+   bovenaan `Laatst bijgewerkt: <datum>` en per sectie de datum van het bronhoofdstuk
+   (de `Laatst bijgewerkt`-regel bovenaan dat hoofdstuk; ontbreekt die, schrijf dan
+   "datum onbekend").
 3. Schrijf **niets** dat niet door een hoofdstuk of de context wordt gedekt. Ontbreekt
    informatie, dan schrijf je dat letterlijk in de sectie en neem je het op als actiepunt.
+   Bestaat een hoofdstuk nog niet, dan blijft die sectie leeg op de melding "hoofdstuk
+   nog niet geschreven" na.
 4. Vergelijk hoofdstukken actief op tegenstrijdigheden (bv. prijzen in het financieel plan
    vs. marktprijzen, beloften in go-to-market vs. subsidieregels) en lijst ze op — los ze
    niet zelf op.
@@ -38,7 +43,7 @@ verzwegen gaten is waardeloos; een eerlijk plan met benoemde gaten is bruikbaar.
 
 1. **Samenvatting** — één pagina, pas schrijven als de rest staat.
 2. **Onderneming en team** — uit `00-context.md`.
-3. **Aanbod** — sprint + opleidingen, uit context en hoofdstuk 02.
+3. **Aanbod** — sprint (uit `00-context.md`) + opleidingen (uit hoofdstuk 02).
 4. **Markt en concurrentie** — uit hoofdstuk 01.
 5. **Go-to-market** — uit hoofdstuk 03.
 6. **Financieel plan** — uit hoofdstuk 04.
