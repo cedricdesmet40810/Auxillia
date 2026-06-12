@@ -124,6 +124,7 @@
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
+  html,body{overflow-x:clip;}
   body{
     margin:0;background:var(--sand);color:var(--ink);
     font-family:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
@@ -473,17 +474,49 @@
   @media (max-width:680px){
     .nav-links,.nav-cta .btn{display:none;}
     .menu-btn{display:flex;}
+    .m-menu.open{background:var(--sand);}
     .foot-grid{grid-template-columns:1fr;gap:34px;}
-    .hero-actions .btn{flex:1;}
-    .final .btn-row .btn{flex:1;}
     h1.hero-title em{white-space:normal;}
-    .proofstrip .wrap{flex-direction:column;align-items:flex-start;gap:20px;}
+
+    /* hero: nette, even brede CTA's */
+    .hero{padding-top:40px;}
+    .hero-actions{flex-direction:column;align-items:stretch;gap:12px;}
+    .hero-cta-wrap{width:100%;}
+    .hero-actions .btn{width:100%;}
+    .reassure{justify-content:center;text-align:center;}
+    .stat-chip{border-radius:16px;align-items:flex-start;padding:11px 16px 11px 14px;font-size:.86rem;line-height:1.5;}
+    .stat-chip .dot{margin-top:7px;}
+
+    /* cijferstrook: geen overflow, rustige rijen */
+    .proofstrip .wrap{flex-direction:column;align-items:stretch;gap:18px;}
+    .proofstrip .lbl{white-space:normal;line-height:1.5;}
+    .deltas{flex-direction:column;gap:13px;min-width:0;width:100%;}
+    .d-item{flex-direction:row;justify-content:space-between;align-items:center;gap:14px;width:100%;}
+    .d-item .nm{font-weight:500;}
+
+    /* kaarten en CTA-blok: meer ademruimte op klein scherm */
+    .pkg{padding:32px 26px;}
+    .prob-card{padding:30px 26px;}
+    .final{padding:48px 26px;border-radius:22px;}
+    .final .hero-actions{width:100%;}
+    .final .btn-row{flex-direction:column;width:100%;}
+    .final .btn-row .btn{width:100%;}
+
     .vloop{flex-direction:column;gap:16px;}
     .vl-track{width:2px;height:42px;background:repeating-linear-gradient(180deg,var(--line) 0 5px,transparent 5px 10px);}
     .vl-dot{left:-4px;top:0;}
     .vl-dot.d1{animation:vlD1v var(--T) infinite;}
     .vl-dot.d2{animation:vlD2v var(--T) infinite;}
-    .vl-hub{margin:0 0 30px;}
+    .vl-hub{margin:0 0 38px;}
+  }
+  @media (max-width:480px){
+    .wrap{padding:0 22px;}
+    :root{--band:clamp(68px,18vw,84px);}
+    .hero-rot{font-size:1.22rem;}
+    .founder{padding:20px 18px;gap:16px;}
+    .founder .av{width:56px;height:56px;font-size:1.3rem;}
+    details.faq summary{font-size:1.16rem;padding:22px 2px;gap:16px;}
+    .film-meta{flex-wrap:wrap;row-gap:4px;}
   }
 </style>
 </head>
