@@ -594,7 +594,7 @@ en een NDA vast bij de analyse-intake, niet pas bij de sprint.
 
 | Actie | Status | Prioriteit |
 |---|---|---|
-| **Website-tekst over subsidies aanpassen of verwijderen** (§7.2) | ❌ Niet gestart | **#1 URGENT** |
+| **Website-tekst over subsidies aanpassen of verwijderen** (§7.2) | ✅ Afgerond (2026-06-12, commit 1c43096 — sectie verwijderd, FAQ optie B) | — |
 | NDA + verwerkingsbijlage voor analyse-intake opstellen (§4.3 / §6.5) | ❌ Niet gestart | **Hoog** |
 | Verwerkersovereenkomst (DPA) opstellen voor gebruik bij klanten (sprint) | ❌ Niet gestart | Hoog |
 | Privacyverklaring (website + opleidingen) opstellen | ❌ Niet gestart | Hoog |

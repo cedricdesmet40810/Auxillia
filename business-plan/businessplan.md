@@ -56,8 +56,8 @@ jaar bereikt (dekking vaste kosten van ca. €4.230/jaar). In het **voorzichtig 
 nettoresultaat circa €575/maand.
 
 **Kritische acties vóór of bij commerciële lancering:**
-1. Website-tekst over subsidies aanpassen of verwijderen — huidige belofte is niet
-   inwisselbaar zolang DV.O-registratie ontbreekt (URGENT).
+1. ~~Website-tekst over subsidies aanpassen of verwijderen~~ — **afgerond 2026-06-12**:
+   subsidiesectie verwijderd, FAQ geneutraliseerd (commit 1c43096).
 2. NDA + verwerkingsbijlage opstellen voor analyse-intake (voor de eerste analyse).
 3. Juridisch contractkader opstellen (aansprakelijkheid, sprint-acceptatiecriteria, DPA).
 4. Open vragen van Cedric beantwoorden (team, uren, definitieve prijzen, statuut — zie §9).
@@ -920,7 +920,7 @@ tussen h05 en h04 rev. 2.
 
 | # | Actie | Status | Prioriteit |
 |---|---|---|---|
-| C-1 | **Website-tekst over subsidies aanpassen of verwijderen** | ❌ Niet gestart | **#1 URGENT — vóór eerste klantcontact** |
+| C-1 | **Website-tekst over subsidies aanpassen of verwijderen** | ✅ Afgerond (2026-06-12, commit 1c43096) | Subsidiesectie verwijderd; FAQ neutraal (optie B) |
 | C-2 | **NDA + verwerkingsbijlage voor analyse-intake opstellen** | ❌ Niet gestart | **Hoog — vóór eerste analyse** |
 | C-3 | Verwerkersovereenkomst (DPA) opstellen voor gebruik bij klanten (sprint) | ❌ Niet gestart | Hoog |
 | C-4 | Privacyverklaring (website + opleidingen) opstellen | ❌ Niet gestart | Hoog |
