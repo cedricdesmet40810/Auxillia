@@ -40,10 +40,12 @@ en surf naar `http://localhost:8000`.
 ## Checklist vóór lancering
 
 - [ ] Eigen domein koppelen en de placeholder-URL's bijwerken in `index.html`: `<link rel="canonical">`, `og:url`, `og:image`, `twitter:image` en de twee `@id`-velden in de JSON-LD (zoek op `www.auxilia.be`).
-- [ ] Ondernemingsnummer en btw-nummer invullen in de footer (nu `0xxx.xxx.xxx`).
-- [ ] Privacybeleid-pagina toevoegen en linken in de footer (GDPR).
+- [x] Ondernemingsnummer en btw-nummer invullen in de footer (1038.962.149).
+- [x] Privacybeleid-pagina toegevoegd (`privacy.html`) en gelinkt in de footer (GDPR).
 - [ ] `robots.txt` en `sitemap.xml` toevoegen zodra het domein vastligt.
-- [ ] LinkedIn-link in de footer naar de echte bedrijfspagina laten wijzen.
+- [ ] LinkedIn-bedrijfspagina aanmaken en weer linken in de footer (link voorlopig verwijderd).
+- [ ] Registreren als kmo-portefeuille dienstverlener (DV.O-nummer via VLAIO-audit) — daarna de subsidiesectie weer aanscherpen. Let op: sinds 1 feb 2026 is enkel **opleiding** subsidieerbaar, geen advies.
+- [ ] `mailto:` vervangen door een boekingstool (Calendly/Cal.com) + kort contactformulier.
 - [ ] Overweeg de promofilm als echte `.mp4` te exporteren voor productie — laadt lichter dan de live-animatie (React + Babel in een iframe).
 
 ## Technisch
