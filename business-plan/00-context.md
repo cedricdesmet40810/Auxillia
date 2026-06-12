@@ -12,12 +12,19 @@ Laatst bijgewerkt: 2026-06-12
 - **Naam:** Auxilia — genoemd naar de hulptroepen van het Romeinse leger.
 - **Ondernemingsnummer / btw:** 1038.962.149.
 - **Wat:** AI-automatisering, AI-implementatie en AI-opleiding voor Vlaamse kmo's.
+- **Instapproduct:** de *AI-analyse* — een betaalde doorlichting van de processen van de
+  kmo met een concreet rapport: waar zit de winst, wat is haalbaar, wat zou het kosten.
+  Eindigt altijd in een voorstel om het via een sprint te laten implementeren (boeken is
+  optioneel — het rapport heeft op zichzelf waarde). Marktbenchmark voor zo'n scan: ±€750
+  (zie `01-markt.md`); definitieve prijs nog te bepalen.
 - **Kernaanbod:** de *sprint* — één bedrijfsproces (bv. offertes, klantenmails,
   rapportering) volledig geautomatiseerd en werkend opgeleverd, met **vaste prijs en vaste
   deadline**, inclusief opleiding van het team. Belofte: werkt het niet binnen de sprint,
   dan sturen we bij zonder extra kost tot het doet wat afgesproken is.
 - **Daarnaast:** doorlopende AI-opleiding voor medewerkers (lokaal te verkopen cursussen,
   in-company en open formats — invulling is het domein van de opleidingsontwerper).
+  Cursussen vereisen géén registratie of audit; de DV.O-registratie is enkel nodig om
+  klanten kmo-portefeuille-subsidie te laten recupereren en is **voorlopig uitgesteld**.
 - **Regio:** doelmarkt zijn Vlaamse kmo's; uitvalsbasis is de Kempen en daar starten we lokaal ("dicht bij de bedrijven die we helpen").
 - **Statuut:** gestart als **zelfstandige in bijberoep**, met een pad naar voltijds zodra
   de omzet dat bewijst.
@@ -58,6 +65,14 @@ Laatst bijgewerkt: 2026-06-12
 
 - 2026-06: gestart in bijberoep, niet meteen voltijds.
 - 2026-06: businessplan wordt opgebouwd per hoofdstuk door het agent-team (zie tabel).
+- 2026-06-12: de **betaalde AI-analyse wordt een kernstuk van het aanbod** — instapproduct
+  met optie tot vervolg (sprint + advies). Funnel: analyse → rapport → sprint.
+- 2026-06-12: de **cursussen blijven bestaan** als derde poot (geen registratie nodig om
+  ze te verkopen).
+- 2026-06-12: de **DV.O-registratie wordt voorlopig uitgesteld** ("naar de kant"). Gevolg:
+  geen kmo-portefeuillesubsidie voor klanten op korte termijn; subsidiebeloften op de
+  website moeten aangepast of verwijderd worden. Heroverwegen zodra losse opleidingen
+  aantoonbaar verkopen.
 
 ## Open vragen voor Cedric
 

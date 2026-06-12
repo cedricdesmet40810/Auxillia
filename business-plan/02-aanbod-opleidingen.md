@@ -1,11 +1,20 @@
 # 02 — Aanbod & Curriculum Opleidingen
 
 Eigenaar: opleidingsontwerper
-Laatst bijgewerkt: 2026-06-12
+Laatst bijgewerkt: 2026-06-12 (rev. 2 — beslissingen 2026-06-12 verwerkt)
 
 > `business-plan/01-markt.md` bestaat nog niet op het moment van schrijven. Zodra dat
 > hoofdstuk beschikbaar is, moeten de concurrentieanalyse in §6 en de differentiatie in
 > §6.3 herijkt worden op basis van de marktgegevens.
+
+> **Wijzigingslog rev. 2 (2026-06-12):** drie beslissingen van Cedric verwerkt:
+> (a) de betaalde AI-analyse is het kerninstapproduct — de gratis kennismakingssessie
+> (vroeger Niveau 1 van de leerladder) is daarmee niet langer de primaire lead-generator;
+> (b) cursussen blijven als derde poot bestaan, zonder vereiste registratie;
+> (c) DV.O-registratie uitgesteld — kmo-portefeuille-subsidie is off-the-table op korte
+> termijn; alle subsidie-argumenten in de klantcommunicatie over opleidingen zijn geschrapt
+> of geconditioneerd; auditbestendig materiaal blijft ontworpen als voorbereiding op een
+> mogelijke toekomstige registratie.
 
 ---
 
@@ -16,9 +25,17 @@ voor kmo's", de verschillende deliveryformats, de leerladder van kennismaking to
 verdieping, het benodigde lesmateriaal, de auditbestendigheid voor kmo-portefeuille, de
 positionering ten opzichte van concurrenten, en de didactische principes achter het ontwerp.
 
+Het **opleidingsaanbod is de derde poot** naast de AI-analyse (instapproduct) en de sprint
+(kernaanbod). Cursussen hoeven geen DV.O-registratie om verkocht te worden — ze worden
+aangeboden tegen volle marktprijs, zonder subsidiebelofte aan de klant.
+
 De **sprint** (procesautomatisering met vaste prijs en vaste deadline) valt buiten dit
 hoofdstuk maar heeft een raakvlak: elke sprint bevat een opleidingsluik voor het team. Dat
 luik moet naadloos aansluiten op de hier beschreven modulaire structuur.
+
+De **AI-analyse** (zie `00-context.md`) is het primaire instapproduct en leidt funnel-matig
+naar de sprint. Hoe de leerladder van de cursussen zich verhoudt tot die funnel is uitgewerkt
+in §4.
 
 ---
 
@@ -167,6 +184,12 @@ moet beslissen of Auxilia een vast samenwerking aangaat met een locatiepartner i
 | **Opleidingsluik sprint** | Halve dag (3 uur), ingebakken in een automatiseringssprint | Medewerkers die met het geautomatiseerde proces gaan werken | Inbegrepen in sprintprijs |
 | **Abonnement / doorlopend** | Maandelijks 2 uur update + Q&A-sessie (online) | Terugkerende klanten die al een basis hebben | €149–€199 p.m. per bedrijf |
 
+> **Opmerking prijsbepaling**: alle prijzen zijn volle marktprijzen exclusief btw, **zonder
+> subsidiekorting**. Zolang Auxilia geen DV.O-nummer heeft, kan de klant géén
+> kmo-portefeuille aanvragen voor deze opleidingen. Communiceer dat eerlijk en proactief:
+> "Onze opleidingen zijn momenteel niet subsidieerbaar via de kmo-portefeuille. We zijn de
+> registratieprocedure aan het voorbereiden — zodra dat rond is, informeren we je."
+
 ### 2.2 Analyse per format
 
 **Open workshop**
@@ -176,28 +199,36 @@ moet beslissen of Auxilia een vast samenwerking aangaat met een locatiepartner i
 - Nadelen: homogeniteit is lager (deelnemers uit andere sectoren), minder diepgaande
   aanpak op de eigen processen, hogere voorbereidingstijd voor de trainer (geen specifiek
   bedrijfscontex).
-- kmo-portefeuille: subsidieerbaar (thema Digitalisering) zodra DV.O-registratie rond is.
+- kmo-portefeuille: **niet beschikbaar op korte termijn** (DV.O-registratie uitgesteld).
+  Voorbereid voor latere subsidiabiliteit zodra registratie alsnog doorgaat — zie §3.
 - Aanbeveling: starten met open workshops in de Kempen om zichtbaarheid te bouwen en
-  feedback te verzamelen. Lage drempel; ideaal als lanceringsinstrument.
+  feedback te verzamelen. Lage drempel; ideaal als lanceringsinstrument. Verkoopargument
+  is de directe praktijkwaarde, niet de subsidie.
 
 **In-company**
 - Voordelen: trainer kan de processen van het bedrijf centraal stellen, hogere impact,
   hogere prijs per dag, eenvoudiger aanwezigheidsregistratie (audit), sterker referentie.
 - Nadelen: vraagt prospectie per bedrijf, tijdsinvestering voor voorbereiding (intake
   nodig), weinig schaalbaar als bijberoep met beperkt beschikbare uren.
-- kmo-portefeuille: subsidieerbaar zodra geregistreerd.
+- kmo-portefeuille: **niet beschikbaar op korte termijn** (DV.O-registratie uitgesteld).
+  Auditbestendig materiaal is al ontworpen (zie §3) — de sprong naar subsidiabiliteit
+  is in principe beperkt tot het afronden van de registratieprocedure.
 - Aanbeveling: de meest waardevolle route op middellange termijn. Starten zodra de
-  basiscursus bewezen is (eerste 2–3 open workshops als piloot).
+  basiscursus bewezen is (eerste 2–3 open workshops als piloot). Instap via de
+  AI-analyse-funnel is de logische route: analyse → rapport → in-company opleiding
+  voor het team of sprint (afhankelijk van de bevinding in het rapport).
 
 **Opleidingsluik sprint**
 - Voordelen: natuurlijke upsell, deelnemers zijn gemotiveerd (ze gaan het tool de volgende
   dag gebruiken), hoge relevantie (training op het geautomatiseerde proces).
 - Nadelen: beperkt tot het geautomatiseerde proces; geen brede AI-geletterdheid.
-- kmo-portefeuille: het opleidingsluik is **apart** subsidieerbaar als het voldoet aan de
-  vereisten (eigen opleidingsdossier, apart gefactureerd of opgesplitst in de offerte).
-  ❓ Cedric beslist of dit apart gefactureerd wordt of in de sprintprijs vervat zit.
+- kmo-portefeuille: **niet beschikbaar op korte termijn**. Aparte facturatie van het
+  opleidingsluik heeft op dit moment geen subsidievoordeel voor de klant; het vereenvoudigt
+  wel de boekhouding als het luik later subsidieerbaar wordt. ❓ Cedric beslist of het
+  apart gefactureerd wordt of in de sprintprijs vervat zit.
 - Aanbeveling: altijd een formeel opleidingsluik opnemen in elke sprint, ook al is het
-  kort. Het verhoogt de perceptiewaarde én maakt subsidie mogelijk.
+  kort. Het verhoogt de perceptiewaarde en bereidt de documentatie voor op een mogelijke
+  latere subsidieclaim.
 
 **Abonnement / doorlopend**
 - Voordelen: terugkerende omzet, klantenbinding, aansluitend op snelle evolutie van AI-
@@ -210,19 +241,37 @@ moet beslissen of Auxilia een vast samenwerking aangaat met een locatiepartner i
 
 ### 2.3 Aanbeveling volgorde
 
-1. **Maand 1–3**: open workshops als piloot (1 per maand, max. 12 deelnemers, Kempen)
-2. **Maand 4–6**: eerste in-company sessies op basis van referenties uit de open workshops
-3. **Maand 6+**: opleidingsluik systematisch koppelen aan elke sprint
-4. **Maand 12+**: abonnementsformule lanceren voor terugkerende klanten
+> **Gewijzigd in rev. 2**: de primaire funnel loopt via de AI-analyse, niet via de
+> kennismakingssessie. De volgorde hieronder houdt daarmee rekening.
+
+1. **Maand 1–3**: open workshops als piloot (1 per maand, max. 12 deelnemers, Kempen) —
+   ook als zichtbaarheidsinstrument naast de AI-analyse-funnel. Geen subsidiebelofte.
+2. **Maand 1–3 (parallel)**: elke opgeleverde AI-analyse bevat een standaard
+   opleidingsaanbeveling; eerste in-company dagcursussen als direct gevolg van
+   analyse-rapporten.
+3. **Maand 4–6**: in-company sessies schalen op basis van analyse-pipeline en referenties
+   uit de open workshops.
+4. **Maand 6+**: opleidingsluik systematisch koppelen aan elke sprint (altijd inbegrepen,
+   apart gedocumenteerd voor latere subsidiabiliteit).
+5. **Maand 12+**: abonnementsformule lanceren voor terugkerende klanten.
+6. **Overweeg DV.O-registratie** zodra ≥5 betalende cursusklanten bewezen zijn — zie §9.
 
 ---
 
-## 3. Eisen kmo-portefeuille en VLAIO-audit
+## 3. Eisen kmo-portefeuille en VLAIO-audit — voorbereid maar uitgesteld
 
-> **Belangrijk voorbehoud**: Auxilia is op 2026-06-12 nog niet geregistreerd als
-> dienstverlener (DV.O-nummer). Dit hoofdstuk ontwerpt het materiaal alvast **auditbestendig**
-> maar behandelt subsidiabiliteit als **voorwaardelijk** tot de registratie afgerond is.
-> Communiceer dit ook zo naar klanten (zie open punt in `00-context.md`).
+> **Status (beslissing 2026-06-12)**: de DV.O-registratie is **voorlopig uitgesteld**.
+> Kmo-portefeuillesubsidie is daarmee off-the-table op korte termijn en mag **niet**
+> beloofd worden aan klanten. Klantcommunicatie: "Onze opleidingen zijn momenteel niet
+> subsidieerbaar via de kmo-portefeuille. We bereiden de registratie voor en informeren
+> je zodra dat verandert."
+>
+> De inhoud van dit hoofdstuk (registratieprocedure, kmop-norm, auditbestendig materiaal)
+> blijft bewaard als **voorbereiding** voor de registratie zodra Auxilia die opportuun acht.
+> Geen actiepunt op korte termijn — wel een activeerbare springplank.
+>
+> Intern voordeel van de auditbestendige aanpak: de documentatiegewoonten (aanwezigheidslijst,
+> evaluatieformulier, attest) zijn hoe dan ook professioneel en versterken de geloofwaardigheid.
 
 ### 3.1 Registratieprocedure in het kort
 
@@ -301,10 +350,13 @@ voor een audit.
 
 ## 4. Leerladder
 
-### 4.1 Overzicht
+### 4.1 Overzicht en verhouding tot de AI-analyse-funnel
 
-De leerladder bestaat uit vier niveaus. Klanten stijgen de ladder op naarmate ze meer
-ervaring opdoen met AI in hun dagelijkse werk.
+De leerladder heeft vier niveaus. **Cruciaal contextverschil t.o.v. rev. 1**: de betaalde
+AI-analyse (instapproduct van Auxilia, zie `00-context.md`) is nu de primaire
+lead-generator en funnel-ingang — niet de gratis kennismakingssessie.
+
+Dit heeft gevolgen voor hoe de niveaus samenhangen:
 
 ```
 Niveau 4 — AI-strategie & automatisering (halve dag + coachingsessie)
@@ -313,32 +365,54 @@ Niveau 3 — Verdieping: sector-specifieke toepassingen (dagmodule)
     ↑
 Niveau 2 — Basisopleiding "AI die werkt" (1 dag — zie §1)
     ↑
-Niveau 1 — Kennismakingssessie (2 uur, gratis of symbolisch bedrag)
+Niveau 1a — Kennismakingssessie (2 uur, gratis/symbolisch) ← lage-drempel lead voor wie
+              NIET via de analyse binnenkomt (bv. open evenement, netwerk, mond-tot-mond)
+Niveau 1b — Kennismaking via AI-analyse-rapport ← primaire instappers (aanbeveling in
+              rapport kan rechtstreeks doorverwijzen naar N2 of naar sprint-opleidingsluik)
 ```
 
-### 4.2 Niveau 1 — Kennismakingssessie (2 uur)
+**Funnel-logica**:
+- Klant doorloopt AI-analyse → rapport → sprint-voorstel.
+- In het rapport kan Auxilia ook een opleidingsaanbeveling opnemen voor het team
+  ("jullie medewerkers hebben baat bij de basiscursus AI vóór of kort na de sprint").
+- Zo wordt de dagcursus een **aanbeveling vanuit het rapport**, met hogere conversiekans
+  dan een koude inschrijving vanuit een evenement.
+- De gratis kennismakingssessie (N1a) blijft zinvol als zelfstandig lanceringsinstrument
+  voor zichtbaarheid in de Kempen, maar is niet meer de hoofdingang van de funnel.
 
-**Doel**: lead genereren, drempel verlagen, mond-tot-mondreclame creëren.
+### 4.2 Niveau 1a — Kennismakingssessie (2 uur)
 
-**Inhoud**: live demo van 3 AI-toepassingen op vertrouwde werktaken, Q&A, uitleg over
-kmo-portefeuille-subsidie.
+**Doel**: lokale zichtbaarheid opbouwen, laagdrempelige instap voor wie nog niet klaar
+is voor een betaalde analyse, mond-tot-mondreclame creëren.
+
+**Inhoud**: live demo van 3 AI-toepassingen op vertrouwde werktaken, Q&A, korte uitleg
+over de AI-analyse als volgende stap.
+
+**Subsidie**: niet vermelden — DV.O-registratie uitgesteld.
 
 **Format**: open evenement (bv. bij Voka, Unizo-lokaal of gemeentehuis Kempen), max.
 25 personen. Kan ook online (Teams-webinar).
 
-**Prijs**: gratis of €25 symbolisch bijdrage (dekt zaalhuur). Niet subsidieerbaar (te
-kort voor kmo-portefeuille).
+**Prijs**: gratis of €25 symbolisch bijdrage (dekt zaalhuur).
 
-**Overgang naar N2**: deelnemers ontvangen een kortingscode van €50 op de dagcursus.
+**Overgang**: deelnemers ontvangen informatie over de AI-analyse als betaalde vervolgstap
+(€750 richtprijs) én een kortingscode van €50 op de dagcursus als ze direct inschrijven.
 
-### 4.3 Niveau 2 — Basisopleiding (1 dag)
+### 4.3 Niveau 1b — Kennismaking via AI-analyse-rapport
+
+Dit is geen aparte sessie maar een **aanbeveling in het analyserapport**. Als de analyse
+aantoont dat het team baat heeft bij brede AI-geletterdheid vóór of naast een sprint,
+vermeldt het rapport expliciet: "Wij adviseren een in-company dagcursus voor jullie team."
+Dat rapport-voorstel is de meest warme en geloofwaardige instap naar N2.
+
+### 4.4 Niveau 2 — Basisopleiding (1 dag)
 
 Volledig beschreven in §1.
 
 **Overgang naar N3**: deelnemers die de 30-dagen-actiekaart invullen en na 30 dagen een
 korte follow-up invullen (zie §7), ontvangen een uitnodiging voor de verdiepingsmodule.
 
-### 4.4 Niveau 3 — Verdiepingsmodule (dagdeel = 3 uur)
+### 4.5 Niveau 3 — Verdiepingsmodule (dagdeel = 3 uur)
 
 Sector-specifieke of functie-specifieke AI-toepassingen. Voorbeelden:
 
@@ -354,7 +428,7 @@ Sector-specifieke of functie-specifieke AI-toepassingen. Voorbeelden:
 **Overgang naar N4**: deelnemers die een verdiepingsmodule volgden én al een sprint
 deden (of aan het doen zijn), kunnen deelnemen aan het strategieniveau.
 
-### 4.5 Niveau 4 — AI-strategie & automatisering (halve dag + coaching)
+### 4.6 Niveau 4 — AI-strategie & automatisering (halve dag + coaching)
 
 **Doel**: zaakvoerder of leidinggevende helpen een AI-routekaart te maken voor hun bedrijf.
 
@@ -465,7 +539,8 @@ Concrete differentiators:
 | Lokale aanwezigheid Kempen | Ja | Nee (of minimaal) |
 | Vaste prijs + resultaatsbelofte | Ja | Nee |
 | Materiaal op maat per bedrijfsproces | Ja (intake voor in-company) | Gedeeltelijk (SBM, AI Learning.be) |
-| Subsidiegids voor de klant | Ja (kmo-portefeuille begeleiding) | Soms |
+| Instap via betaalde AI-analyse | Ja (uniek: analyse → rapport → opleiding/sprint) | Nee |
+| Subsidiegids voor de klant | Voorbereid, nog niet actief (DV.O uitgesteld) | Soms |
 
 ---
 
@@ -540,30 +615,42 @@ De oefeningen zijn zo gebouwd dat elke deelnemer iets **meeneemt naar het werk**
 
 ## 9. Openstaande beslissingen voor Cedric
 
-De volgende keuzes zijn nog niet genomen en blokkeren of beïnvloeden de uitvoering van dit hoofdstuk:
+> Beslissingen die in rev. 1 nog open stonden maar nu **genomen zijn** (verwijderd):
+> — "Cursussen als poot: ja of nee?" → Ja, derde poot (beslissing 2026-06-12).
+> — "DV.O-registratie wanneer?" → Uitgesteld; geen kmo-portefeuille op korte termijn.
+> — "AI-analyse als kerninstapproduct?" → Ja (beslissing 2026-06-12).
 
-1. **DV.O-registratie**: wanneer start de auditprocedure? Welk auditbureau (Bureau Veritas,
-   DNV, Certup, BQA)? Kost gemiddeld €800–€2.000 voor de startaudit. Zonder registratie
-   geen subsidieerbare opleidingen.
+De volgende keuzes zijn **nog open** en beïnvloeden de uitvoering van dit hoofdstuk:
+
+1. **Opleidingsluik sprint — apart factureren?**: wordt het opleidingsluik (3 uur) apart
+   gefactureerd of zit het in de sprintprijs vervat? Op korte termijn geen subsidieargument,
+   maar aparte facturatie vereenvoudigt een latere subsidieclaim en maakt de
+   opleidingskost inzichtelijker voor de klant. ❓ Cedric beslist.
 
 2. **Locatiepartner Kempen**: open workshops vereisen een zaal. Wil je samenwerken met een
    vaste partner (Voka-lokaal, gemeentehuis, co-working)? Heeft Auxilia (of een van de
    teamleden) toegang tot een geschikte ruimte?
 
-3. **Opleidingsluik sprint — apart factureren?**: wordt het opleidingsluik (3 uur) apart
-   gefactureerd zodat de klant kmo-portefeuille kan aanvragen, of zit het in de sprintprijs
-   vervat? Aparte facturatie = meer administratie maar maakt subsidie mogelijk voor de klant.
-
-4. **Rolverdeling opleiding**: uit `00-context.md` blijkt dat "Lien Vandereyt" het
+3. **Rolverdeling opleiding**: uit `00-context.md` blijkt dat "Lien Vandereyt" het
    opleidingsprofiel draagt. Wie geeft de opleidingen in de praktijk? Kan dat bijberoep
    gecombineerd worden? Hoeveel uren per maand zijn beschikbaar?
 
-5. **Prijsvastlegging**: de prijsranges hierboven zijn marktconform maar moeten bevestigd
+4. **Prijsvastlegging**: de prijsranges hierboven zijn marktconform maar moeten bevestigd
    worden. In het bijzonder: is €395–€450 p.p. voor de open dagworkshop haalbaar in de
    Kempenmarkt, of is een lager instapbedrag nodig voor de lancering?
 
-6. **Abonnementsformule**: wil je dit al in de eerste 6 maanden activeren, of pas later?
+5. **Abonnementsformule**: wil je dit al in de eerste 6 maanden activeren, of pas later?
    Vraagt een platform (Zoom, opnameinfrastructuur) en consistente tijdsinvestering per maand.
 
-7. **Taal van de opleiding**: de materialen zijn voor 100% Nederlands. Zijn er klanten waar
+6. **Taal van de opleiding**: de materialen zijn voor 100% Nederlands. Zijn er klanten waar
    ook Frans- of Engelstalige medewerkers aanwezig zijn? Zo ja, dit vraagt een aparte versie.
+
+7. **Verhouding analyse-rapport en opleidingsaanbeveling**: in welke gevallen raadt het
+   AI-analyserapport een in-company dagcursus aan versus een sprint-opleidingsluik? Moet
+   er een beslisboom of standaardzin in het rapport komen? Dit raakt het domein van de
+   sprint-ontwerper maar vraagt ook een gestandaardiseerde koppeling vanuit het
+   opleidingsaanbod.
+
+8. **Heroverwegen DV.O-registratie**: wanneer is het moment waarop losse opleidingen
+   aantoonbaar verkopen en de registratie wél de moeite waard is? ❓ Cedric bepaalt de
+   drempel (bv. "als we 5 betalende cursusklanten hebben, starten we de auditprocedure").

@@ -1,6 +1,6 @@
 # 05 — Subsidies & Compliance
 
-Laatst bijgewerkt: 2026-06-12
+Laatst bijgewerkt: 2026-06-12 (rev. 2 — §1.4 sprint-split afgestemd op 04-financieel-plan rev. 2)
 Eigenaar: subsidie-specialist
 
 > **Disclaimer:** dit hoofdstuk biedt praktische duiding, geen bindend juridisch of fiscaal
@@ -11,15 +11,21 @@ Eigenaar: subsidie-specialist
 ## Stand van zaken (juni 2026)
 
 Auxilia (ondernemingsnummer 1038.962.149) is **nog niet geregistreerd** als erkend
-dienstverlener voor de kmo-portefeuille. De DV.O-registratie is de meest urgente
-compliance-actie: zonder dit nummer kan Auxilia haar AI-opleidingen niet als
-gesubsidieerde kmo-portefeuille-dienst aanbieden en kan de website-belofte ("we loodsen
-je door de aanvraag") niet volledig worden ingelost.
+dienstverlener voor de kmo-portefeuille. Per beslissing van **2026-06-12** wordt de
+DV.O-registratie **voorlopig uitgesteld** — het volledige draaiboek (procedure, kosten,
+auditbureaus) blijft behouden in §2 als klaar-voor-gebruik-playbook voor het moment
+dat losse opleidingen aantoonbaar verkopen.
 
-`business-plan/04-financieel-plan.md` en `business-plan/02-aanbod-opleidingen.md`
-bestonden nog niet op het moment van schrijven (2026-06-12). De uitspraken over
-subsidiabiliteit en prijsimpact in dit hoofdstuk worden na het beschikbaar komen van
-die bestanden afgestemd.
+**Nieuwe compliance-prioriteit** door de uitgestelde registratie: de website-belofte
+rond subsidies moet onmiddellijk worden aangepast of verwijderd (zie §7 — actiepunt #1).
+
+De **betaalde AI-analyse** is als instapproduct bevestigd (2026-06-12). Dit brengt een
+eigen compliance-dimensie mee (zie §7.3 — GDPR bij intake vóór contract).
+
+`business-plan/04-financieel-plan.md` is beschikbaar en verwerkt: de sprint-split
+(€ 3.500 implementatie + € 1.250 opleidingsluik) is overgenomen in §1.4 (rev. 2,
+2026-06-12). `business-plan/02-aanbod-opleidingen.md` bestaat nog niet — subsidiabiliteit
+per opleidingsmodule wordt afgestemd zodra dat bestand beschikbaar is.
 
 ---
 
@@ -30,6 +36,12 @@ die bestanden afgestemd.
 Vanaf **1 februari 2026** is via de kmo-portefeuille **uitsluitend opleiding**
 subsidieerbaar, met één uitzondering: advies rond cybersecurity blijft gesubsidieerd.
 Alle andere adviesdiensten vallen weg.
+
+**Belangrijk voor Auxilia:** de AI-analyse is een adviesdienst. Adviesdiensten zijn
+**niet subsidieerbaar via de kmo-portefeuille** (behoudens cybersecurity). Dit is
+definitief per 1 februari 2026 en heroverwegen heeft geen zin — de regelgeving is
+helder. Informeer klanten hier proactief over, zodat niemand achteraf met een
+subsidieverwachting op een analyse zit.
 
 Opleidingen komen enkel in aanmerking als ze kaderen binnen één van de volgende acht
 **toekomstgerichte thema's**:
@@ -82,17 +94,51 @@ Bron: [VLAIO — Voorwaarden voor subsidie](https://www.vlaio.be/nl/subsidies-fi
 
 ### 1.4 Praktische implicatie voor Auxilia-prijsstelling
 
-Een AI-sprint met opleidingscomponent van bv. € 3.000 excl. btw:
-- Kleine klant-kmo: subsidie 30 % = **€ 900** terug via kmo-portefeuille.
-- Nettokost voor klant: **€ 2.100** (+ btw).
+> **Voorwaarde:** het onderstaande scenario is enkel toepasbaar **na afronding van de
+> DV.O-registratie**. Die registratie is momenteel uitgesteld (beslissing 2026-06-12).
+> Het scenario blijft geldig als klaar-voor-gebruik verkoopargument voor wanneer de
+> trigger bereikt wordt (zie §2 — 3–5 cursusverkopen met expliciete subsidievraag).
 
-Dit is een concreet verkoopargument zodra Auxilia geregistreerd is. Zolang de
-DV.O-registratie ontbreekt, **mag dit argument niet als bestaand voordeel worden
-gepresenteerd** (zie §5).
+**Concrete toepassing op Sprint Standaard (€ 4.750 excl. btw):**
+
+Conform de prijssplitsing uit `business-plan/04-financieel-plan.md` §7.2 wordt de
+Sprint Standaard-factuur als volgt opgesplitst:
+
+| Factuurlijn | Bedrag excl. btw | Subsidieerbaar? |
+|---|---|---|
+| Implementatie & begeleiding | **€ 3.500** | Nee |
+| Teamopleiding (opleidingsluik) | **€ 1.250** | **Ja** |
+| **Totaal sprint** | **€ 4.750** | — |
+
+- Kleine klant-kmo (30 % steun): subsidie op opleidingsluik = **€ 375** terug via
+  kmo-portefeuille.
+- Nettokost voor klant op het opleidingsluik: **€ 875** (in plaats van € 1.250).
+- De implementatiefactuur (€ 3.500) blijft ongewijzigd — geen subsidie, geen korting.
+
+**Verkoopargument:** de subsidie verlaagt de netto klantprijs voor het opleidingsluik
+met **€ 375**, zonder dat Auxilia de implementatieprijs verlaagt. Communiceer dit als
+een concreet voordeel van de factuursplitsing — niet als een algemene kortingsboodschap.
+
+**Voorwaarden voor de factuursplitsing:**
+- De opleidingslijn moet een reëel en duidelijk omschreven opleidingsonderdeel zijn
+  (leerdoelen, programma, aanwezigheidslijst — zie §2.4 stavingsdocumenten).
+- Minimumbedrag per gesubsidieerde lijn: € 100 excl. btw (hier ruim gehaald).
+- Btw wordt steeds rechtstreeks door de klant betaald — nooit inbegrepen in de
+  subsidiabele grondslag.
 
 ---
 
-## 2. DV.O-registratie — stappenplan
+## 2. DV.O-registratie — uitgesteld draaiboek
+
+> **Status (2026-06-12): UITGESTELD.**
+> De DV.O-registratie is bewust naar de kant geschoven. Heroverwegen zodra losse
+> opleidingen aantoonbaar verkopen. Het volledige stappenplan hieronder is klaar voor
+> onmiddellijke uitvoering zodra de trigger bereikt is — geen nieuwe research nodig.
+
+**Trigger voor heroverweging:** zodra Auxilia een reeks losse opleidingen verkoopt en
+klanten actief vragen naar kmo-portefeuille-subsidie, is dat het sein om §2.3 te
+activeren. Als vuistregel: 3–5 cursusverkopen met expliciete subsidieinteresse is een
+voldoende bewijs van vraag.
 
 ### 2.1 Wat is het?
 
@@ -103,7 +149,7 @@ jouw opleiding.
 
 Bron: [VLAIO — Kmo-portefeuille voor dienstverleners](https://www.vlaio.be/nl/subsidies-financiering/kmo-portefeuille/kmo-portefeuille-voor-dienstverleners), raadpleging 2026-06-12.
 
-### 2.2 Verplicht vs. aanbevolen vs. optioneel
+### 2.2 Verplicht vs. aanbevolen vs. optioneel (op het moment van activatie)
 
 | Actie | Status |
 |---|---|
@@ -216,7 +262,8 @@ medewerkers willen inschrijven voor AI-opleidingen.
 **Beoordeling voor Auxilia:** een AI-basisopleiding van bv. 32 uur past in het VOV-
 kader mits registratie in de databank. Dit vereist WSE-kwaliteitsregistratie — die vlot
 verkregen wordt via of naast de kmo-portefeuille-registratie.
-**Aanbevolen** als bijkomend kanaal zodra de kmo-portefeuille-registratie round is.
+**Aanbevolen** als bijkomend kanaal zodra de DV.O-registratie geactiveerd en afgerond is
+(zie §2 trigger).
 
 Bron: [VLAIO — Vlaams opleidingsverlof](https://www.vlaio.be/nl/subsidies-financiering/subsidiedatabank/maatregelen/vlaams-opleidingsverlof-vergoeding-voor-de-werkgever), raadpleging 2026-06-12.
 Bron: [Securex — wijzigingen VOV 1 september 2026](https://www.securex.be/nl/lex4you/werkgever/nieuws/nieuwe-wijzigingen-vlaams-opleidingsverlof-vanaf-1-september-2026), raadpleging 2026-06-12.
@@ -235,7 +282,7 @@ Voor klanten-kmo's die een significante digitaliseringssprong willen maken:
 
 **Beoordeling voor Auxilia:** deze subsidie is bedoeld voor de klant, niet voor
 Auxilia. Auxilia kan optreden als externe dienstverlener in het project. Geen vereiste
-dat Auxilia zelf erkend dienstverlener is voor deze maatregel.
+dat Auxilia zelf erkend dienstverlener is voor deze maatregel. Geen DV.O-nummer nodig.
 **Optioneel** — voor klanten met grotere transformatieambities en voldoende budget om
 de volledige aanvraagprocedure te doorlopen.
 
@@ -309,7 +356,36 @@ versies; documenteer dit in het sprint-intakedocument.
 
 Bron: [Conversal — GDPR en AI-tools](https://www.conversal.be/blog/gdpr-en-ai-tools-welke-data-mag-je-voeren-aan-chatgpt/), raadpleging 2026-06-12.
 
-### 4.3 GDPR bij opleidingsregistratie
+### 4.3 GDPR bij de AI-analyse (instapproduct)
+
+De AI-analyse is het instapproduct: een betaalde doorlichting van de processen van de
+klant. Dit betekent dat Auxilia **al bij de intake** — nog vóór een sprint-contract
+gesloten is — inzicht krijgt in de werking, data en mogelijke persoonsgegevens van de
+klant.
+
+**Concreet risico:** de klant deelt procesomschrijvingen, werkbestanden, voorbeelddossiers
+of klantlijsten om de analyse mogelijk te maken. Als die bestanden persoonsgegevens
+bevatten (namen van klanten, medewerkers, leveranciers), is Auxilia vanaf dat moment
+verwerker onder de AVG.
+
+**Verplichte acties bij elk analyse-intake:**
+
+- [ ] **NDA ondertekenen** vóór de klant enige bedrijfsinfo deelt — ook al is het "maar
+  een analyse". Een eenvoudig model-NDA volstaat.
+- [ ] **Verwerkingsafspraken vastleggen**: bepaal in de analyse-overeenkomst (of een
+  korte bijlage) welke gegevens worden gedeeld, voor welk doel, door wie ze worden
+  verwerkt en hoe lang ze worden bewaard. Dit is de lichtste vorm van een DPA.
+- [ ] **Minimale datadeling**: vraag de klant om persoonsgegevens te anonimiseren of
+  pseudonimiseren vóór ze worden gedeeld (bv. namen vervangen door "klant A"). Zo
+  vermijd je verwerkersverplichtingen voor de analysedata zelf.
+- [ ] **Bewaringstermijn analyse-output**: leg vast dat Auxilia de aangeleverde documenten
+  na X weken/maanden verwijdert. Documenteer dit en voer het ook effectief uit.
+
+**Aanbeveling:** maak een standaard analyse-intakeformulier met een korte sectie
+"gegevensdeling en vertrouwelijkheid" — dit geeft meteen een professionele indruk en
+beschermt Auxilia juridisch. Bespreek de exacte bewoording met een jurist.
+
+### 4.4 GDPR bij opleidingsregistratie
 
 Bij het organiseren van opleidingen verwerkt Auxilia zelf persoonsgegevens als
 verwerkingsverantwoordelijke:
@@ -327,7 +403,7 @@ verwerkingsverantwoordelijke:
   vermelden en DPA in orde brengen.
 - Geen persoonsgegevens van deelnemers doorgeven aan derden zonder rechtsgrond.
 
-### 4.4 Sprint-intake: GDPR-checklist
+### 4.5 Sprint-intake: GDPR-checklist
 
 Bespreek bij elke sprint-intake:
 
@@ -373,7 +449,8 @@ maar de inspanning moet aantoonbaar zijn.
 
 **Kans voor Auxilia:** AI-geletterdheidsopleidingen voor kmo-medewerkers zijn precies
 wat Auxilia aanbiedt én vallen onder het kmo-portefeuille-thema digitalisering. De
-EU-verplichting is een concrete verkoopdruk bij klanten.
+EU-verplichting is een concrete verkoopdruk bij klanten — gebruik dit als argument
+bij de analyse én bij de verkoop van cursussen.
 
 ### 5.3 Risicoclassificatie — relevante categorieën voor typische kmo-toepassingen
 
@@ -446,43 +523,70 @@ AI-systeem."*
 - [ ] Hoe lang duurt de bijsturingperiode zonder extra kost (de "belofte" op de site)?
 - [ ] Hoe wordt "bijsturen" afgebakend t.o.v. scopewijziging?
 
+### 6.5 Analyse-overeenkomst (nieuw — instapproduct)
+
+- [ ] Bevat de analyse-overeenkomst een NDA-clausule vóór uitwisseling van bedrijfsinfo?
+- [ ] Is er een korte verwerkingsbijlage voor de analysedata (doel, bewaartermijn,
+  verwijdering na afloop)?
+- [ ] Is de scope van de analyse duidelijk afgebakend (wat levert Auxilia op, wat niet)?
+- [ ] Is het rapport-eigendom helder: wie mag het rapport delen, publiceren, hergebruiken?
+
 ---
 
-## 7. Eerlijke communicatie over subsidies op de website
+## 7. Eerlijke communicatie over subsidies — actie #1
+
+> **Dit is het meest urgente actiepunt op de compliance-agenda.**
+> De DV.O-registratie is uitgesteld. Daardoor is de huidige website-belofte niet
+> inwisselbaar — en dat is niet alleen een reputatierisico, het kan als misleidende
+> reclame worden beschouwd (art. VI.104 WER).
 
 ### 7.1 Huidige situatie
 
 De website belooft: *"We helpen je nagaan of je in aanmerking komt en loodsen je door
-de aanvraag."* Auxilia heeft op dit moment **geen DV.O-nummer**. Dat betekent:
+de aanvraag."* Auxilia heeft op dit moment **geen DV.O-nummer** en heeft beslist de
+registratie voorlopig uit te stellen. Dat betekent:
 
-- Auxilia **kan de klant adviseren** over het subsidiestelsel en helpen de haalbaarheid
-  te checken → dit is als zelfstandig advies toegestaan, maar dit advies is **zelf niet
-  subsidieerbaar** via de kmo-portefeuille (advies is weggevallen, behoudens
-  cybersecurity).
-- Auxilia **kan nog niet** de opleidingen als gesubsidieerde kmo-portefeuille-dienst
-  aanbieden.
+- Auxilia kan klanten **informeel informeren** over het subsidiestelsel als algemeen
+  advies — dat is toegestaan.
+- Auxilia **kan de klant echter niet laten profiteren** van kmo-portefeuille-subsidie
+  voor haar opleidingen, want daarvoor is het DV.O-nummer vereist.
+- Dat verschil is voor een klant die de site leest niet zichtbaar — en dus misleidend.
 
-### 7.2 Aanbevolen formulering zolang de registratie loopt
+### 7.2 Verplichte actie: website-tekst aanpassen
 
-Verander de huidige belofte naar iets als:
+Verwijder elke verwijzing naar kmo-portefeuille-subsidies totdat de DV.O-registratie
+effectief is afgerond. Hieronder drie concrete alternatieven op basis van de
+positioneringskeuze:
 
-> *"We zijn bezig met onze registratie als erkend dienstverlener voor de
-> kmo-portefeuille. Tot die registratie afgerond is, kun je via de kmo-portefeuille
-> nog geen subsidie aanvragen voor onze opleidingen. We informeren je zodra dat
-> mogelijk is."*
+**Optie A — volledig verwijderen (minste risico, meest eerlijk):**
+> Verwijder de subsidiezin volledig. Vervang door iets over de nuchter-praktische
+> aanpak of de vaste prijsformule als USP.
 
-Of, als de registratie al in gang is gezet:
+**Optie B — neutrale toekomstformulering (als je het onderwerp wil vasthouden):**
+> *"Afhankelijk van je opleiding en bedrijfsgrootte zijn er subsidiekanalen beschikbaar
+> voor AI-opleiding. We bekijken dat samen zodra we je situatie kennen."*
 
-> *"We zijn in volle registratieprocedure. Zodra ons DV.O-nummer beschikbaar is —
-> naar verwachting [kwartaal X] — kun je 30 % (kleine kmo) of 20 % (middelgrote kmo)
-> subsidie terugkrijgen op onze AI-opleidingen via de kmo-portefeuille."*
+**Optie C — eerlijke plaatshouder als je de DV.O-toekomst wil signaleren:**
+> *"We werken aan onze erkenning als erkend opleidingsverstrekker voor de
+> kmo-portefeuille. Zodra die afgerond is, kunnen kleine kmo's tot 30 % van het
+> cursusbedrag recupereren via VLAIO. Op dit moment is die subsidie nog niet
+> beschikbaar via Auxilia."*
 
-**Verplicht:** de huidige tekst aanpassen. Een belofte die Auxilia nu niet kan
-waarmaken, schaadt het vertrouwen en kan als misleidende reclame worden beschouwd
-(VI.104 WER).
+**Aanbeveling:** kies optie A of B zolang de registratie niet op de planning staat.
+Optie C is enkel gepast als de registratie binnen afzienbare tijd (bv. 6 maanden) ook
+echt gepland wordt — anders wekt het valse verwachtingen.
 
-**Aanbevolen:** na het behalen van het DV.O-nummer de subsidie-USP prominent
-communiceren, inclusief een concreet rekenvoor voorbeeld (zie §1.4).
+### 7.3 Compliance-implicaties van de AI-analyse als instapproduct
+
+De AI-analyse is een **adviesdienst** — dit is definitief **niet subsidieerbaar via de
+kmo-portefeuille** per 1 februari 2026 (advies is weggevallen, behoudens cybersecurity).
+Communiceer dit proactief aan klanten die vragen of de analyse subsidieerbaar is: het
+antwoord is nee, en dat hoeft geen probleem te zijn als de meerwaarde van het rapport op
+zichzelf gecommuniceerd wordt.
+
+**GDPR-angle bij de analyse (zie ook §4.3):** de klant deelt gevoelige bedrijfsinformatie
+vóór er een sprint-contract is — mogelijk al persoonsgegevens. Leg verwerkingsafspraken
+en een NDA vast bij de analyse-intake, niet pas bij de sprint.
 
 ---
 
@@ -490,13 +594,14 @@ communiceren, inclusief een concreet rekenvoor voorbeeld (zie §1.4).
 
 | Actie | Status | Prioriteit |
 |---|---|---|
-| Start registratieprocedure DV.O: offertes opvragen bij 2+ auditbureaus | ❌ Niet gestart | **URGENT** |
-| Website-tekst over subsidies aanpassen | ❌ Niet gestart | **URGENT** |
-| Verwerkersovereenkomst (DPA) opstellen voor gebruik bij klanten | ❌ Niet gestart | Hoog |
+| **Website-tekst over subsidies aanpassen of verwijderen** (§7.2) | ❌ Niet gestart | **#1 URGENT** |
+| NDA + verwerkingsbijlage voor analyse-intake opstellen (§4.3 / §6.5) | ❌ Niet gestart | **Hoog** |
+| Verwerkersovereenkomst (DPA) opstellen voor gebruik bij klanten (sprint) | ❌ Niet gestart | Hoog |
 | Privacyverklaring (website + opleidingen) opstellen | ❌ Niet gestart | Hoog |
-| Projectdossiersjabloon aanmaken (stavingsdocumenten VLAIO) | ❌ Niet gestart | Hoog (voor audit) |
 | AI-geletterdheidsbeleid intern documenteren (art. 4 EU AI Act) | ❌ Niet gestart | Middel (deadline 2 aug. 2026) |
-| WSE-kwaliteitsregistratie onderzoeken (voor Vlaams Opleidingsverlof) | ❌ Niet gestart | Middel — na kmo-portefeuille-registratie |
-| Contractsjabloon bespreken met jurist (aansprakelijkheid, IP, sprint-criteria) | ❌ Niet gestart | Middel |
-| Terugkoppeling 04-financieel-plan: subsidiescenario's verwerken | ⏳ Wacht op dat bestand | — |
+| Contractsjabloon bespreken met jurist (aansprakelijkheid, IP, sprint-criteria, analyse) | ❌ Niet gestart | Middel |
+| DV.O-registratie activeren zodra trigger bereikt (§2 trigger: 3–5 cursusverkopen met subsidievraag) | ⏳ Uitgesteld | Heroverwegen op trigger |
+| WSE-kwaliteitsregistratie onderzoeken (voor Vlaams Opleidingsverlof) | ⏳ Uitgesteld — na DV.O | Heroverwegen na DV.O |
+| Projectdossiersjabloon aanmaken (stavingsdocumenten VLAIO) | ⏳ Uitgesteld — na DV.O | Heroverwegen na DV.O |
+| Terugkoppeling 04-financieel-plan: subsidiescenario's verwerken | ✅ Verwerkt in §1.4 (rev. 2, 2026-06-12) — sprint-split € 3.500 / € 1.250 | — |
 | Terugkoppeling 02-aanbod-opleidingen: subsidiabiliteit per module toetsen | ⏳ Wacht op dat bestand | — |

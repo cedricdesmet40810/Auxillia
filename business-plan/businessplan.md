@@ -6,6 +6,12 @@ Laatst bijgewerkt: 2026-06-12
 > context. Per sectie staat de datum van het bronhoofdstuk vermeld. Waar informatie ontbreekt
 > of hoofdstukken elkaar tegenspreken, is dat expliciet aangegeven — zie sectie 9 voor de
 > volledige actielijst.
+>
+> **Revisie t.o.v. vorige versie:** drie beslissingen van 2026-06-12 zijn verwerkt in alle
+> bronhoofdstukken en daarmee ook in dit plan: (a) de betaalde AI-analyse is het
+> kerninstapproduct; (b) cursussen blijven als derde poot; (c) DV.O-registratie is voorlopig
+> uitgesteld. Tegenstrijdigheden T-1 t/m T-4 zijn herbeoordeeld — zie §9.4. Latere update
+> (2026-06-12): N-1 opgelost — h05 rev. 2 stemt sprint-split af op h04 rev. 2.
 
 ---
 
@@ -17,30 +23,45 @@ Auxilia is een Vlaamse dienstverlener in AI-automatisering, AI-implementatie en 
 voor kmo's, met als thuisbasis de Kempen. Het bedrijf is actief onder ondernemingsnummer
 1038.962.149 en gestart als zelfstandige in bijberoep.
 
-Het kernaanbod is de **sprint**: één bedrijfsproces volledig geautomatiseerd en werkend
-opgeleverd, met vaste prijs (indicatief €3.500–€6.000 excl. btw) en vaste deadline,
-inclusief opleiding van het team en een bijsturingsbelofte zonder extra kost. Daarnaast
-biedt Auxilia een gestructureerd opleidingsprogramma "AI die werkt — voor jouw job" in
-vier formats (open workshop, in-company, opleidingsluik in sprint, en abonnement).
+Het aanbod heeft drie poten:
+
+1. **AI-analyse** (instapproduct): een betaalde doorlichting van de processen van de kmo,
+   inclusief concreet rapport met prioriteiten en een indicatieve kostenraming. Richtprijs
+   ca. €750 excl. btw (definitieve prijs nog te bevestigen door Cedric). Het rapport sluit
+   altijd af met een optioneel sprint-voorstel.
+2. **Sprint** (kernaanbod): één bedrijfsproces volledig geautomatiseerd en werkend
+   opgeleverd, met vaste prijs (€3.500–€6.000 excl. btw) en vaste deadline, inclusief
+   opleiding van het team en bijsturingsbelofte zonder extra kost.
+3. **Opleidingen** (derde poot): de basisopleiding "AI die werkt — voor jouw job" (1 dag,
+   4 modules) in vier formats (open workshop, in-company, opleidingsluik sprint,
+   abonnement). Geen DV.O-registratie vereist om ze te verkopen; volledige marktprijs,
+   geen subsidiebelofte op korte termijn.
+
+De funnel loopt: bewustwording → intake-gesprek (gratis, 20 min) → AI-analyse (betaald,
+~€750) → rapport → sprint-voorstel → sprint. Analyses die niet tot een sprint leiden,
+zijn zelfstandig waardevol en genereren cashflow.
 
 De markt is gunstig: 81% van de Belgische kmo's gebruikt AI in 2026, maar 51% weet niet
-hoe. Barrière nummer één is kennisgebrek (62,8% van de Vlaamse ondernemingen). Concurrenten
+hoe. Kennisgebrek is barrière nummer één (62,8% Vlaamse ondernemingen). Concurrenten
 richten zich op grotere kmo's of generieke opleidingen; Auxilia richt zich op kleine kmo's
-(1–10 medewerkers) in de Kempen met een gecombineerd aanbod van implementatie én opleiding
-aan een lagere instapprijs dan de marktleiders.
+(1–10 medewerkers) in de Kempen met een gecombineerd aanbod van analyse, implementatie
+én opleiding aan een lagere instapprijs dan de marktleiders.
 
-Het financieel plan rekent met drie scenario's. In het verwachte scenario (jaar 2: 8 sprints
-+ 6 opleidingen + 2 workshops) bedraagt de netto opbrengst circa €1.820/maand — ruim boven
-de tussentijdse doelstelling van €1.500 netto/maand. Break-even wordt al bij 1–2 sprints
-per jaar bereikt (dekking vaste kosten van ca. €4.230/jaar).
+Het financieel plan rekent met drie scenario's. In het **verwachte scenario** (jaar 2–3:
+10 analyses + 8 sprints + 4 in-company opleidingen + 2 open workshops) bedraagt de
+jaaromzet **€60.220** en de netto opbrengst **circa €2.300/maand** — ruim boven de
+tussentijdse doelstelling van €1.500 netto/maand. Break-even wordt al bij 1–2 sprints per
+jaar bereikt (dekking vaste kosten van ca. €4.230/jaar). In het **voorzichtig scenario**
+(jaar 1: 4 analyses + 4 sprints + 1 in-company opleiding) is de jaaromzet €19.000 en het
+nettoresultaat circa €575/maand.
 
-**Kritische acties vóór commerciële lancering:**
-1. DV.O-registratie starten (URGENT — 3–6 maanden doorlooptijd; zonder dit geen
-   gesubsidieerde opleidingen).
-2. Website-tekst over subsidies aanpassen (huidig beloftestatement is misleidend zolang
-   registratie ontbreekt).
+**Kritische acties vóór of bij commerciële lancering:**
+1. Website-tekst over subsidies aanpassen of verwijderen — huidige belofte is niet
+   inwisselbaar zolang DV.O-registratie ontbreekt (URGENT).
+2. NDA + verwerkingsbijlage opstellen voor analyse-intake (voor de eerste analyse).
 3. Juridisch contractkader opstellen (aansprakelijkheid, sprint-acceptatiecriteria, DPA).
-4. Open vragen van Cedric beantwoorden (team, uren, prijsbevestiging, statuut — zie §9).
+4. Open vragen van Cedric beantwoorden (team, uren, definitieve prijzen, statuut — zie §9).
+5. DV.O-registratie heroverwegen zodra 3–5 cursusklanten met subsidievraag aantoonbaar zijn.
 
 ---
 
@@ -73,26 +94,73 @@ De website vermeldt twee profielen:
 - **Doelgroep:** Vlaamse kmo's zonder eigen IT/AI-profielen; eigenaars die "iets met AI
   moeten" maar geen aanpak hebben.
 - **Toon:** nuchter, zonder jargon, geen rapporten-consultancy — "twee paar extra handen".
-- **Differentiatie:** werkende oplossing + opleiding, vaste prijs i.p.v. uurtje-factuurtje.
+- **Differentiatie:** werkende oplossing + opleiding, vaste prijs i.p.v. uurtje-factuurtje,
+  lokale aanwezigheid in de Kempen.
 
 ---
 
 ## 3. Aanbod
 
-### 3.1 De sprint
+### 3.1 De AI-analyse (instapproduct)
+
+*(Bron: `00-context.md` — 2026-06-12; uitwerking in `03-go-to-market.md` en
+`04-financieel-plan.md` — 2026-06-12)*
+
+De AI-analyse is het primaire instapproduct van Auxilia. Het is een betaalde doorlichting
+van de processen van de kmo met een concreet rapport: waar zit de winst, wat is haalbaar,
+wat zou het kosten. Het rapport sluit altijd af met een optioneel sprint-voorstel — het
+kopen van een sprint is niet verplicht; het rapport heeft op zichzelf waarde.
+
+**Waarom betaald instapproduct:** prospects die €750 betalen voor een diagnose zijn per
+definitie koopbereid. De diagnose-naar-sprint-conversie bij vergelijkbare consultancy-
+modellen ligt op 40–60% (aanname go-to-market; te valideren na eerste kwartaal).
+(`03-go-to-market.md` §1)
+
+**Tijdsinvestering per analyse:**
+
+| Fase | Uren |
+|---|---|
+| Intake-gesprek ter plaatse of online (1–1,5 uur) | ~1,5 uur |
+| Analyse van 2–3 bedrijfsprocessen | ~2 uur voorbereiding |
+| Schriftelijk rapport (prioriteitenlijst + indicatieve kostenraming) | ~1,5 uur |
+| Presentatie rapport (30 min online of ter plaatse) | ~0,5 uur |
+| **Totaal per analyse** | **~5,5 uur** |
+
+**Prijs (aanname F):** €750 excl. btw — marktbenchmark AI voor KMO AI-scan
+([aivoorkmo.be](https://aivoorkmo.be/), 2026-06-12). ❓ Definitieve prijs te bevestigen
+door Cedric (range: €650–€950 — zie actiepunt O-4 in §9).
+
+Uurtarief-check: €750 bij 5,5 uur = **€136/uur** — bovenaan de marktrange (€60–€150/uur)
+voor een junior AI-profiel.
+
+**Cashflowtiming:** volledig vooraf (bij getekende offerte) of 50% start / 50% bij
+oplevering rapport. Max. betalingstermijn 15 dagen.
+
+**Rol in de funnel:** de analyse genereert direct cashflow vóór een sprint begint en
+kwalificeert de klant. Analyses die niet tot een sprint leiden, zijn zelfstandig waardevol.
+Variabele kosten per analyse: ±€50 (reiskosten + rapportage-tools).
+
+**De AI-analyse is niet subsidieerbaar** via de kmo-portefeuille — adviesdiensten zijn
+definitief weggevallen per 1 februari 2026, behoudens cybersecurity. Communiceer dit
+proactief aan klanten.
+
+---
+
+### 3.2 De sprint (kernaanbod)
 
 *(Bron: `00-context.md` — 2026-06-12; prijsonderbouwing uit `04-financieel-plan.md` —
 2026-06-12)*
 
 De sprint is het kernaanbod van Auxilia: één bedrijfsproces volledig geautomatiseerd en
-werkend opgeleverd, met **vaste prijs en vaste deadline**, inclusief opleiding van het team.
-**Belofte:** werkt het niet binnen de sprint, dan stuurt Auxilia bij zonder extra kost.
+werkend opgeleverd, met **vaste prijs en vaste deadline**, inclusief opleiding van het
+team. **Belofte:** werkt het niet binnen de sprint, dan stuurt Auxilia bij zonder extra
+kost tot het doet wat afgesproken is.
 
-Meest gevraagde processen voor automatisering (bron: `01-markt.md`):
+Meest gevraagde processen (bron: `01-markt.md`, 2026-06-12):
 offerte-automatisering, klantenmails en communicatie, vergaderingen samenvatten/notulen,
 rapportering/dashboards, documentverwerking, projectopstart.
 
-**Prijsvarianten (aanname financieel plan — zie ook tegenstrijdigheid T-1 in §9):**
+**Prijsvarianten (aanname financieel plan):**
 
 | Variant | Prijs excl. btw | Scope |
 |---|---|---|
@@ -100,69 +168,103 @@ rapportering/dashboards, documentverwerking, projectopstart.
 | Sprint Standaard | €4.750 | 1 complex proces, 4–5 weken |
 | Sprint Plus | €6.000 | Meerdere deelprocessen of integraties, 6–8 weken |
 
-Bron prijsonderbouwing: AI-implementatietrajecten voor kmo's in de markt: €5.000–€25.000
-([Searchlab](https://searchlab.nl/kosten/wat-kost-ai-implementatie), 2026-06-12); freelance
-AI-consultant dagprijs België: €700–€1.100/dag
+Bron prijsonderbouwing: AI-implementatietrajecten voor kmo's: €5.000–€25.000
+([Searchlab](https://searchlab.nl/kosten/wat-kost-ai-implementatie), 2026-06-12);
+freelance AI-consultant dagprijs België: €700–€1.100/dag
 ([algida.be](https://algida.be/freelance-tarieven-2025/), 2026-06-12). Sprint Standaard
-(€4.750) bij 60 productieve uren = €79/uur — conservatief tegenover markt.
+(€4.750) bij 60 productieve uren = €79/uur — conservatief tegenover markt, haalbaar als
+instapprijs voor eerste referentieklanten.
+
+**Funnel-waarde:** klant die eerst een analyse kocht (€750) en daarna Sprint Standaard:
+totale funnel-waarde €750 + €4.750 = **€5.500** — volledig in lijn met de marktbenchmark.
 
 **Kmo-portefeuille:** de sprint als geheel is niet subsidieerbaar (implementatietraject,
-geen opleiding). Aanbeveling uit `04-financieel-plan.md`: splits de factuur in een
-implementatieluik (niet subsidieerbaar) en een opleidingsluik (subsidieerbaar na DV.O).
-Voorbeeld Sprint Standaard €4.750: implementatie €3.500 + teamopleiding €1.250 → kleine
-klant betaalt netto €875 voor het opleidingsluik (30% subsidie). Dit is pas mogelijk na
-DV.O-registratie.
+geen opleiding). Aanbeveling uit `04-financieel-plan.md` zodra DV.O-registratie rond is:
+splits de factuur in een implementatieluik (niet subsidieerbaar) en een opleidingsluik
+(subsidieerbaar). Voorbeeld Sprint Standaard €4.750: implementatie €3.500 + teamopleiding
+€1.250 → kleine klant betaalt netto €875 voor het opleidingsluik (30% subsidie = €375
+voordeel). Dit is pas mogelijk na DV.O-registratie.
 
-### 3.2 Opleidingen
+**Variabele kosten per sprint:** ±€175 (extra cloud/API €30–€100 + reiskosten €105).
 
-*(Bron: `02-aanbod-opleidingen.md` — 2026-06-12)*
+---
+
+### 3.3 Opleidingen (derde poot)
+
+*(Bron: `02-aanbod-opleidingen.md` — 2026-06-12 rev. 2)*
+
+Het opleidingsaanbod is de derde poot naast de AI-analyse en de sprint. Cursussen hoeven
+**geen DV.O-registratie** om verkocht te worden — ze worden aangeboden tegen volle
+marktprijs, zonder subsidiebelofte aan de klant zolang de DV.O-registratie uitgesteld is.
 
 #### Basisopleiding "AI die werkt — voor jouw job"
 
 **Doelgroep:** kmo-medewerkers zonder technische achtergrond (zaakvoerders, bedienden,
 administratief medewerkers, salesprofielen, HR, projectopvolgers).
 
-**Structuur:** 1 dag, 4 modules van elk 1,5 uur (6 contacturen netto):
+**Structuur:** 1 dag, 4 modules van elk 1,5 uur (6 contacturen netto, totale aanwezigheid
+ca. 8 uur met pauzes):
 
-| Module | Inhoud |
-|---|---|
-| 1 — Wat AI wél en niet kan | Live demo's, patroonkaart, grenzen herkennen |
-| 2 — Prompts die werken | CTF-formule (Context–Taak–Formaat), promptbibliotheek starten |
-| 3 — AI in jouw dagelijkse processen | Proceskaart, "no-go zones" (GDPR), concrete workflow |
-| 4 — Kritisch gebruiken & volgende stappen | Hallucinaties herkennen, EU AI Act in 3 zinnen, 30-dagen-actiekaart |
+| Module | Kern | Materiaal |
+|---|---|---|
+| 1 — Wat AI wél en niet kan | Live demo's (ChatGPT / Copilot / Claude), verrassingsfouten ontdekken, patroonkaart invullen | Flip-over, sticky notes, patroonkaart (A4) |
+| 2 — Prompts die werken | CTF-formule (Context–Taak–Formaat), duo-oefening, promptbibliotheek starten | Laptops (BYOD), promptsjabloon-werkblad |
+| 3 — AI in jouw dagelijkse processen | Proceskaart, "no-go zones" (GDPR), live workflow bouwen | Proceskaart-sjabloon, GDPR-cheatsheet |
+| 4 — Kritisch gebruiken & volgende stappen | Hallucinaties herkennen, EU AI Act in 3 zinnen, 30-dagen-actiekaart invullen | Fout-slides, 30-dagen-actiekaart (A5) |
 
-Didactisch principe: ervaringsgericht leren (Kolb), demo-eerste aanpak, elke deelnemer
-neemt concreet materiaal mee (patroonkaart, promptsjabloon, GDPR-cheatsheet, actiekaart).
+Didactisch principe: ervaringsgericht leren (Kolb, 1984) — concrete ervaring → reflectie
+→ concept → toepassen. Demo-eerste aanpak; geen theorieslides in module 1. Elke deelnemer
+neemt concreet materiaal mee naar het werk.
 
 #### Deliveryformats en prijzen
 
-*(Zie ook tegenstrijdigheid T-2 in §9 voor verschil met aannames in h04)*
+*(Bron: `02-aanbod-opleidingen.md` §2.1 — 2026-06-12)*
 
 | Format | Beschrijving | Prijs excl. btw |
 |---|---|---|
-| Open workshop | Max. 12 deelnemers uit verschillende kmo's, 1 dag | €395–€450 p.p. |
-| In-company | Exclusief voor 1 bedrijf, 6–15 deelnemers, 1 dag | €1.800–€2.400 per dag |
+| Open workshop | Max. 12 deelnemers uit verschillende kmo's, 1 dag | **€395–€450 p.p.** |
+| In-company | Exclusief voor 1 bedrijf, 6–15 deelnemers, 1 dag | **€1.800–€2.400 per dag** |
 | Opleidingsluik sprint | Halve dag (3 uur), ingebakken in sprint | Inbegrepen in sprintprijs |
-| Abonnement / doorlopend | Maandelijks 2 uur update + Q&A online | €149–€199 p.m. per bedrijf |
+| Abonnement / doorlopend | Maandelijks 2 uur update + Q&A online | **€149–€199 p.m. per bedrijf** |
 
-Alle formats zijn subsidieerbaar via de kmo-portefeuille (thema Digitalisering) **zodra
-de DV.O-registratie afgerond is**.
+> **Subsidie:** alle formats zijn subsidieerbaar via de kmo-portefeuille (thema
+> Digitalisering, tarief 30% klein / 20% middelgroot) **zodra de DV.O-registratie
+> afgerond is**. Op dit moment is die registratie uitgesteld. Communiceer proactief:
+> "Onze opleidingen zijn momenteel niet subsidieerbaar via de kmo-portefeuille. We
+> bereiden de registratie voor en informeren je zodra dat verandert."
 
 #### Leerladder
 
-| Niveau | Format | Prijs |
+*(Bron: `02-aanbod-opleidingen.md` §4 — 2026-06-12)*
+
+| Niveau | Format | Prijs excl. btw |
 |---|---|---|
-| 1 — Kennismakingssessie | 2 uur, gratis of €25 symbolisch | Gratis / €25 |
+| 1a — Kennismakingssessie | 2 uur, open evenement (Kempen), max. 25 pers. | Gratis of €25 symbolisch |
+| 1b — Via AI-analyse-rapport | Opleidingsaanbeveling in het rapport | — (geen extra event) |
 | 2 — Basisopleiding | 1 dag (zie boven) | €395–€450 p.p. (open) |
-| 3 — Verdiepingsmodule (sector-specifiek) | 3 uur | €295–€345 p.p. (open) / €900–€1.200 (in-company) |
-| 4 — AI-strategie & automatisering | Halve dag groep + 1 uur individuele coaching | €595 p.p. (open) |
+| 3 — Verdiepingsmodule (sector-specifiek) | 3 uur (bv. AI voor administratie, AI voor verkoop) | €295–€345 p.p. (open) / €900–€1.200 (in-company) |
+| 4 — AI-strategie & automatisering | Halve dag groepsessie (max. 6 zaakvoerders) + 1 uur individuele coaching | €595 p.p. (open) |
 
-#### Aanbevolen volgorde lancering (uit `02-aanbod-opleidingen.md`)
+**Funnel-logica:** de primaire ingang is de betaalde AI-analyse. Het analyserapport kan
+een opleidingsaanbeveling bevatten ("jullie medewerkers hebben baat bij de basiscursus AI
+vóór of naast de sprint") — dat is een warmere en geloofwaardige instap naar niveau 2 dan
+een koude inschrijving vanuit een evenement. De kennismakingssessie (niveau 1a) blijft
+bruikbaar als zichtbaarheidsinstrument voor wie nog niet via de analyse binnenkomt.
 
-1. Maand 1–3: open workshops als piloot (1/maand, max. 12 deelnemers, Kempen)
-2. Maand 4–6: eerste in-company sessies op basis van referenties
-3. Maand 6+: opleidingsluik systematisch koppelen aan elke sprint
-4. Maand 12+: abonnementsformule lanceren voor terugkerende klanten
+#### Aanbevolen volgorde lancering
+
+*(Bron: `02-aanbod-opleidingen.md` §2.3 — 2026-06-12)*
+
+1. **Maand 1–3:** open workshops als piloot (1/maand, max. 12 deelnemers, Kempen) —
+   parallel aan de eerste analyses. Geen subsidiebelofte.
+2. **Maand 1–3 (parallel):** elke opgeleverde AI-analyse bevat een standaard
+   opleidingsaanbeveling; eerste in-company dagcursussen als direct gevolg van rapporten.
+3. **Maand 4–6:** in-company sessies schalen op basis van analyse-pipeline en referenties.
+4. **Maand 6+:** opleidingsluik systematisch koppelen aan elke sprint (altijd inbegrepen,
+   apart gedocumenteerd voor latere subsidiabiliteit).
+5. **Maand 12+:** abonnementsformule lanceren voor terugkerende klanten.
+6. **Overweeg DV.O-registratie** zodra ≥ 3–5 betalende cursusklanten met expliciete
+   subsidievraag aantoonbaar zijn — zie §5 voor het activeerbare draaiboek.
 
 ---
 
@@ -183,9 +285,9 @@ de DV.O-registratie afgerond is**.
   (Streekplatform Kempen, data 2018)
 
 **Economisch klimaat 2025:** 414 faillissementen in de Kempen (+6,70% vs. 2024) —
-hoogste aantal sinds 2015. Toename eenmanszaken (+23%). Dit verhoogt de druk op
-kostenbeheersing en maakt het "vaste prijs, duidelijk resultaat"-model van Auxilia
-relevanter. ([made-in.be/kempen](https://www.made-in.be/kempen/2025-zwaar-jaar-voor-kempense-bedrijven-faillissementen-nemen-opnieuw-toe/), 2026-06-12)
+hoogste aantal sinds 2015; 26.778 banen verloren; toename eenmanszaken (+23%). Dit verhoogt
+de druk op kostenbeheersing en maakt het "vaste prijs, duidelijk resultaat"-model van
+Auxilia relevanter. ([made-in.be/kempen](https://www.made-in.be/kempen/2025-zwaar-jaar-voor-kempense-bedrijven-faillissementen-nemen-opnieuw-toe/), 2026-06-12)
 
 ### 4.2 AI-adoptie bij Vlaamse kmo's
 
@@ -195,7 +297,7 @@ relevanter. ([made-in.be/kempen](https://www.made-in.be/kempen/2025-zwaar-jaar-v
 - **81%** van de Belgische kmo's gebruikt AI (stijging van 8% in 2024 naar 81% in 2026);
   **51%** weet niet hoe AI gericht in te zetten.
   (Exact KMO Barometer 2026: [4bs.com](https://4bs.com/nl/exact-online-kmo-barometer-2026/), 2026-06-12)
-- Voornaamste barrière: **62,8%** wijst op gebrek aan kennis.
+- Voornaamste barrière: **62,8%** wijst op gebrek aan kennis (technisch én juridisch/ethisch).
 - **66%** van de Belgische kmo's heeft een budget voor automatisering.
 - Kmo-portefeuille 2024: **€43 miljoen** aan leersubsidies verdeeld over duizenden
   aanvragers. ([vlaio.be](https://www.vlaio.be/nl/subsidies-financiering/kmo-portefeuille), 2026-06-12)
@@ -206,7 +308,7 @@ relevanter. ([made-in.be/kempen](https://www.made-in.be/kempen/2025-zwaar-jaar-v
 
 | Aanbieder | Aanbod | Prijs | Bereik |
 |---|---|---|---|
-| Cevora | AI-geletterdheid, 4 thema's, 0,5–7+ dagen | Kosteloos via sectorale fondsen (paritaire comités) | Heel België, enkel via aangesloten PC's |
+| Cevora | AI-geletterdheid, 4 thema's, 0,5–7+ dagen | Kosteloos via sectorale fondsen (paritaire comités) | Heel België; enkel via aangesloten PC's |
 | Voka Mechelen-Kempen | "De basics van AI" (halve dag) | €255/leden – €385/niet-leden | Mechelen, Geel; kmo-portef. toepasbaar |
 | Voka AW + AMS | "AI voor kmo's" — 8 weken | €850/leden – €1.020/niet-leden | Antwerpen; strategisch niveau |
 | Syntra AB | AI-agents (6u, 2 sessies) | €395–€478 | Mechelen, Antwerpen, Leuven |
@@ -218,7 +320,7 @@ relevanter. ([made-in.be/kempen](https://www.made-in.be/kempen/2025-zwaar-jaar-v
 |---|---|---|
 | CAIKMO ([caikmo.be](https://caikmo.be/)) | 8-stappen implementatietraject (6–12 weken), 3 pakketten | Starter €8.000 / Growth €14.000 / Premium €32.000 |
 | Codelines ([codelines.be](https://www.codelines.be/oplossingen/ai-ontwikkeling/)) | AI-agents procesautomatisering, 6 weken | Niet openbaar |
-| AI voor KMO ([aivoorkmo.be](https://aivoorkmo.be/)) | AI-scan €750; Future Focus Lab 90 dagen | DIY €299 / DWY €699 |
+| AI voor KMO ([aivoorkmo.be](https://aivoorkmo.be/)) | AI-scan €750 (halve dag + rapport) + Future Focus Lab | DIY €299 / DWY €699 |
 | AI Learning ([ailearning.be](https://ailearning.be/)) | Maatwerk workshops, implementatietrajecten | Workshop €425/deelnemer; implementatie niet openbaar |
 
 ### 4.4 Gangbare marktprijzen
@@ -226,17 +328,23 @@ relevanter. ([made-in.be/kempen](https://www.made-in.be/kempen/2025-zwaar-jaar-v
 - Freelance AI-consultant België: **€60–€150/uur**; dagtarief **€700–€1.100/dag**
   ([algida.be](https://algida.be/freelance-tarieven-2025/), 2026-06-12)
 - Open dagworkshop: **€250–€500/deelnemer**; gemiddeld studiedag België **€695/deelnemer**
+  (Expert Academy, 2025)
 - In-company dagtraining door zelfstandige consultant: indicatief **€1.500–€3.500/dag**
-- AI-implementatietraject voor kmo (1 proces, 4–8 weken): **€5.000–€25.000**
+- AI-scan / quickscan: AI voor KMO **€750** ([aivoorkmo.be](https://aivoorkmo.be/), 2026-06-12)
+- AI-implementatietraject kmo (1 proces, 4–8 weken): **€5.000–€25.000**
+  ([Searchlab](https://searchlab.nl/kosten/wat-kost-ai-implementatie), 2026-06-12)
 
 ### 4.5 Positioneringsgaten voor Auxilia
 
+*(Bron: `01-markt.md` §7 — 2026-06-12)*
+
 | Dimensie | Marktaanbod | Kans Auxilia |
 |---|---|---|
+| Instapproduct | Enkel AI voor KMO heeft een betaalde diagnose (€750); de meeste bureaus beginnen direct met dure trajecten of gratis intake | Betaalde AI-analyse als laagdrempelig, concreet instapproduct |
 | Prijsmodel | Meeste bureaus: variabel of niet-gepubliceerd; CAIKMO €8.000–€32.000 | Vaste prijs, transparant gepubliceerd |
 | Schaal | Grote bureaus richten zich op 5–49 medewerkers met >€8.000 budget | Kleine kmo's (1–10 mw.) die te klein zijn voor €8.000-pakketten |
 | Opleiding inbegrepen | Meeste bureaus scheiden opleiding van implementatie | Sprint = werkende oplossing én teamopleiding — één prijs, één aanbieder |
-| Lokale aanwezigheid | De meeste bureaus zijn Antwerps of nationaal | Kempen als thuisbasis: lokale referenties, face-to-face |
+| Lokale aanwezigheid | De meeste bureaus zijn Antwerps of nationaal | Kempen als thuisbasis: lokale referenties, face-to-face, snelle opvolging |
 | Garantie | AI voor KMO en CAIKMO hebben resultaat-/ROI-garantie | Auxilia bijsturingsbelofte past bij marktstandaard die zich ontwikkelt |
 | Deadline-duidelijkheid | Weinig aanbieders communiceren concrete levertermijn | "Vaste deadline" als expliciete differentiator |
 
@@ -244,154 +352,212 @@ relevanter. ([made-in.be/kempen](https://www.made-in.be/kempen/2025-zwaar-jaar-v
 
 ## 5. Go-to-market
 
-*(Bron: `03-go-to-market.md` — 2026-06-12)*
+*(Bron: `03-go-to-market.md` — 2026-06-12 v2)*
 
-### 5.1 Snelste pad naar de eerste tien klanten
+### 5.1 Funnel: analyse → rapport → sprint
 
-**Principe:** bij bijberoep met beperkte uren is warm netwerk het meest efficiënte
-startkanaal. Koude prospectie heeft een te lage conversie-per-tijdseenheid in de
-opstartfase.
+De funnel is tweestaps: eerst de analyse verkopen, dan — op basis van het rapport — de
+sprint. Dit maakt het eerste verkoopgesprek over een concrete, afgebakende deliverable
+(diagnose voor €750) in plaats van een vage implementatie.
 
-**Eerste 12 weken — stap-voor-stap:**
+```
+[Bewustwording]
+LinkedIn-post / mond-aan-mond / event / partnerverwijzing
+          ↓
+[Eerste contact]
+Persoonlijk bericht, reactie op post, doorverwijzing boekhouder
+          ↓  (verwacht uitval: ~50%)
+[Intake-gesprek — 20 min video/call, GRATIS]
+Kwalificeren. CTA: "AI-analyse voor €750 — concreet rapport in handen."
+          ↓  (verwacht uitval: ~35%)
+[AI-ANALYSE — betaald, ~€750 excl. btw]
+Halve dag + schriftelijk rapport
+          ↓  (verwacht uitval: ~40%)
+[Sprint-voorstel op basis van rapport]
+Vaste prijs, vaste deadline, concreet proces benoemd
+          ↓  (verwacht uitval: ~30%)
+[Sprint — 3–6 weken]
+Eén proces geautomatiseerd, team opgeleid
+          ↓
+[Afronding + evaluatie]
+Getuigenis vragen, introductie vragen (2 namen)
+          ↓
+[Cursus of vervolgSprint — optioneel]
+```
+
+**Praktische implicatie:** om per maand 1 sprint te starten, zijn ca. 7–8 intake-
+gesprekken nodig, waarvoor ca. 14–16 warme contactmomenten nodig zijn.
+
+**KPI-kern:** de **analyse-verkopen per maand** zijn de meest stuurbare grootheid.
+Streefwaarde steady state: 2 analyses/maand.
+
+### 5.2 Eerste 12 weken — stap-voor-stap
+
+*(Bron: `03-go-to-market.md` §3 — 2026-06-12)*
 
 | Periode | Actie | Meetpunt |
 |---|---|---|
-| Week 1–2 | Warm netwerk activeren: persoonlijk bericht aan 30–50 contacten | Week 4: ≥ 3 afspraken ingepland |
-| Week 3–6 | Eerste pilootklant binnenhalen: pilootkorting 20–25% in ruil voor getuigenis + 2 introducties. Aanname pilot-prijs: €2.000–€3.750 | Week 8: piloot gestart of aanbod uitgestuurd |
-| Week 7–12 | Referral activeren + geanonimiseerde case op LinkedIn publiceren | Week 12: 2–3 nieuwe gesprekken via piloot |
-| Week 10–20 | Kanalen verbreden naar partnerships en events (pas na eerste case) | — |
+| Week 1–2 | Warm netwerk activeren: persoonlijk bericht aan 30–50 contacten met nieuwe boodschap ("AI-analyse voor €750, concreet rapport in handen") | Week 4: ≥ 4 intake-gesprekken ingepland, ≥ 1 analyse geboekt of in bespreking |
+| Week 3–8 | Eerste 2–3 analyses uitvoeren (pilootkorting 15–20% voor warm netwerk in ruil voor schriftelijke getuigenis + 2 introducties); eerste pilootprijs ca. €625–€640 excl. btw | Week 8: ≥ 2 analyses afgerond, ≥ 1 sprint-voorstel uitgestuurd |
+| Week 5–10 | Na positieve analyse: sprint-voorstel uitsturen binnen 5 werkdagen | Week 12: ≥ 1 sprint gestart of formeel geaccordeerd |
+| Week 8–16 | Partnerships activeren (boekhouders, Voka); geanonimiseerde case op LinkedIn | — |
 
-### 5.2 Partnerships
+### 5.3 Partnerships
 
 **Boekhouders en accountants in de Kempen:**
 
-| Kantoor | Locatie |
-|---|---|
-| Kempas | Turnhout + Oud-Turnhout ([kempas.be](https://kempas.be/)) |
-| HB Accountants | Turnhout ([hbaccountants.be](https://www.hbaccountants.be/)) |
-| QFK Tax Accountants | Olen + Turnhout ([qfk.be](https://qfk.be/)) |
-| ACS Accountants | Turnhout ([acs.be](https://www.acs.be/vestigingen/acs-turnhout)) |
+| Kantoor | Locatie | Contact |
+|---|---|---|
+| Kempas | Turnhout + Oud-Turnhout | info@kempas.be ([kempas.be](https://kempas.be/)) |
+| HB Accountants | Turnhout | [hbaccountants.be](https://www.hbaccountants.be/) |
+| QFK Tax Accountants | Olen + Turnhout | [qfk.be](https://qfk.be/) |
+| ACS Accountants | Turnhout | [acs.be](https://www.acs.be/vestigingen/acs-turnhout) |
 
-Aanpak: eerst waarde bieden (gratis lunch-demo van 30 min), daarna pas samenwerking
-bespreken. Tijdsinvestering: 2–3 uur/week voor 4–6 gerichte contacten.
+Aanpak: gratis lunch-demo van 30 min ("hoe AI de administratie van jullie kmo-klanten
+verlicht"), dan doorverwijzingsafspraak. Geen geldstroom; boekhouder ontvangt gratis
+AI-demo als tegenprestatie. Tijdsinvestering: 2–3 uur/week voor 4–6 gerichte contacten.
 
 **Voka Mechelen-Kempen** ([voka.be/mechelen-kempen](https://www.voka.be/mechelen-kempen)):
-lid worden → toegang tot events en netwerk. Voka bundelt al krachten met externe
-AI-partners (precedent: samenwerking VanRoey). Tijdsinvestering: 1–2 uur/week.
+lid worden → toegang tot events en netwerk. Voka bundelt al krachten met externe AI-partners
+(precedent: samenwerking met VanRoey rond cybersecurity en AI).
 ([made-in.be](https://www.made-in.be/kempen/voka-mechelen-kempen-en-vanroey-bundelen-krachten-rond-cybersecurity-en-ai/), 2026-06-12)
+Tijdsinvestering: 1–2 uur/week.
 
 **UNIZO Provincie Antwerpen** ([unizo.be/provincie/antwerpen](https://www.unizo.be/provincie/antwerpen)):
-kmo@unizo.be / 02 21 22 679. Kempen-specifieke trajecten. Tijdsinvestering: 1 uur/week.
+kmo@unizo.be / 02 21 22 679. Kempen-specifieke trajecten (Go For Growth, KMO-management).
 
-**Gemeentelijke ondernemingsloketten:** Herentals (economie@herentals.be), Turnhout
-([turnhout.be/nl/starten](https://www.turnhout.be/nl/starten)), Geel
-([geel.be/ondernemingsloket](https://www.geel.be/ondernemingsloket)) — opname in lokale
-ondernemersguides.
+**Gemeentelijke ondernemingsloketten:** Herentals (economie@herentals.be, 014 28 50 50),
+Turnhout ([turnhout.be/nl/starten](https://www.turnhout.be/nl/starten)),
+Geel ([geel.be/ondernemingsloket](https://www.geel.be/ondernemingsloket)).
 
-### 5.3 Lokale events
+### 5.4 Lokale events
+
+*(Bron: `03-go-to-market.md` §5 — 2026-06-12)*
 
 | Event | Datum | Relevantie |
 |---|---|---|
-| Jong Voka Kempen — Lunch & Learn "Hoe word je gevonden in AI?" | 23 juni 2026 | AI-publiek lokale ondernemers; pols naar gastsprekersslot najaar |
-| Voka: Scouting industrie 4.0 — AI Powered Industry | Start 18 juni 2026 | Doelgroep = kmo's die AI willen implementeren |
+| Jong Voka Kempen — Lunch & Learn "Hoe word je gevonden in AI?" | 23 juni 2026, Merksplas | AI-publiek, lokale ondernemers; pols naar gastsprekersslot najaar |
+| Voka: Scouting industrie 4.0 — AI Powered Industry | Start 18 juni 2026, Mechelen-Kempen | Doelgroep = kmo's die AI willen implementeren |
 | Bedrijvencontactdagen Mechelen-Kempen | 7–8 okt. 2026, Nekkerhal | Deelnemen pas als ≥ 2 cases beschikbaar zijn |
-| Antwerps Business Event | Volgende editie 11 maart 2027, Kinepolis | Als exposant/spreker overwegen voor 2027 |
+| Antwerps Business Event | 11 maart 2027, Kinepolis | Als exposant/spreker overwegen voor 2027 |
 
 Gastsprekersslots (Voka reeks 7 AI-events najaar 2026): contacteer programmacoördinator
-augustus 2026, **enkel na ≥ 2 gedocumenteerde cases**.
+augustus 2026 — **enkel na ≥ 2 gedocumenteerde cases**.
 
-### 5.4 LinkedIn-strategie
+### 5.5 LinkedIn-strategie
 
 Aanbeveling: persoonlijk profiel van de meest zichtbare medewerker, niet de bedrijfspagina.
-Frequentie: 2 posts/week op vaste dagen.
+Frequentie: 2 posts/week op vaste dagen. Tijdsinvestering: 1–1,5 uur/week.
 
 **Contentpijlers (roteer):**
 
-| Pijler | Frequentie |
+| Pijler | Frequentie | Toelichting |
+|---|---|---|
+| Mini-case (geanonimiseerd, concrete getallen) | 1×/maand | Maakt instapproduct tastbaar |
+| Analyse-teaser ("wat valt typisch op in een AI-analyse bij [sector]?") | 1×/maand | Verlaagt drempel om €750 te boeken |
+| Misverstand rechtzetten | 2×/maand | Kort, uitgesproken standpunt |
+| Mini-tip (1 AI-hulpmiddel, direct toepasbaar) | 2×/maand | Tool + stappenplan in 3 zinnen |
+| Achter de schermen (ook mislukkingen) | 1×/maand | Bouwt vertrouwen |
+| Vraag aan het netwerk | 1×/2 maanden | Genereert reacties = bereik |
+
+### 5.6 Website — prioritaire aanpassing
+
+*(Bron: `03-go-to-market.md` §7 — 2026-06-12)*
+
+**PRIORITEIT 1:** de DV.O-registratie is uitgesteld. De website belooft nu hulp bij
+kmo-portefeuille-aanvragen — dit is niet langer correct en kan als misleidende reclame
+worden beschouwd (art. VI.104 WER). Aanbevolen formulering tot registratie effectief is:
+
+> *"AI-opleidingen kunnen in aanmerking komen voor subsidie via de kmo-portefeuille.
+> We informeren je over de mogelijkheden zodra onze registratie als erkend
+> opleidingsverstrekker volledig is afgerond."*
+
+**CTA aanpassen:** primaire CTA moet het instapproduct expliciteren:
+> *"Wat kan AI concreet opleveren voor jouw bedrijf? Plan een AI-analyse — €750,
+> concreet rapport in handen."* + Calendly-link.
+
+Behoud ook een vrijblijvend intake-gesprek (20 min, gratis) voor wie de stap van €750
+nog te groot vindt zonder voorafgaand contact.
+
+**SEO-zoektermen:** `AI analyse kmo`, `AI scan kmo`, `AI opleiding kmo`,
+`AI automatisering kmo`, `AI consultant Kempen`.
+
+### 5.7 Referral-mechanisme
+
+*(Bron: `03-go-to-market.md` §8 — 2026-06-12)*
+
+Geen formele doorverwijspremie (ongunstige fiscale behandeling in België).
+
+| Mechanisme | Uitwerking |
 |---|---|
-| Mini-case (geanonimiseerd, concrete getallen) | 1×/maand |
-| Misverstand rechtzetten | 2×/maand |
-| Mini-tip (1 AI-hulpmiddel, direct toepasbaar) | 2×/maand |
-| Achter de schermen (ook mislukkingen) | 1×/maand |
-| Vraag aan het netwerk | 1×/2 maanden |
-
-Tijdsinvestering: 1–1,5 uur/week.
-
-### 5.5 Funnel
-
-```
-[Bewustwording]  LinkedIn / mond-aan-mond / event
-      ↓
-[Eerste contact]  Persoonlijk bericht / doorverwijzing boekhouder
-      ↓  (verwacht uitval: ~60%)
-[Kennismaking 30 min]  Probleem begrijpen, sprint concreet maken
-      ↓  (verwacht uitval: ~40%)
-[Sprintaanbod]  Vaste prijs, vaste deadline, concreet proces benoemd
-      ↓  (verwacht uitval: ~30%)
-[Sprint 3–6 weken]  Proces geautomatiseerd, team opgeleid
-      ↓
-[Afronding]  Getuigenis + 2 introducties vragen
-      ↓
-[Vervolgrelatie]  Doorlopende opleiding of vervolgSprint
-```
-
-### 5.6 Referral-mechanisme
-
-Geen formele doorverwijspremie (ongunstige fiscale behandeling in België — belast als
-beroepsinkomen tot 53,5%; ORBISS, 2026-06-12). Wel:
-- **Gratis opfrissessie** (ca. €150–€200 waarde) voor klant die 2 introducties geeft.
-- **Partnerkorting voor boekhouder:** zijn eigen kmo of team krijgt gratis demo/sessie.
-
-### 5.7 Website en SEO
-
-Prioritaire zoektermen: `AI opleiding kmo`, `AI automatisering kmo`, `AI implementatie
-klein bedrijf`, `AI consultant Kempen`. Technische prioriteiten (bijberoep-tempo, 1
-aanpassing/week): `<title>` + meta description met zoektermen; CTA "Plan een gratis
-kennismaking van 30 min" (Calendly); case-sectie zodra eerste piloot afgerond; regio's
-vermelden in tekst.
-
-> Subsidie-communicatie op de website moet aangepast worden — zie §7.5 en actiepunt O-6 in §9.
+| Gratis opfrissessie | Klant die 2 namen geeft die leiden tot een intake: gratis AI-opfrissessie van 1 uur (waarde ca. €150–€200) |
+| Analyse-korting voor tweede klant | Bestaande klant introduceert iemand die ook een analyse boekt: die vriend krijgt €75 korting (10%) |
+| Partnerkorting voor boekhouder | Boekhouder die klanten aanbrengt: eigen team krijgt gratis demo/sessie — geen geldstroom |
 
 ### 5.8 KPI's
 
-| KPI | Streefwaarde |
-|---|---|
-| Kennismakingen/maand | ≥ 4 |
-| Conversie kennismaking → sprint | ≥ 25% |
-| Actieve cases tegelijk | Max. 2 (bijberoep-grens) |
-| Omzet per kanaal | Inzicht na 3 maanden |
+*(Bron: `03-go-to-market.md` §9 — 2026-06-12)*
+
+| KPI | Definitie | Streefwaarde |
+|---|---|---|
+| Analyse-verkopen/maand | Aantal betaalde AI-analyses gefactureerd | 2/maand (steady state) |
+| Intake-gesprekken/maand | Vrijblijvende intake-gesprekken van 20 min | 6–8/maand |
+| Conversie analyse → sprint | % analyses dat uitmondt in geaccordeerd sprint-aanbod | ≥ 40% |
+| Omzet per kanaal | Warm netwerk / LinkedIn / events / partnerships | Inzicht na 3 maanden |
+| Actieve cases tegelijk | Sprints in uitvoering | Max. 2 (bijberoep-grens) |
 
 ### 5.9 Tijdsbudget totaaloverzicht (bijberoep)
 
+*(Bron: `03-go-to-market.md` §11 — 2026-06-12)*
+
 | Activiteit | Uren/week |
 |---|---|
-| Warm netwerk + opvolging | 1 uur |
-| LinkedIn posts | 1,5 uur |
-| Events + nawerken | 1 uur (gemiddeld) |
-| Partnership-gesprekken | 2 uur |
-| Website CTA + SEO mini-updates | 1 uur |
+| Warm netwerk activeren + opvolging | 1,5 uur |
+| LinkedIn posts schrijven + publiceren | 1,5 uur |
+| Events bezoeken + nawerken | 1 uur (gemiddeld) |
+| Partnership-gesprekken (boekhouders, Voka) | 1,5 uur |
+| Website CTA + SEO mini-aanpassingen | 0,5–1 uur |
 | Pipeline-opvolging | 0,5 uur |
 | **Totaal sales/marketing** | **~7 uur/week** |
+| + 1 analyse/week | ~3–4 uur extra |
+| **Totaal incl. 1 analyse/week** | **~10–11 uur/week** |
 
-Bij beschikbare capaciteit van 10–15 uur/week blijft 3–8 uur over voor uitvoering van
-sprints.
+Bij beschikbare capaciteit van 10–15 uur/week past dit model comfortabel. Wanneer tegelijk
+ook een sprint loopt (4–6 uur/week extra), loopt het tegen de bijberoepsgrens.
+Aanname: max. 1 sprint + max. 2 analyses tegelijk actief.
 
 ---
 
 ## 6. Financieel plan
 
-*(Bron: `04-financieel-plan.md` — 2026-06-12)*
+*(Bron: `04-financieel-plan.md` — 2026-06-12 rev. 2)*
 
 > **Disclaimer:** dit plan biedt financiële analyse en scenario's, geen bindend fiscaal of
 > juridisch advies. Raadpleeg een boekhouder voor definitieve keuzes over statuut,
 > btw-regime en optimalisatie.
 
-### 6.1 Wettelijk kader (actuele waarden, 2026-06-12)
+### 6.1 Openstaande aannames
+
+De scenario's draaien op aannames omdat Cedric de open vragen in `00-context.md` nog niet
+beantwoord heeft. Wijzigt een aanname, dan moeten de scenario-tabellen herberekend worden.
+
+| # | Aanname | Waarde |
+|---|---|---|
+| A | Beschikbare uren/week | 8 uur per profiel (Jonas + Lien); ~16 uur totaal |
+| B | Financieel doel bijberoep | €1.500 netto/mnd tussentijds; €4.000/mnd als drempel voltijds |
+| C | Sprint-prijsrange | €3.500–€6.000 per sprint |
+| D | Statuut | Eenmanszaak zolang bijberoep; overweeg BV bij voltijds en winst >€50.000/jaar |
+| E | Klanten bij start | Geen (scenario's starten bij nul) |
+| F | Prijs AI-analyse | €750 (marktbenchmark AI voor KMO) |
+| G | Conversie analyse → sprint | 40% |
+
+### 6.2 Wettelijk kader (actuele waarden, 2026-06-12)
 
 **Btw-vrijstellingsregeling kleine onderneming:**
 - Drempel 2026: **€25.000** excl. btw/jaar.
   ([FOD Financiën](https://financien.belgium.be/nl/ondernemingen/btw/btw-plicht/vrijstellingsregeling), 2026-06-12)
 - Geplande verhoging (Arizona-wet): €30.000 — nog niet in werking.
+  ([VLAIO](https://www.vlaio.be/nl/nieuws/nieuwe-regeling-btw-vrijstelling-kleine-ondernemingen), 2026-06-12)
 - Bij omzet < €25.000: geen btw aanrekenen, geen kwartaalaangiftes.
 - Bij omzet ~€22.000: bespreek met boekhouder of vrijwillig btw-plichtig worden interessant is.
 
@@ -408,9 +574,9 @@ sprints.
   bijberoepinkomen ≈ **55–65%** (belasting + sociale bijdragen).
   ([Accountable](https://www.accountable.eu/nl-be/blog/progressieve-belastingschijven/), 2026-06-12)
 
-### 6.2 Kostenstructuur bijberoep
+### 6.3 Kostenstructuur bijberoep
 
-**Vaste kosten/jaar (aanname):**
+**Vaste kosten/jaar:**
 
 | Post | Bedrag/jaar |
 |---|---|
@@ -419,83 +585,118 @@ sprints.
 | BA uitbating | €150 |
 | AI-tooling (Claude Pro, ChatGPT, n8n) | €600 |
 | Automatiserings- & productiviteitssoftware | €1.200 |
-| Vervoer (ca. 2.000 km/jaar, €0,44/km) | €880 |
+| Vervoer (ca. 2.000 km/jaar × €0,44/km) | €880 |
 | Opleidingsmateriaal | €200 |
 | Domein, hosting, website | €100 |
+| DV.O-auditkosten | €0 (uitgesteld) |
 | **Totaal** | **±€4.230** |
 
-**Variabele kosten per sprint:**
-- Extra cloud/API-gebruik: €30–€100
-- Reiskosten (gem. 3 bezoeken × 80 km): €105
-- **Totaal per sprint: ±€175**
+> DV.O-auditkosten (€800–€2.500 schatting voor startersaudit bij Bureau Veritas, DNV of
+> BQA) zijn **niet** opgenomen in de actieve kostenstructuur — beslissing 2026-06-12.
+> Ze worden heropgenomen zodra de registratie geactiveerd wordt.
 
-### 6.3 Break-evenanalyse
+**Variabele kosten per sprint:** ±€175 (extra cloud/API €30–€100 + reiskosten €105).
+**Variabele kosten per AI-analyse:** ±€50 (reiskosten €35 + rapportage-tools €15).
 
-- Gemiddelde sprintprijs (Sprint Standaard): €4.750
-- Brutomarge per sprint: €4.575 (na €175 variabele kosten)
-- Vaste kosten/jaar: €4.230
-- Break-even (kostendekking): **1–2 sprints per jaar**
+### 6.4 Break-evenanalyse
 
-### 6.4 Drie omzetscenario's
+| Parameter | Waarde |
+|---|---|
+| Gemiddelde sprintprijs | €4.750 (Sprint Standaard) |
+| Brutomarge per sprint | €4.575 (na €175 variabele kosten) |
+| Brutomarge per AI-analyse | €700 (na €50 variabele kosten) |
+| Vaste kosten/jaar | €4.230 |
+| Break-even (kostendekking) | **1–2 sprints per jaar** |
 
-*(Zie ook tegenstrijdigheid T-3 in §9 — interne inconsistentie in de parameter- vs. detailtabellen van h04)*
+### 6.5 Drie omzetscenario's
 
-| Parameter | Voorzichtig | Verwacht | Optimistisch |
+*(Bron: `04-financieel-plan.md` §5 rev. 2 — 2026-06-12; correcties T-2 en T-3 verwerkt)*
+
+| Parameter | Voorzichtig (jaar 1) | Verwacht (jaar 2–3) | Optimistisch (jaar 3–4) |
 |---|---|---|---|
+| AI-analyses/jaar | 4 | 10 | 16 |
+| Gem. prijs AI-analyse | €750 | €750 | €750 |
+| **Omzet AI-analyses** | **€3.000** | **€7.500** | **€12.000** |
 | Sprints/jaar | 4 | 8 | 12 |
 | Gem. sprintprijs | €3.500 | €4.750 | €5.500 |
-| Opleidingen in-company/jaar | 2 | 6 | 10 |
-| Open workshops/jaar | 0 | 2 | 4 |
-| **Jaaromzet** | **€16.400** | **€48.200*** | **€84.000** |
-| **Netto beschikbaar** | **±€5.700** ≈ **€476/mnd** | **±€21.800** ≈ **€1.820/mnd** | **±€36.600** ≈ **€3.048/mnd** |
-| Btw-regime | Vrijgesteld | Btw-plichtig | Btw-plichtig |
-| Doel €1.500/mnd bereikt? | Nee | **Ja** | Ruim ja |
-| Doel €4.000/mnd (voltijds) bereikt? | Nee | Nee | Nadert |
+| **Omzet sprints** | **€14.000** | **€38.000** | **€66.000** |
+| In-company opleidingen/jaar (forfait €2.000/dag) | 1 | 4 | 8 |
+| Open workshops/jaar (gem. 8 pers. × €420) | 0 | 2 | 4 |
+| **Omzet opleidingen** | **€2.000** | **€14.720** | **€29.440** |
+| **Totale jaaromzet** | **€19.000** | **€60.220** | **€107.440** |
+| Btw-regime | Vrijgesteld (<€25.000) | Btw-plichtig (>€25.000) | Btw-plichtig |
 
-*De parametertabel in h04 vermeldt €52.600 voor het verwachte scenario; de gedetailleerde
-berekening in §5.2 van dat hoofdstuk komt uit op €48.200. Dit verschil (€4.400) staat als
-actiepunt T-3 in §9.*
+> **Toelichting verwacht scenario:** 10 × €750 = €7.500; 8 × €4.750 = €38.000;
+> 4 × €2.000 = €8.000; 2 × 8 × €420 = €6.720. Totaal: **€60.220**.
+> Dit is substantieel hoger dan de pre-revisie verwachting omdat (a) de AI-analyse als
+> aparte revenustream is toegevoegd en (b) de opleidingsprijzen zijn gecorrigeerd naar de
+> hogere dagformat-prijs van €420/p.p. (middenpunt €395–€450, uit `02-aanbod-opleidingen.md`).
+>
+> **Let op:** €60.220 is een jaar-2/3-doel, niet jaar-1. In jaar 1 is het voorzichtig
+> scenario of de ondergrens van het verwachte niveau realistischer.
 
-**Verwacht scenario detailberekening (jaar 2, uit h04 §5.2):**
+**Voorzichtig scenario — detail jaar 1:**
 
 | Post | Bedrag |
 |---|---|
-| Omzet (8 × €4.750 + 6 × €1.200 + 2 × €1.500) | €48.200 |
-| − Vaste kosten | −€4.480 |
-| − Variabele kosten | −€1.400 |
-| = Netto belastbaar | €42.320 |
-| − Sociale bijdragen (20,5%) | −€8.676 |
-| = Fiscaal inkomen | €33.644 |
-| − Personenbelasting (progressief) | −€11.800 (schatting) |
-| **= Netto beschikbaar** | **≈€21.844 ≈ €1.820/mnd** |
+| Omzet (4 × €750 + 4 × €3.500 + 1 × €2.000) | €19.000 |
+| − Vaste kosten | −€4.230 |
+| − Variabele kosten (4 × €175 + 4 × €50) | −€900 |
+| = Netto belastbaar | €13.870 |
+| − Sociale bijdragen (20,5%) | −€2.843 |
+| = Fiscaal inkomen | €11.027 |
+| − Personenbelasting (45%) | −€4.122 |
+| **= Netto beschikbaar** | **≈€6.905/jaar ≈ €575/maand** |
 
-### 6.5 Drempels en beslismomenten
+**Verwacht scenario — detail jaar 2–3:**
+
+| Post | Bedrag |
+|---|---|
+| Omzet (10 × €750 + 8 × €4.750 + 4 × €2.000 + 2 × 8 × €420) | €60.220 |
+| − Vaste kosten (incl. btw-aangifte boekhouder +€250) | −€4.480 |
+| − Variabele kosten (8 × €175 + 10 × €50) | −€1.900 |
+| = Netto belastbaar | €53.840 |
+| − Sociale bijdragen (20,5%) | −€11.037 |
+| = Fiscaal inkomen | €42.803 |
+| − Personenbelasting (progressief, schatting) | −€15.200 |
+| **= Netto beschikbaar** | **≈€27.603/jaar ≈ €2.300/maand** |
+
+Doel A (€1.500/mnd) **ruim bereikt** in verwacht scenario. Doel B (€4.000/mnd voltijds)
+vereist het optimistisch scenario of de overstap naar hoofdberoep.
+
+### 6.6 Drempels en beslismomenten
 
 | Drempel | Actie |
 |---|---|
-| Omzet ~€22.000 | Gesprek met boekhouder: vrijwillig btw-plichtig? |
+| Omzet ~€22.000 | Gesprek met boekhouder: vrijwillig btw-plichtig worden? |
 | Omzet €25.000 | Btw-plichtig worden (tenzij ≤ 10% overschrijding in hetzelfde jaar) |
 | Netto inkomen ≥ €17.374/jaar | Sociale bijdragen gelijkgesteld aan hoofdberoep (min. €925,59/kwartaal) |
-| Voltijds-drempel (aanname): aantoonbare omzet ≥ €60.000 + pipeline ≥ €30.000 + buffer ≥ 6 mnd lasten + ≥ 3 vaste klanten | Overweeg overstap naar voltijds |
+| Aantoonbare omzet ≥ €60.000 + pipeline ≥ €30.000 + buffer ≥ 6 mnd lasten + ≥ 3 vaste klanten | Overweeg overstap naar voltijds |
 
-### 6.6 Cashflowbeheer
+### 6.7 Cashflowbeheer
 
 Aanbevolen betalingsstructuur per sprint:
 - Voorschot bij getekende offerte: **30–40%**
 - Tweede schijf bij tussenoplevering: **30%**
-- Saldo bij eindoplevering: **30–40%** (binnen 30 dagen)
+- Saldo bij eindoplevering: **30–40%** (binnen 30 dagen, Wet B2B Betalingstermijnen)
 
-Plan een cashflowbuffer van **€200–€300/maand** voor de definitieve herberekening van
-sociale bijdragen (2 jaar later).
+Bij Sprint Standaard (€4.750): start €1.425, week 3 €1.425, einde €1.900.
 
-### 6.7 Kmo-portefeuille — impact op commerciële strategie
+De AI-analyse (volledig vooraf gefactureerd, 15 dagen) **lost een structureel
+cashflowprobleem op**: in kwartalen zonder sprint-start kan Auxilia 2–3 analyses doen =
+€1.500–€2.250 extra cashflow tegen ~5,5 uur per stuk.
 
-De sprint als geheel is **niet** subsidieerbaar. Enkel het opleidingsluik, mits apart
-gefactureerd én mits Auxilia een DV.O-registratie heeft, is subsidieerbaar.
+Plan een buffer van **€200–€300/maand** voor de definitieve herberekening van sociale
+bijdragen (2 jaar later).
 
-Aanbevolen factuuropsplitsing Sprint Standaard (€4.750):
+### 6.8 Kmo-portefeuille — impact op commerciële strategie
+
+De sprint als geheel is **niet** subsidieerbaar. De AI-analyse is **niet** subsidieerbaar
+(adviesdienst). Enkel het opleidingsluik is subsidieerbaar, mits DV.O-registratie.
+
+Aanbevolen factuuropsplitsing Sprint Standaard (€4.750) **na** DV.O-registratie:
 - Implementatie + begeleiding: €3.500 (niet subsidieerbaar)
-- Teamopleiding: €1.250 (subsidieerbaar na DV.O → kleine klant betaalt netto €875)
+- Teamopleiding: €1.250 (subsidieerbaar → kleine klant betaalt netto €875)
 
 Effect: verkoopargument van €375 subsidie zonder de implementatieprijs te verlagen.
 
@@ -503,32 +704,32 @@ Effect: verkoopargument van €375 subsidie zonder de implementatieprijs te verl
 
 ## 7. Subsidies en compliance
 
-*(Bron: `05-subsidies-compliance.md` — 2026-06-12)*
+*(Bron: `05-subsidies-compliance.md` — 2026-06-12 rev. 2)*
 
 ### 7.1 Kmo-portefeuille — regels per 1 februari 2026
 
 Vanaf 1 februari 2026 is via de kmo-portefeuille **uitsluitend opleiding** subsidieerbaar.
-Advies is weggevallen, behoudens cybersecurity.
-
-AI-opleiding valt onder het thema **Digitalisering**.
-([VLAIO — Digitalisering](https://www.vlaio.be/nl/subsidies-financiering/kmo-portefeuille/wat-is-de-kmo-portefeuille/digitalisering), 2026-06-12)
+Advies is weggevallen, behoudens cybersecurity. AI-opleiding valt onder **Digitalisering**.
+([VLAIO](https://www.vlaio.be/nl/subsidies-financiering/kmo-portefeuille/wat-is-de-kmo-portefeuille/digitalisering), 2026-06-12)
 
 **Steunpercentages:**
 
 | Type onderneming | Standaard opleiding | Opleiding digitalisering/cybersecurity |
 |---|---|---|
-| Kleine onderneming | 30% | 45% |
-| Middelgrote onderneming | 20% | 35% |
+| Kleine onderneming | **30%** | **45%** |
+| Middelgrote onderneming | **20%** | **35%** |
 
 - Max. **€7.500 steun per jaar** per onderneming.
 - Minimumbedrag per opleiding: **€100 excl. btw**.
 - Aanvraagtermijn klant: **binnen 14 kalenderdagen na startdatum opleiding** — hard.
-  Vermeld startdatum op elke opdrachtbevestiging en factuur.
   ([VLAIO — Subsidies aanvragen](https://www.vlaio.be/nl/subsidies-financiering/kmo-portefeuille/subsidies-aanvragen-en-ontvangen), 2026-06-12)
 
-### 7.2 DV.O-registratie — stappenplan
+### 7.2 DV.O-registratie — uitgesteld draaiboek
 
-Auxilia is op 2026-06-12 **nog niet geregistreerd** als erkend dienstverlener.
+**Status (2026-06-12): UITGESTELD.**
+Trigger voor heroverweging: 3–5 cursusverkopen met expliciete subsidievraag.
+Het volledige stappenplan is klaar voor onmiddellijke uitvoering zodra de trigger bereikt
+is — geen nieuwe research nodig.
 
 **Geschatte doorlooptijd van start tot DV.O-nummer: 3–6 maanden.**
 
@@ -538,48 +739,62 @@ Auxilia is op 2026-06-12 **nog niet geregistreerd** als erkend dienstverlener.
 | 2 | Offertes opvragen bij ≥ 2 auditbureaus | 1–2 weken |
 | 3 | Startersaudit (1 dag; vrijgesteld: ervaring + klanttevredenheid) | 1 dag |
 | 4 | VLAIO-registratie voor 2 jaar (starterstraject) | 4–8 weken na audit |
-| 5 | Opvolgingsaudit (uiterlijk 2 jaar na registratie) | — |
+| 5 | Opvolgingsaudit uiterlijk 2 jaar na registratie | — |
 
 **Aangestelde auditbureaus (selectie):**
 - CertUp / AB-Management-Qfor — info@certup.be ([certup.be](https://certup.be/nl/registratieaudits-kwaliteit/audit-kmo-portefeuille-registratie/))
 - Brand Compliance bv — kmop-wse@brandcompliance.com ([brandcompliance.be](https://brandcompliance.be/kwaliteit/kmo-portefeuille/))
-- BQA — info@bqa.be
+- BQA — info@bqa.be (Zwijnaarde)
 - LRQA België BV — Antwerpen
 
-Indicatieve auditkosten: **€800–€2.500** voor een startersaudit (schatting; vraag zelf
-offertes op — geen officieel VLAIO-tarief).
+Indicatieve auditkosten: **€800–€2.500** (schatting; vraag zelf offertes op).
 
-**Auditbestendig materiaal per opleiding (bewaren 5 jaar):** aanwezigheidslijst,
-evaluatieformulier, attest van deelname, opdrachtbevestiging, factuur, syllabus.
+**Auditbestendig materiaal per opleiding** (bewaren 5 jaar): aanwezigheidslijst,
+evaluatieformulier, attest van deelname, opdrachtbevestiging, factuur, syllabus/
+cursusmateriaal. Dit is hoe dan ook professioneel en is al volledig uitgewerkt in
+`02-aanbod-opleidingen.md` §3.5.
 
 ### 7.3 Aanvullende financieringskanalen voor klanten
 
 **Vlaams Opleidingsverlof (VOV):**
 - Werknemers volgen erkende opleidingen met behoud van loon; werkgever vergoed door Vlaanderen.
 - Vergoeding werkgever (vanaf 1 september 2026): **€24,50/uur** gevolgd.
-- Vereiste: opleiding ≥ 32 contacturen, geregistreerd in de Vlaamse Opleidingsdatabank.
-- Voor Auxilia: aanbevolen als bijkomend kanaal na kmo-portefeuille-registratie.
+- Vereiste: opleiding ≥ 32 contacturen, geregistreerd in Vlaamse Opleidingsdatabank.
+- Aanbevolen als bijkomend kanaal na kmo-portefeuille-registratie.
   ([Securex — VOV 2026](https://www.securex.be/nl/lex4you/werkgever/nieuws/nieuwe-wijzigingen-vlaams-opleidingsverlof-vanaf-1-september-2026), 2026-06-12)
 
 **VLAIO Subsidie Digitale Transformatieprojecten:**
 - 50% steun op aanvaarde begroting; max. €50.000 per kmo; minimum projectbegroting €20.000.
 - Voor de klant die een grotere digitaliseringssprong wil; Auxilia als externe dienstverlener.
-- Optioneel kanaal voor grotere projecten.
-  ([VLAIO — Digitale transformatieprojecten](https://www.vlaio.be/nl/subsidies-financiering/digitale-transformatieprojecten/wat-is-de-subsidie-voor-digitale-transformatieprojecten), 2026-06-12)
+- Geen DV.O-nummer vereist voor Auxilia in dit traject.
+  ([VLAIO](https://www.vlaio.be/nl/subsidies-financiering/digitale-transformatieprojecten/wat-is-de-subsidie-voor-digitale-transformatieprojecten), 2026-06-12)
 
-**Sectorfondsen:** situationeel, afhankelijk van sector klant (Cevora, Educam, Constructiv).
-Geen extra registratie vereist van Auxilia.
+**Sectorfondsen:** situationeel, afhankelijk van sector klant (Cevora PC 200/218, Educam,
+Constructiv). Geen extra registratie vereist van Auxilia.
 
 ### 7.4 GDPR
 
-**Basisregel:** gebruik bij klanten enkel betaalde AI-tools met DPA (ChatGPT Enterprise,
-Claude for Work, Google Workspace AI, Microsoft Copilot for M365). Gratis tiers bieden
+**Basisregel:** gebruik bij klanten enkel betaalde AI-tools met DPA. Gratis tiers bieden
 geen DPA — gebruik met klantpersoonsgegevens is niet AVG-conform.
 
-**Verplichte documenten per sprint:**
-- Verwerkersovereenkomst (DPA) met elke klant waarbij Auxilia persoonsgegevens verwerkt
-  (art. 28 GDPR).
-- Verwerkingsregister bijhouden (art. 30 GDPR) — aanbevolen als due-diligence-bewijs.
+| Tool | Prijs (indicatief) | DPA beschikbaar |
+|---|---|---|
+| ChatGPT Enterprise | vanaf $60/gebruiker/maand | Ja |
+| Claude for Work / Pro | vanaf $20–$30/gebruiker/maand | Ja |
+| Google Workspace AI / Gemini Business | vanaf €18/gebruiker/maand | Ja |
+| Microsoft Copilot for M365 | vanaf €28/gebruiker/maand | Ja |
+
+OpenAI, Google en Anthropic zijn gecertificeerd onder het EU-US Data Privacy Framework —
+doorgifte naar de VS is hierdoor geldig.
+([Conversal](https://www.conversal.be/blog/gdpr-en-ai-tools-welke-data-mag-je-voeren-aan-chatgpt/), 2026-06-12)
+
+**GDPR bij de AI-analyse (bijzonder aandachtspunt):** de klant deelt procesomschrijvingen
+en mogelijk werkbestanden met persoonsgegevens al bij de intake, vóór een sprint-contract
+bestaat. Verplichte acties bij elke analyse-intake:
+- NDA ondertekenen vóór uitwisseling van bedrijfsinfo.
+- Verwerkingsafspraken vastleggen (doel, bewaartermijn, verwijdering na analyse).
+- Minimale datadeling: vraag klant persoonsgegevens te anonimiseren of pseudonimiseren.
+(`05-subsidies-compliance.md` §4.3)
 
 **GDPR-checklist sprint-intake** (per klant doorlopen):
 - Welke persoonsgegevens zitten in het te automatiseren proces?
@@ -591,17 +806,18 @@ Bron: [GBA — FAQ kmo's](https://www.gegevensbeschermingsautoriteit.be/publicat
 
 ### 7.5 EU AI Act
 
-**Artikel 4 — AI-geletterdheid** (inspanningsverplichting, handhaving vanaf 2 augustus 2026):
-organisaties moeten aantoonbare AI-geletterdheid bij personeel waarborgen.
+**Artikel 4 — AI-geletterdheid** (handhaving vanaf 2 augustus 2026): organisaties moeten
+aantoonbare AI-geletterdheid bij personeel waarborgen. Inspanningsverplichting — geen
+vast aantal uren, maar inspanning moet documenteerbaar zijn.
 
 **Kans voor Auxilia:** EU-verplichting schept concrete verkoopdruk bij klanten voor
-AI-geletterdheidsopleidingen — precies wat Auxilia aanbiedt. Deadline 2 augustus 2026
-is een urgentiefactor in verkoopgesprekken.
+AI-geletterdheidsopleidingen — precies wat Auxilia aanbiedt. Deadline 2 augustus 2026 is
+een urgentiefactor in verkoopgesprekken.
 
 **Transparantieverplichting** (van kracht per 2 augustus 2026): bij AI-systemen die
 communiceren met gebruikers of AI-gegenereerde content produceren, moet de gebruiker weten
-dat hij met AI te maken heeft. Aanbevolen standaardzin: *"Dit bericht is (mede) gegenereerd
-door een AI-systeem."*
+dat hij met AI te maken heeft. Aanbevolen standaardzin: *"Dit bericht is (mede)
+gegenereerd door een AI-systeem."*
 
 **Risicoclassificatie typische Auxilia-use-cases:**
 - Offerteautomatisering → minimaal risico
@@ -612,16 +828,19 @@ door een AI-systeem."*
 ### 7.6 Eerlijke communicatie over subsidies op de website
 
 De huidige websitebelofte (*"We helpen je nagaan of je in aanmerking komt en loodsen je
-door de aanvraag"*) kan zonder DV.O-nummer **niet** volledig worden ingelost.
+door de aanvraag"*) kan zonder DV.O-nummer **niet** worden ingelost en kan als misleidende
+reclame worden beschouwd (art. VI.104 WER).
 
-**Aanbevolen formulering zolang registratie loopt** (uit `05-subsidies-compliance.md`):
+**Aanbevolen formulering zolang registratie niet actief is (optie A of B):**
 
-> *"We zijn bezig met onze registratie als erkend dienstverlener voor de kmo-portefeuille.
-> Tot die registratie afgerond is, kun je via de kmo-portefeuille nog geen subsidie
-> aanvragen voor onze opleidingen. We informeren je zodra dat mogelijk is."*
+Optie A (minste risico): verwijder de subsidiezin volledig; vervang door USP van vaste
+prijs of nuchter-praktische aanpak.
 
-Dit is een urgente aanpassing — de huidige tekst kan als misleidende reclame worden
-beschouwd (VI.104 WER).
+Optie B (als het onderwerp vastgehouden wordt):
+> *"Afhankelijk van je opleiding en bedrijfsgrootte zijn er subsidiekanalen beschikbaar
+> voor AI-opleiding. We bekijken dat samen zodra we je situatie kennen."*
+
+Controleer ook `promo.html` en eventuele andere pagina's.
 
 ---
 
@@ -631,17 +850,18 @@ beschouwd (VI.104 WER).
 
 | # | Risico | Bron | Ernst | Toelichting |
 |---|---|---|---|---|
-| R-1 | **DV.O-registratie vertraagt of mislukt** | 00-context, 02, 04, 05 | Hoog | Zonder DV.O-nummer zijn opleidingen niet subsidieerbaar, wat het verkoopargument sterk verzwakt. Doorlooptijd 3–6 maanden; kans op vertraging door auditbureau of onvoldoende voorbereiding. |
-| R-2 | **Misleidende subsidiebelofte op website** | 00-context, 05 | Hoog | De huidige formulering belooft iets wat Auxilia nu niet kan waarmaken. Risico: reputatieschade en mogelijke klacht wegens misleidende reclame (VI.104 WER). Actie vereist vóór aanwerving van eerste klanten. |
-| R-3 | **Onvoldoende uren bij bijberoep** | 00-context, 03, 04 | Hoog | Beschikbare uren zijn onbevestigd (aanname 10–15 uur/week totaal). Bij 2 actieve sprints tegelijk + sales-inspanning + opleidingen is overbelasting reëel bij bijberoep. |
-| R-4 | **Hoge belastingdruk bijberoep** | 04 | Middel | Gecombineerde druk 55–65% op bijberoepinkomen. Netto-opbrengst is aanzienlijk lager dan omzet suggereert. Risico: cashflowproblemen als belastingprovision niet apart gezet wordt. |
-| R-5 | **Aansprakelijkheid bij AI-fouten** | 05 | Middel | Geen contractkader vastgelegd. Acceptatiecriteria sprint ("werkend opgeleverd") zijn niet juridisch gedefinieerd. Bijsturingsbelofte is niet afgebakend t.o.v. scopewijziging. |
-| R-6 | **Geen betalende klanten bij start** | 03, 04 | Middel | Financieel plan start bij nul. Alle scenario's zijn aannames. Verwacht scenario (€1.820/mnd) vereist 8 sprints in jaar 2 — haalbaar bij bijberoep alleen als pijplijn goed functioneert. |
-| R-7 | **GDPR-risico bij sprints zonder DPA** | 05 | Middel | Zonder verwerkersovereenkomst met de klant loopt Auxilia aansprakelijkheidsrisico bij verwerking van persoonsgegevens in AI-tools. |
-| R-8 | **Concurrenten verlagen prijzen of lokaliseren** | 01 | Laag-Middel | CAIKMO, Codelines en AI Learning.be opereren primair buiten de Kempen, maar kunnen de markt volgen. Auxilia's concurrentievoordeel is lokale verankering — kwetsbaar als grotere spelers lokale aanwezigheid opbouwen. |
-| R-9 | **Snelle marktevolutie AI-tools** | 02 | Laag-Middel | AI-tools veranderen razendsnel; cursusmateriaal kan verouderen. Abonnementsformule (maandelijkse updates) is een mitigatie, maar vraagt consistente tijdsinvestering. |
-| R-10 | **Teamsamenstelling onbevestigd** | 00-context | Onbekend | De namen op de website (Jonas Mertens, Lien Vandereyt) zijn niet bevestigd als de werkelijke teamleden. Rolverdeling, beschikbare uren per persoon en beslissingsbevoegdheid zijn open. |
+| R-1 | **Misleidende subsidiebelofte op website** | 00-context, 05 | Hoog | Huidige formulering belooft iets wat Auxilia nu niet kan waarmaken. Risico: reputatieschade en klacht wegens misleidende reclame (VI.104 WER). Actie vereist vóór eerste klanten. |
+| R-2 | **Onvoldoende uren bij bijberoep** | 00-context, 03, 04 | Hoog | Beschikbare uren zijn onbevestigd (aanname 10–15 uur/week totaal). Bij 1 actieve sprint + sales-inspanning + analyses + opleidingen is overbelasting reëel bij bijberoep. |
+| R-3 | **Aansprakelijkheid bij AI-fouten** | 05 | Hoog | Geen contractkader vastgelegd. Acceptatiecriteria sprint ("werkend opgeleverd"), bijsturingsbelofte t.o.v. scopewijziging en GDPR-verantwoordelijkheden bij analyses zijn juridisch niet afgebakend. |
+| R-4 | **Hoge belastingdruk bijberoep** | 04 | Middel | Gecombineerde druk 55–65% op bijberoepinkomen. Netto is aanzienlijk lager dan omzet. Plan cashflowbuffer voor belastingprovision en sociale bijdrageafrekening. |
+| R-5 | **Conversieratio analyse → sprint valt tegen** | 03, 04 | Middel | Aanname 40% is kritisch. Bij 20% conversie verliest het verwacht scenario ca. €6.000 omzet. Dan zijn analyses zelfstandig waardevol maar is het sprint-volume onvoldoende om doelen te halen. Meet dit in kwartaal 1. |
+| R-6 | **Geen betalende klanten bij start** | 03, 04 | Middel | Financieel plan start bij nul. Verwacht scenario (€2.300/mnd) vereist jaar 2–3-volume. In jaar 1 is voorzichtig scenario (€575/mnd) realistischer. |
+| R-7 | **GDPR-risico bij analyses en sprints zonder contractkader** | 05 | Middel | Zonder NDA + verwerkingsbijlage bij analyse-intake en DPA bij sprint loopt Auxilia aansprakelijkheidsrisico bij verwerking van persoonsgegevens. |
+| R-8 | **Teamsamenstelling onbevestigd** | 00-context | Onbekend | Namen op website (Jonas Mertens, Lien Vandereyt) zijn niet bevestigd als werkelijke teamleden. Rolverdeling, beschikbare uren en beslissingsbevoegdheid zijn open. |
+| R-9 | **Concurrenten verlagen prijzen of lokaliseren** | 01 | Laag-Middel | CAIKMO, Codelines, AI Learning.be opereren primair buiten de Kempen maar kunnen de markt volgen. Auxilia's concurrentievoordeel is lokale verankering — kwetsbaar als grotere spelers lokale aanwezigheid opbouwen. |
+| R-10 | **Snelle marktevolutie AI-tools** | 02 | Laag-Middel | Cursusmateriaal kan verouderen. Abonnementsformule (maandelijkse updates) mitigeert dit, maar vraagt consistente tijdsinvestering. |
 | R-11 | **EU AI Act — deadline 2 augustus 2026** | 05 | Laag | Art. 4 handhaving start op 2 augustus 2026. Auxilia heeft intern nog geen AI-geletterdheidsbeleid gedocumenteerd. Relatief beperkt risico als kleine speler, maar symbolisch relevant als AI-dienstverlener. |
+| R-12 | **DV.O-registratie permanent uitgesteld** | 02, 04, 05 | Laag-Middel | Als losse opleidingen niet verkopen en de trigger (3–5 cursusklanten met subsidievraag) nooit bereikt wordt, blijft het kmo-portefeuille-argument permanent onbeschikbaar. Dit raakt de concurrentiepositie op middellange termijn voor het cursusaanbod. |
 
 ---
 
@@ -654,19 +874,19 @@ beschouwd (VI.104 WER).
 | O-1 | Kloppen de namen Jonas Mertens en Lien Vandereyt op de website nog? Wat is de precieze rolverdeling? | Cedric | Alle aannames over team, capaciteit en taakverdeling kunnen onjuist zijn. |
 | O-2 | Hoeveel uur per week is er beschikbaar voor Auxilia (per persoon)? | Cedric | Centrale aanname voor go-to-market (max. 2 sprints tegelijk) en financieel plan (10–15 uur/week totaal) is onbevestigd. |
 | O-3 | Wat is het financiële doel van het bijberoep (extra inkomen per maand, drempel voor voltijds)? | Cedric | Financieel plan hanteert €1.500/mnd als tussentijds doel en €4.000/mnd als voltijds-drempel — beide onbevestigd. |
-| O-4 | Welke prijsrange voor de sprint is tot nu toe gehanteerd of overwogen? | Cedric | Raakt tegenstrijdigheid T-1 (zie onder); bevestiging ontbreekt. |
-| O-5 | Eenmanszaak of vennootschap, en op wiens naam staat het ondernemingsnummer? | Cedric | Heeft fiscale gevolgen (vennootschapsbelasting vs. personenbelasting). Financieel plan gaat uit van eenmanszaak. |
-| O-6 | Zijn er al (proef)klanten of concrete leads? | Cedric | Alle scenario's starten bij nul; bij bestaande leads kunnen de tijdlijnen eerder zijn. |
+| O-4 | Welke definitieve prijs voor de AI-analyse? | Cedric | Financieel plan rekent met €750 (marktbenchmark). Range: €650–€950. Raakt alle omzetscenario's. |
+| O-5 | Welke prijsrange voor de sprint is tot nu toe gehanteerd of overwogen? | Cedric | Financieel plan gaat uit van €3.500–€6.000 (zie T-1). |
+| O-6 | Eenmanszaak of vennootschap, en op wiens naam staat het ondernemingsnummer? | Cedric | Heeft fiscale gevolgen. Financieel plan gaat uit van eenmanszaak. |
+| O-7 | Zijn er al (proef)klanten of concrete leads? | Cedric | Alle scenario's starten bij nul; bij bestaande leads kunnen de tijdlijnen eerder zijn. |
 
 ### 9.2 Openstaande beslissingen (uit `02-aanbod-opleidingen.md`)
 
 | # | Beslissing | Wie | Impact |
 |---|---|---|---|
-| O-7 | Wanneer start de auditprocedure voor DV.O-registratie? Welk auditbureau? | Cedric | URGENT — 3–6 maanden doorlooptijd; subsidieargument is pas bruikbaar na registratie. |
 | O-8 | Vaste locatiepartner in de Kempen voor open workshops (Voka-lokaal, gemeentehuis, co-working)? | Cedric | Eerste open workshops kunnen pas gepland worden als locatie bekend is. |
-| O-9 | Wordt het opleidingsluik van de sprint apart gefactureerd (voor subsidie) of in de sprintprijs vervat? | Cedric | Heeft directe impact op kassaargument bij klant en op de factuurstructuur. |
-| O-10 | Wie geeft de opleidingen in de praktijk? Hoeveel uren per maand zijn beschikbaar voor opleiding? | Cedric | Raakt ook aan de teamvraag (O-1 en O-2). |
-| O-11 | Is €395–€450 p.p. haalbaar als instapprijs voor open dagworkshop in de Kempenmarkt, of is een lager instapbedrag nodig voor de lancering? | Cedric | Heeft impact op omzetscenario's in h04 (die €250/deelnemer hanteert voor open workshop — zie T-2). |
+| O-9 | Wordt het opleidingsluik van de sprint apart gefactureerd (voor latere subsidie) of in de sprintprijs vervat? | Cedric | Directe impact op factuurstructuur en verkoopargument bij klant. |
+| O-10 | Wie geeft de opleidingen in de praktijk? Hoeveel uren per maand zijn beschikbaar voor opleiding? | Cedric | Raakt ook aan O-1 en O-2. |
+| O-11 | Is €395–€450 p.p. haalbaar als instapprijs voor open dagworkshop in de Kempenmarkt, of is een lager instapbedrag nodig voor de lancering? | Cedric | Heeft impact op omzetscenario's (zie T-2 hieronder). |
 | O-12 | Wordt de abonnementsformule al in de eerste 6 maanden gelanceerd, of pas later? | Cedric | Vereist platforminvestering (Zoom, opnames). |
 | O-13 | Zijn er klanten waarbij ook Frans- of Engelstalige medewerkers aanwezig zijn? | Cedric | Zo ja, aparte cursusversie nodig. |
 
@@ -677,27 +897,38 @@ beschouwd (VI.104 WER).
 | O-14 | Zijn er specifieke sectoren in de Kempen (logistiek, metaalindustrie, bouw) waarvoor sectorfonds-optie prioriteit verdient? | Cedric | Bepaalt of Auxilia gericht op specifieke paritaire comités communiceert. |
 | O-15 | Is er provinciale steun (provincie Antwerpen/Kempen) die relevant is boven de kmo-portefeuille? | Cedric + ondernemersloket | Geen gevonden in huidige onderzoek, maar te bevestigen via lokaal loket. |
 
-### 9.4 Tegenstrijdigheden tussen hoofdstukken
+### 9.4 Tegenstrijdigheden tussen hoofdstukken — status na rework
 
-| # | Tegenstrijdigheid | Hoofdstukken | Toelichting |
+> **Revisie-evaluatie:** de bronhoofdstukken 02, 03, 04 en 05 zijn in rev. 2 herschreven
+> op basis van de drie beslissingen van 2026-06-12. Hieronder staat per eerder gesignaleerde
+> tegenstrijdigheid of die nu opgelost is.
+
+| # | Tegenstrijdigheid | Status na rev. 2 | Resterende toelichting |
 |---|---|---|---|
-| T-1 | **Sprint-prijsrange verschilt:** h03 hanteert €2.500–€5.000 (aanname bij gebrek aan bevestiging), h04 hanteert €3.500–€6.000 (met drie varianten). | 03 vs. 04 | Dit plan gebruikt de drieledige structuur van h04 (Light/Standaard/Plus) als meest gedetailleerde onderbouwing. De definitieve prijs is een beslissing voor Cedric (zie O-4). |
-| T-2 | **Open workshop-prijs verschilt:** h04 hanteert €250/deelnemer (open workshop halve dag, aanname), h02 hanteert €395–€450/deelnemer (dagcursus). | 02 vs. 04 | De formats zijn niet identiek (halve dag vs. volledige dag), maar de aanname in h04 was gemaakt zonder h02. De omzetscenario's in h04 zijn berekend met €250/deelnemer × 6 deelnemers = €1.500/open workshop — bij de prijzen van h02 zouden de scenarios hoger uitvallen. Financieel-planner moet herrekenen zodra prijsbeslissing genomen is. |
-| T-3 | **Intern inconsistente omzetcijfers in h04:** de parametertabel (§5, scenario-aannames) vermeldt €52.600 voor het verwachte scenario, maar de gedetailleerde berekening in §5.2 komt uit op €48.200. Verschil: €4.400.** | 04 intern | Dit plan gebruikt de gedetailleerde berekening (€48.200) als meest transparante basis. Financieel-planner moet inconsistentie oplossen. |
-| T-4 | **In-company dagprijs verschilt:** h04 hanteert €1.900 (volle dag forfait), h02 hanteert €1.800–€2.400 (range). | 02 vs. 04 | Overlappend maar niet identiek. H04's aanname is een punt binnen de range van h02. Geen blokkerende tegenstrijdigheid, maar de definitieve prijs vereist beslissing. |
+| T-1 | **Sprint-prijsrange:** h03 hanteerde €2.500–€5.000; h04 hanteert €3.500–€6.000. | **Gedeeltelijk opgelost.** h03 v2 hanteert nu expliciet €2.500–€5.000 als aanname bij gebrek aan bevestiging door Cedric, en erkent dat h04 een eigen drieledige structuur heeft. Beide zijn aannames — het definitieve sprintprijsbesluit ligt bij Cedric (O-5). Dit plan gebruikt de h04-structuur (Light/Standaard/Plus) als meest gedetailleerde onderbouwing. | Vraagt beslissing O-5. |
+| T-2 | **Open workshop-prijs:** h04 (rev. 1) hanteerde €250/deelnemer; h02 hanteert €395–€450 p.p. voor een volle dagcursus. | **Opgelost in h04 rev. 2.** h04 corrigeert de aanname expliciet naar €420/deelnemer (middenpunt dagformat, 8 pers. = €3.360 per workshop). De scenario-tabel en detailberekeningen zijn bijgesteld. | Geen resterende discrepantie — vraagt enkel bevestiging van Cedric via O-11. |
+| T-3 | **Intern inconsistente omzetcijfers h04:** parametertabel vermeldde €52.600; detailberekening §5.2 kwam uit op €48.200. Verschil €4.400. | **Opgelost in h04 rev. 2.** h04 erkent de rekenfout expliciet en corrigeert de parametertabel. Het verwacht scenario is nu herschreven naar €60.220 (hogere basis door toevoeging AI-analyse als aparte stroom en gecorrigeerde opleidingsprijzen). Beide vorige cijfers zijn achterhaald. | Geen resterende inconsistentie — nieuw verwacht scenario is €60.220. |
+| T-4 | **In-company dagprijs:** h04 (rev. 1) hanteerde €1.900 (volle dag forfait); h02 hanteert €1.800–€2.400 (range). | **Opgelost in h04 rev. 2.** h04 gebruikt nu €2.000 als middenpunt van de h02-range in de scenario-aannames. Geen overlap meer buiten de range. | Geen resterende discrepantie. Vraagt definitieve prijsbeslissing voor het definitieve contract. |
 
-### 9.5 Compliance-acties (urgentielijst uit `05-subsidies-compliance.md`)
+**Tegenstrijdigheid N-1: OPGELOST (2026-06-12).** h05 is bijgewerkt naar rev. 2 door
+de subsidie-specialist. §1.4 gebruikt nu de sprint-split conform h04 rev. 2: €3.500
+implementatie + €1.250 opleidingsluik → subsidie €375 (30%) → nettokost opleidingsluik
+€875 voor kleine klant. Conditioneel op latere DV.O-registratie. Geen discrepantie meer
+tussen h05 en h04 rev. 2.
+
+### 9.5 Compliance-acties (urgentielijst)
 
 | # | Actie | Status | Prioriteit |
 |---|---|---|---|
-| C-1 | Start DV.O-registratieprocedure: offertes opvragen bij ≥ 2 auditbureaus | Niet gestart | **URGENT** |
-| C-2 | Website-tekst over subsidies aanpassen (huidige belofte is misleidend) | Niet gestart | **URGENT** |
-| C-3 | Verwerkersovereenkomst (DPA) opstellen voor gebruik bij klanten | Niet gestart | Hoog |
-| C-4 | Privacyverklaring (website + opleidingen) opstellen | Niet gestart | Hoog |
-| C-5 | Projectdossiersjabloon aanmaken (stavingsdocumenten VLAIO) | Niet gestart | Hoog (vereist voor audit) |
-| C-6 | AI-geletterdheidsbeleid intern documenteren (art. 4 EU AI Act) | Niet gestart | Middel (deadline 2 aug. 2026) |
-| C-7 | WSE-kwaliteitsregistratie onderzoeken (voor Vlaams Opleidingsverlof) | Niet gestart | Middel — na kmo-portefeuille-registratie |
-| C-8 | Contractsjabloon bespreken met jurist (aansprakelijkheid, IP, sprint-acceptatiecriteria) | Niet gestart | Middel |
+| C-1 | **Website-tekst over subsidies aanpassen of verwijderen** | ❌ Niet gestart | **#1 URGENT — vóór eerste klantcontact** |
+| C-2 | **NDA + verwerkingsbijlage voor analyse-intake opstellen** | ❌ Niet gestart | **Hoog — vóór eerste analyse** |
+| C-3 | Verwerkersovereenkomst (DPA) opstellen voor gebruik bij klanten (sprint) | ❌ Niet gestart | Hoog |
+| C-4 | Privacyverklaring (website + opleidingen) opstellen | ❌ Niet gestart | Hoog |
+| C-5 | AI-geletterdheidsbeleid intern documenteren (art. 4 EU AI Act) | ❌ Niet gestart | Middel (deadline 2 aug. 2026) |
+| C-6 | Contractsjabloon bespreken met jurist (aansprakelijkheid, IP, sprint-acceptatiecriteria, analyse-scope) | ❌ Niet gestart | Middel |
+| C-7 | DV.O-registratie activeren zodra trigger bereikt (3–5 cursusklanten met subsidievraag) | ⏳ Uitgesteld | Heroverwegen op trigger |
+| C-8 | WSE-kwaliteitsregistratie onderzoeken (voor Vlaams Opleidingsverlof) | ⏳ Uitgesteld — na DV.O | Heroverwegen na DV.O |
+| C-9 | h05 actualiseren: subsidie-specialist terugkoppeling op h04 rev. 2 (§1.4 sprint-split) | ✅ Afgerond (rev. 2, 2026-06-12) — zie N-1 opgelost in §9.4 | — |
 
 ---
 
@@ -705,17 +936,85 @@ beschouwd (VI.104 WER).
 
 *(Alle URLs zijn geraadpleegd op 2026-06-12, tenzij anders vermeld)*
 
-**Marktonderzoek (01-markt.md):**
-Cevora AI-opleidingen; Voka Mechelen-Kempen "De basics van AI"; Voka AW/AMS "AI voor kmo's"; Syntra AB; Syntra MVL; VAIA; CAIKMO; Codelines; AI voor KMO; AI Learning; AI Seminariedag; Algida freelance tarieven 2025; Freelance Vlaanderen; Exact KMO Barometer 2026 ([4bs.com](https://4bs.com/nl/exact-online-kmo-barometer-2026/)); VLAIO AI-barometer ([vlaio.be](https://www.vlaio.be/nl/nieuws/ai-gebruik-bij-vlaamse-ondernemingen-en-overheid-is-verdubbeld)); VLAIO kmo-portefeuille; AlleCijfers arrondissement Turnhout; Made In Kempen faillissementen 2025 ([made-in.be](https://www.made-in.be/kempen/2025-zwaar-jaar-voor-kempense-bedrijven-faillissementen-nemen-opnieuw-toe/)).
+**Context (`00-context.md`):**
+Intern document — geen externe bronnen.
 
-**Opleidingen (02-aanbod-opleidingen.md):**
-VLAIO registratieprocedure dienstverleners; VLAIO subsidieerbare diensten; VLAIO digitalisering; Certup audit; SHRM; eLearning Industry; iSEAZY.
+**Marktonderzoek (`01-markt.md`):**
+Cevora AI-opleidingen ([cevora.be](https://www.cevora.be/voor-mij/ik-heb-een-job/opleidingen/themas/ai));
+Voka Mechelen-Kempen "De basics van AI" ([voka.be/mechelen-kempen](https://www.voka.be/mechelen-kempen/opleidingen/digitalisering-it-technologie/de-basics-van-ai-0));
+Voka AW/AMS "AI voor kmo's" ([voka.be/antwerpen-waasland](https://www.voka.be/antwerpen-waasland/opleidingen/digitalisering-it-technologie/ai-voor-kmos-van-inzicht-naar-echte-innovatie));
+Syntra AB ([syntra-ab.be](https://www.syntra-ab.be/opleidingen/ai-agents-bouw-je-eigen-digitale-collegas-zonder-een-regel-code));
+Syntra MVL ([syntra-mvl.be](https://syntra-mvl.be/nl/opleidingen/marketing-en-sales/marketing/ai-essential-slimmer-werken-met-artificiele-intelligentie));
+VAIA ([vaia.be](https://www.vaia.be/nl/series/generatieve-ai-voor-kmos-en-ondernemers));
+CAIKMO ([caikmo.be](https://caikmo.be/));
+Codelines ([codelines.be](https://www.codelines.be/oplossingen/ai-ontwikkeling/));
+AI voor KMO ([aivoorkmo.be](https://aivoorkmo.be/));
+AI Learning ([ailearning.be](https://ailearning.be/));
+AI Seminariedag ([thedigitalplatform.be](https://thedigitalplatform.be/ai-seminariedagvoor-kmos/));
+Algida freelance tarieven 2025 ([algida.be](https://algida.be/freelance-tarieven-2025/));
+Freelance Vlaanderen ([freelance.vlaanderen](https://freelance.vlaanderen/freelance-tarieven/));
+Exact KMO Barometer 2026 ([4bs.com](https://4bs.com/nl/exact-online-kmo-barometer-2026/));
+VLAIO AI-barometer ([vlaio.be](https://www.vlaio.be/nl/nieuws/ai-gebruik-bij-vlaamse-ondernemingen-en-overheid-is-verdubbeld));
+VLAIO kmo-portefeuille ([vlaio.be](https://www.vlaio.be/nl/subsidies-financiering/kmo-portefeuille));
+AlleCijfers arrondissement Turnhout ([allecijfers.be](https://allecijfers.be/arrondissement/arrondissement-turnhout/));
+Made In Kempen faillissementen 2025 ([made-in.be](https://www.made-in.be/kempen/2025-zwaar-jaar-voor-kempense-bedrijven-faillissementen-nemen-opnieuw-toe/));
+Codelines "5 processen" ([codelines.be/inzichten](https://www.codelines.be/inzichten/artikel/5-processen-ai-agent-tijdsbesparing/)).
 
-**Go-to-market (03-go-to-market.md):**
-Exact KMO Barometer 2026; Kempas; HB Accountants; QFK Tax; ACS Accountants; Voka Mechelen-Kempen; UNIZO Provincie Antwerpen; gemeentelijke loketten Herentals/Turnhout/Geel; Antwerpse Business Event; ORBISS (referral-fiscaliteit).
+**Opleidingen (`02-aanbod-opleidingen.md` rev. 2):**
+VLAIO registratieprocedure dienstverleners;
+VLAIO subsidieerbare diensten;
+VLAIO digitalisering;
+Certup ([certup.be](https://certup.be/nl/registratieaudits-kwaliteit/audit-kmo-portefeuille-registratie/));
+SHRM "Engage employees in AI without triggering fear";
+eLearning Industry "Learning Design in 2026";
+iSEAZY "Experiential Learning for Corporate Training 2026".
 
-**Financieel plan (04-financieel-plan.md):**
-Liantis sociale bijdragen bijberoep; Accountable (bijdragen, belastingschijven, btw-vrijstelling, boekhouder); FOD Financiën btw-vrijstelling; VLAIO kmo-portefeuille hervorming; RSVZ; Xerius; Hellosafe.be beroepsaansprakelijkheid; Searchlab AI-implementatie kosten; Expert Academy studiedag; VR op Locatie AI workshop; Elivado Claude AI kosten; Acerta gewaarborgd inkomen; Practicali kleine ondernemingsregeling.
+**Go-to-market (`03-go-to-market.md` v2):**
+Kempas ([kempas.be](https://kempas.be/));
+HB Accountants ([hbaccountants.be](https://www.hbaccountants.be/));
+QFK Tax ([qfk.be](https://qfk.be/));
+ACS Accountants ([acs.be](https://www.acs.be/vestigingen/acs-turnhout));
+Voka Mechelen-Kempen AI-aanbod ([voka.be/mk](https://www.voka.be/mk/aanbod-artificiele-intelligentie));
+Voka Mechelen-Kempen VanRoey-samenwerking ([made-in.be](https://www.made-in.be/kempen/voka-mechelen-kempen-en-vanroey-bundelen-krachten-rond-cybersecurity-en-ai/));
+UNIZO Antwerpen ([unizo.be/provincie/antwerpen](https://www.unizo.be/provincie/antwerpen));
+Herentals ondernemersloket ([herentals.be](https://www.herentals.be/jobs-en-ondernemen/ondernemersloket/hulp-en-ondersteuning));
+Turnhout starten ([turnhout.be/nl/starten](https://www.turnhout.be/nl/starten));
+Geel ondernemingsloket ([geel.be/ondernemingsloket](https://www.geel.be/ondernemingsloket));
+Jong Voka Kempen Lunch & Learn;
+Bedrijvencontactdagen Mechelen ([mechelen.bedrijvencontactdagen.be](https://www.mechelen.bedrijvencontactdagen.be/nl/ontdek-de-beurs/algemeen/));
+Antwerps Business Event ([antwerpsbusinessevent.be](https://www.antwerpsbusinessevent.be/));
+Searchlab AI implementatie kosten ([searchlab.nl](https://searchlab.nl/kosten/wat-kost-ai-implementatie)).
 
-**Subsidies & compliance (05-subsidies-compliance.md):**
-VLAIO kmo-portefeuille voor dienstverleners; VLAIO hervorming feb. 2026; VLAIO digitalisering; VLAIO hoeveel subsidies; VLAIO voorwaarden; VLAIO subsidies aanvragen; VLAIO controle stavingsdocumenten; VLAIO digitale transformatieprojecten; VLAIO Vlaams opleidingsverlof; Securex VOV 2026; Brand Compliance; CertUp; GBA GDPR FAQ kmo's; Conversal GDPR AI-tools; Autoriteit Persoonsgegevens EU AI Act risicogroepen; AIAdopt artikel 4; EU Digital Strategy AI Act.
+**Financieel plan (`04-financieel-plan.md` rev. 2):**
+Liantis sociale bijdragen bijberoep ([liantis.be](https://www.liantis.be/nl/zelfstandig-worden/sociale-bijdragen/bijberoep));
+RSVZ zelfstandige bijberoep ([rsvz.be](https://www.rsvz.be/nl/zelfstandige-bijberoep));
+Accountable (bijdragen, belastingschijven, btw-vrijstelling, boekhouder) ([accountable.eu](https://www.accountable.eu));
+FOD Financiën btw-vrijstelling ([financien.belgium.be](https://financien.belgium.be/nl/ondernemingen/btw/btw-plicht/vrijstellingsregeling));
+VLAIO btw-vrijstelling kleine ondernemingen ([vlaio.be](https://www.vlaio.be/nl/nieuws/nieuwe-regeling-btw-vrijstelling-kleine-ondernemingen));
+VLAIO kmo-portefeuille hervorming feb. 2026 ([vlaio.be](https://www.vlaio.be/nl/nieuws/hervorming-kmo-portefeuille-vanaf-1-februari-2026-enkel-nog-advies-voor-cybersecurity));
+Xerius kosten bijberoep ([xerius.be](https://www.xerius.be/nl-be/zelfstandig-worden/je-voorbereiding/kosten-in-bijberoep));
+hellosafe.be beroepsaansprakelijkheid ([hellosafe.be](https://hellosafe.be/nl/beroepsaansprakelijkheidsverzekering/beroepsaansprakelijkheidsverzekering-zelfstandigen));
+Elivado Claude AI kosten ([elivado.nl](https://elivado.nl/claude-ai-kosten/));
+Acerta gewaarborgd inkomen ([acerta.be](https://www.acerta.be/nl/inspiratie/verzekering-gewaarborgd-inkomen-prijs));
+Practicali kleine ondernemingsregeling ([practicali.be](https://www.practicali.be/blog/kleine-ondernemingsregeling-nieuwe-omzetmelding-via-de-klantenlisting-uiterlijk-op-31-maart-2026));
+AI voor KMO AI-scan prijs ([aivoorkmo.be](https://aivoorkmo.be/));
+Searchlab AI implementatie kosten ([searchlab.nl](https://searchlab.nl/kosten/wat-kost-ai-implementatie)).
+
+**Subsidies & compliance (`05-subsidies-compliance.md` rev. 2 — 2026-06-12):**
+VLAIO kmo-portefeuille voor dienstverleners;
+VLAIO hervorming feb. 2026;
+VLAIO digitalisering;
+VLAIO hoeveel subsidies ([vlaio.be](https://www.vlaio.be/nl/subsidies-financiering/kmo-portefeuille/hoeveel-subsidies-kan-ik-krijgen));
+VLAIO voorwaarden voor subsidie;
+VLAIO subsidies aanvragen en ontvangen;
+VLAIO controle en stavingsdocumenten;
+VLAIO digitale transformatieprojecten;
+VLAIO Vlaams opleidingsverlof ([vlaio.be](https://www.vlaio.be/nl/subsidies-financiering/subsidiedatabank/maatregelen/vlaams-opleidingsverlof-vergoeding-voor-de-werkgever));
+Securex VOV 2026 ([securex.be](https://www.securex.be/nl/lex4you/werkgever/nieuws/nieuwe-wijzigingen-vlaams-opleidingsverlof-vanaf-1-september-2026));
+Brand Compliance ([brandcompliance.be](https://brandcompliance.be/kwaliteit/kmo-portefeuille/));
+CertUp ([certup.be](https://certup.be/nl/audits/registratie-kmo-portefeuille/));
+GBA GDPR FAQ kmo's ([gegevensbeschermingsautoriteit.be](https://www.gegevensbeschermingsautoriteit.be/publications/faq-brochure-voor-kmo-s.pdf));
+Conversal GDPR en AI-tools ([conversal.be](https://www.conversal.be/blog/gdpr-en-ai-tools-welke-data-mag-je-voeren-aan-chatgpt/));
+Autoriteit Persoonsgegevens EU AI Act risicogroepen ([autoriteitpersoonsgegevens.nl](https://www.autoriteitpersoonsgegevens.nl/en/themes/algorithms-ai/eu-ai-act/eu-ai-act-risk-groups));
+AIAdopt artikel 4 ([aiadopt.eu](https://aiadopt.eu/nl/eu-ai-act-artikel-4));
+EU Digital Strategy AI Act ([digital-strategy.ec.europa.eu](https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai)).

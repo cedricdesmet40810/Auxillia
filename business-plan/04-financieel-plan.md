@@ -1,6 +1,6 @@
 # 04 — Financieel plan
 
-Laatst bijgewerkt: 2026-06-12
+Laatst bijgewerkt: 2026-06-12 (rev. 2 — AI-analyse als kernproduct, DV.O-audit uit near-term kosten, T-2/T-3 correcties)
 
 > **Disclaimer:** dit document biedt financiële analyse en scenario's, geen bindend
 > fiscaal of juridisch advies. Raadpleeg een boekhouder voor definitieve keuzes over
@@ -21,10 +21,8 @@ toont de aannames die dit plan hanteert zolang Cedric ze niet bevestigt of corri
 | C | Welke prijsrange sprint? | **€ 3.500 – € 6.000 excl. btw** per sprint (wordt onderbouwd in §2). |
 | D | Eenmanszaak of vennootschap? | **Eenmanszaak** zolang bijberoep; overweeg BV bij voltijds + winst > € 50.000/jaar. |
 | E | Al (proef)klanten of leads? | Geen bekende leads — scenario's starten bij nul. |
-
-> `01-markt.md` en `02-aanbod-opleidingen.md` bestaan nog niet op moment van schrijven.
-> Prijsonderbouwing en opleidingsformats zijn gebaseerd op marktonderzoek in dit hoofdstuk
-> en worden bijgesteld zodra die hoofdstukken beschikbaar zijn.
+| F | Definitieve prijs AI-analyse? | **€ 750** (marktbenchmark uit `01-markt.md` — AI voor KMO AI-scan); Cedric beslist de definitieve prijs. |
+| G | Conversieratio analyse → sprint? | **40%** (aanname): 4 op 10 klanten die een AI-analyse kopen, boeken daarna een sprint. |
 
 ---
 
@@ -104,7 +102,8 @@ boven de schijfgrens.
 | Maximum steun per bedrijf per jaar | **€ 7.500** | idem |
 | Advies subsidieerbaar? | Enkel cybersecurity — overig advies **niet** meer | idem |
 | Geldt voor **de sprint**? | **Nee** — de sprint is een implementatietraject/advies, geen erkende opleiding | aanname op basis van definitie |
-| DV.O-registratie Auxilia | **Nog niet** aangevraagd | 00-context.md |
+| Geldt voor **de AI-analyse**? | **Nee** — het is een adviestraject, geen opleiding | idem |
+| DV.O-registratie Auxilia | **Niet aangevraagd; voorlopig uitgesteld** | 00-context.md beslissing 2026-06-12 |
 
 **Communicatierichtlijn (zie ook 00-context.md §Subsidies):**
 Zolang de DV.O-registratie er niet is, is de kmo-portefeuille **voorwaardelijk**. Auxilia
@@ -112,20 +111,58 @@ mag nooit garanderen dat een klant subsidie krijgt. Correcte formulering:
 *"Zodra onze erkenning als erkend dienstverlener rond is, kunnen opleidingen in aanmerking
 komen voor 30% subsidie via de kmo-portefeuille. We begeleiden je bij de aanvraag."*
 
-**Impact op effectieve prijs voor klant (na DV.O):**
-
-| Catalogusprijs opleiding | Kleine onderneming betaalt (netto) | Middelgrote onderneming betaalt |
-|---|---|---|
-| € 500 | € 350 | € 400 |
-| € 1.000 | € 700 | € 800 |
-| € 1.500 | € 1.050 | € 1.200 |
-| € 2.500 | € 1.750 | € 2.000 |
+**Geen subsidie-effect in de scenario's van dit plan:**
+De DV.O-registratie is uitgesteld (beslissing 2026-06-12). Alle scenario's rekenen met
+brutoprijzen **zonder subsidie-effect**. Dit is de correcte conservatieve aanname: de
+vraag naar opleidingen wordt niet opgedreven door een kortingsprikkel die Auxilia op
+korte termijn niet kan bieden. Wanneer de registratie wél rond is, verbetert de
+effectieve prijs voor de klant maar stijgen de opbrengsten voor Auxilia zelf niet —
+het subsidie-effect is een verkoopargument, geen extra omzet voor Auxilia.
 
 ---
 
 ## 2. Prijszetting
 
-### 2.1 De sprint
+### 2.1 De AI-analyse (instapproduct) — nieuw kernproduct
+
+**Definitie (uit 00-context.md, beslissing 2026-06-12):** betaalde doorlichting van de
+processen van de kmo met een concreet rapport: waar zit de winst, wat is haalbaar, wat zou
+het kosten. Eindigt altijd in een voorstel voor een sprint (optioneel vervolg).
+
+**Marktbenchmark:**
+- AI voor KMO AI-scan (halve dag + rapport binnen 5 werkdagen): **€ 750**
+  ([aivoorkmo.be](https://aivoorkmo.be/), geraadpleegd 2026-06-12)
+- Gemiddeld dagtarief AI-consultant België: **€ 700–€ 1.100/dag**
+  ([algida.be/freelance-tarieven-2025](https://algida.be/freelance-tarieven-2025/), 2026-06-12)
+
+**Aanname F:** definitieve prijs **€ 750** excl. btw. ❓ Cedric beslist definitieve prijs
+(range: € 650–€ 950 — lager dan marktleider is mogelijk als lanceringsstrategie, hoger
+als het rapport meer diepgang biedt dan de benchmark).
+
+| Wat is inbegrepen | Tijdsinvestering |
+|---|---|
+| Intake-gesprek ter plaatse of online (1–1,5 uur) | ~1,5 uur |
+| Analyse van 2–3 bedrijfsprocessen | ~2 uur voorbereiding |
+| Schriftelijk rapport met prioriteitenlijst + indicatieve kostenraming | ~1,5 uur |
+| Presentatie rapport (30 min online of ter plaatse) | ~0,5 uur |
+| **Totaal per analyse** | **~5,5 uur** |
+
+**Uurtarief-check:** € 750 bij 5,5 uur = **€ 136/uur** — bovenaan de marktrange (€ 60–
+€ 150/uur) voor een junior AI-profiel, en goed verdedigbaar gezien het concrete rapport.
+
+**Rol in de funnel:**
+- De AI-analyse genereert cashflow vóór de sprint begint.
+- Ze kwalificeert de klant: Auxilia investeert pas in een sprint bij een klant die al
+  betaald heeft voor het vooronderzoek en het rapport kent.
+- Aanname G (conversieratio): **40%** van de analyses leidt tot een sprint. Dit is een
+  kritische aanname — zie §5.
+
+**Cashflowtiming:** de analyse wordt volledig vooraf gefactureerd (€ 750 bij ondertekening
+van de offerte) of 50% bij start / 50% bij oplevering rapport. Geen betalingstermijnrisico.
+
+---
+
+### 2.2 De sprint
 
 **Definitie (uit 00-context.md):** één bedrijfsproces volledig geautomatiseerd en
 werkend opgeleverd, vaste prijs, vaste deadline, inclusief opleiding van het team.
@@ -154,35 +191,41 @@ voor kleine Vlaamse kmo's verliezen.
 netto) = **€ 79/uur** — conservatief tegenover markt (€ 120–300/uur) en dus haalbaar als
 instapprijs voor eerste referentieklanten.
 
+**Link met AI-analyse:** een klant die eerst een analyse kocht (€ 750), betaalt bij een
+Sprint Standaard de totale funnel-waarde: **€ 750 + € 4.750 = € 5.500**. Dit is volledig
+in lijn met de marktbenchmark voor een bewuste, voorbereide kmo.
+
 ---
 
-### 2.2 Opleidingen
+### 2.3 Opleidingen
 
-> `02-aanbod-opleidingen.md` bestaat nog niet. Onderstaande prijzen zijn aannames die
-> bijgesteld worden zodra de opleidingsontwerper de formats definieert.
+> **Actualisering t.o.v. rev. 1:** `02-aanbod-opleidingen.md` (rev. 2, 2026-06-12) bestaat
+> nu en bevat concrete prijsranges. De prijzen hieronder zijn bijgesteld op basis van die
+> gegevens. **Aandachtspunt T-2:** de vorige versie van dit hoofdstuk hanteerde € 250/
+> deelnemer voor een open workshop (halve dag). Hoofdstuk 02 specificeert echter een
+> volledige dagcursus aan **€ 395–€ 450 p.p.** voor de open workshop. De scenario-aannames
+> worden hieronder gecorrigeerd. Er is geen halve-dag open format in het definitieve aanbod
+> — dat label is komen te vervallen.
 
-**Marktbenchmark:**
-- Open dagtraining per deelnemer (Expert Academy BE): **€ 695/persoon/dag** (open)
-  ([expertacademy.be](https://www.expertacademy.be/nl/faq/113/hoeveel-kost-een-studiedag-opleiding-of-training), 2026-06-12)
-- In-company training België: **€ 1.900 – € 3.000/dag** (forfait)
-  (idem)
-- AI-workshop basistraining: **€ 150 – € 400/persoon** (halve dag tot volle dag)
-  ([VR op Locatie](https://vroplocatie.nl/kennisbank/wat-kost-een-gemiddelde-ai-workshop-per-persoon/), 2026-06-12)
-- Freelance trainer dagprijs: **€ 800 – € 1.500/dag**
-  (idem)
-
-**Aanname prijsstructuur Auxilia opleidingen:**
+**Prijsstructuur Auxilia opleidingen (gebaseerd op `02-aanbod-opleidingen.md` §2.1):**
 
 | Format | Prijs excl. btw | Toelichting |
 |---|---|---|
-| Open workshop (halve dag, max. 12 pers.) | **€ 250/deelnemer** | Min. 6 deelnemers = € 1.500 drempel |
-| In-company workshop (halve dag, max. 15 pers.) | **€ 1.200 forfait** | Reiskosten inbegrepen tot 50 km |
-| In-company workshop (volledige dag, max. 15 pers.) | **€ 1.900 forfait** | idem |
+| Open workshop (1 dag, max. 12 pers.) | **€ 395–€ 450/deelnemer** | Uit `02-aanbod-opleidingen.md` §2.1; scenarioplanning gebruikt **€ 420** als middenpunt. Min. 8 deelnemers = € 3.360 drempel bij € 420/p.p. |
+| Verdiepingsmodule (halve dag, open, max. 12 pers.) | **€ 295–€ 345/deelnemer** | Uit `02-aanbod-opleidingen.md` §4.4; scenarioplanning gebruikt **€ 320** als middenpunt. |
+| In-company workshop (1 dag, max. 15 pers.) | **€ 1.800–€ 2.400 forfait** | Uit `02-aanbod-opleidingen.md` §2.1; scenarioplanning gebruikt **€ 2.000** als middenpunt. |
+| In-company workshop (halve dag, max. 15 pers.) | **€ 900–€ 1.200 forfait** | Schatting (helft dagprijs); scenarioplanning gebruikt **€ 1.050** als middenpunt. |
+| Abonnement doorlopend (online, per bedrijf/maand) | **€ 149–€ 199/maand** | Uit `02-aanbod-opleidingen.md` §2.1; pas actief in jaar 2+. |
 | Opleiding inbegrepen in sprint | **Inbegrepen** | Geen extra factuur; versterkt positionering |
 
-**Subsidie-effect (na DV.O — zie §1.4):** in-company workshop € 1.200 → klant betaalt
-netto € 840 (klein) of € 960 (middel). Dit is een sterk verkoopargument zodra de
-registratie rond is.
+**Noot subsidieaannames:** de scenario-omzet voor opleidingen wordt berekend **zonder**
+subsidie-effect (DV.O uitgesteld — zie §1.4). Klanten betalen de volle prijs. Zodra
+de registratie rond is, verandert de netto klantprijs maar niet de Auxilia-omzet.
+
+**Marktconformiteitscheck:**
+- AI Learning open sessie (1 dag): € 425/deelnemer — Auxilia zit met € 395–450 goed in lijn.
+- Syntra AI-agents (6u, 2 sessies): € 395/deelnemer — Auxilia ligt gelijk.
+- Voka "basics" (halve dag): € 255–385 — Auxilia is licht hoger maar biedt een volle dag.
 
 ---
 
@@ -201,7 +244,12 @@ registratie rond is.
 | Vervoer (klantenbezoeken Kempen/Vlaanderen) | **€ 0,44/km** (fiscaal max.) × ~2.000 km/jaar = **€ 880/jaar** | FOD Financiën km-vergoeding 2026; aanname 2 bezoeken/maand × 80 km gem. |
 | Opleidingsmateriaal (handouts, presentaties) | **€ 200/jaar** | Drukwerk, licenties educatieve tools |
 | Domein, hosting, website | **€ 100/jaar** | Statische one-pager (index.html in repo) |
-| **Totaal vaste kosten/jaar** | **± € 4.230** | Planningsbedrag (middenmoot aannames) |
+| DV.O-auditkosten | **€ 0 (near-term)** | Beslissing 2026-06-12: registratie uitgesteld. Audit kost € 800–€ 2.500 (Bureau Veritas, DNV, BQA) — heroverwegen zodra opleidingen aantoonbaar verkopen. Niet in de near-term kostenstructuur opgenomen. |
+| **Totaal vaste kosten/jaar** | **± € 4.230** | Planningsbedrag (middenmoot aannames; exclusief DV.O-audit) |
+
+> **T.o.v. rev. 1:** de DV.O-auditpost (€ 800–€ 2.500) is verwijderd uit de actieve
+> kostentabel op basis van de beslissing van 2026-06-12. Ze blijft vermeld als toekomstige
+> investering wanneer de registratie heropgestart wordt.
 
 ### 3.2 Variabele kosten per sprint
 
@@ -211,6 +259,14 @@ registratie rond is.
 | Reiskosten (gem. 3 bezoeken × 80 km) | € 105 |
 | Subcontractor / freelancehulp (indien nodig) | € 0 (aanname: eigen team) |
 | **Totaal variabel/sprint** | **± € 175** |
+
+### 3.3 Variabele kosten per AI-analyse
+
+| Post | Bedrag per analyse |
+|---|---|
+| Reiskosten (1 bezoek × 80 km) | € 35 |
+| Rapportage-tools, AI-gebruik voor analyse | € 15 |
+| **Totaal variabel/analyse** | **± € 50** |
 
 ---
 
@@ -223,6 +279,9 @@ registratie rond is.
 | Gemiddelde sprintprijs | € 4.750 (Sprint Standaard) |
 | Variabele kosten per sprint | € 175 |
 | Brutomarge per sprint | **€ 4.575** |
+| Gemiddelde prijs AI-analyse | € 750 |
+| Variabele kosten per analyse | € 50 |
+| Brutomarge per AI-analyse | **€ 700** |
 | Vaste kosten per jaar | € 4.230 |
 | Effectief belastingtarief bijberoepinkomen | 45% (marginaal) + 20,5% sociale bijdragen = ~55% gecombineerd |
 
@@ -244,7 +303,8 @@ conservatieve benadering; werkelijke netto kan hoger zijn via meer kostenaftrek.
 > **Aanname B revisited:** om € 1.500/maand netto = € 18.000/jaar netto te bereiken,
 > heb je bij de *verwachte* prijzen en 45% belastingdruk een **bruto-inkomen van ± € 40.000**
 > nodig — d.w.z. kosten (€ 4.230) + sociale bijdragen (~€ 7.380) + belasting (~€ 8.370)
-> + netto (€ 18.000) → **± 8–9 sprints/jaar (verwacht scenario).**
+> + netto (€ 18.000) → **± 8–9 sprints/jaar (verwacht scenario).** De AI-analyses helpen
+> dit gat dichten door cashflow te genereren in de wachtperiode tussen sprints.
 
 ---
 
@@ -252,67 +312,96 @@ conservatieve benadering; werkelijke netto kan hoger zijn via meer kostenaftrek.
 
 ### Scenario-aannames
 
+> **Correctie T-3 (rev. 2):** de vorige parametertabel vermeldde **€ 52.600** als verwacht
+> scenario, terwijl de detailberekening in §5.2 uitkwam op **€ 48.200**. De detailberekening
+> was juist (8 × € 4.750 + 6 × € 1.200 + 2 × € 1.500 = € 38.000 + € 7.200 + € 3.000 =
+> € 48.200). De parametertabel bevatte een rekenfout. Beide zijn nu gecorrigeerd naar het
+> herziene verwacht scenario — zie de nieuwe tabel.
+>
+> **Correctie T-2 (rev. 2):** de open workshop was in rev. 1 geprijsd op € 250/deelnemer
+> (halve dag). Hoofdstuk 02 specificeert een volle dagcursus aan € 395–€ 450 p.p. De
+> scenario's worden aangepast naar **€ 420/deelnemer** (middenpunt dagformat, 8 deelnemers
+> gemiddeld = € 3.360 per workshop). De vorige prijs van € 250/halve dag is als format
+> niet weerhouden in het definitieve aanbod.
+
 | Parameter | Voorzichtig | Verwacht | Optimistisch |
 |---|---|---|---|
+| AI-analyses/jaar | **4** | **10** | **16** |
+| Gem. prijs AI-analyse | € 750 | € 750 | € 750 |
+| Omzet AI-analyses | € 3.000 | € 7.500 | € 12.000 |
 | Sprints/kwartaal | 1 | 2 | 3 |
 | Sprints/jaar | **4** | **8** | **12** |
 | Gem. sprintprijs | € 3.500 | € 4.750 | € 5.500 |
-| Opleidingen/jaar (in-company, forfait €1.200) | 2 | 6 | 10 |
-| Open workshops/jaar (gem. € 1.500 = 6 pers. × €250) | 0 | 2 | 4 |
-| Totale omzet/jaar | **€ 16.400** | **€ 52.600** | **€ 88.000** |
-| Btw-regime | Vrijgesteld | **Btw-plichtig vanaf € 25.000** | Btw-plichtig |
+| Omzet sprints | € 14.000 | € 38.000 | € 66.000 |
+| Analyses die leiden tot sprint (conversieratio 40%) | 2 van 4 | 4 van 10 | 6 van 16 |
+| In-company opleidingen/jaar (forfait € 2.000/dag) | 1 | 4 | 8 |
+| Open workshops/jaar (gem. 8 pers. × € 420 = € 3.360) | 0 | 2 | 4 |
+| Omzet opleidingen | € 2.000 | **€ 14.720** | **€ 29.440** |
+| **Totale omzet/jaar** | **€ 19.000** | **€ 60.220** | **€ 107.440** |
+| Btw-regime | Vrijgesteld | **Btw-plichtig (> €25.000)** | Btw-plichtig |
 
-> *Voorzichtig*: net boven btw-drempel maar dicht genoeg voor vrijstelling bij start.
-> *Verwacht + optimistisch*: btw-plicht treedt in; prijzen zijn sowieso excl. btw.
+> **Toelichting verwacht scenario:** 10 analyses × € 750 = € 7.500; 8 sprints × € 4.750 =
+> € 38.000; 4 in-company opleidingen × € 2.000 = € 8.000; 2 open workshops × 8 pers. ×
+> € 420 = € 6.720. Totaal: **€ 60.220**. Dit ligt hoger dan de rev. 1 verwachting
+> (€ 48.200) doordat de AI-analyse als aparte revenustream is toegevoegd én de
+> opleidingsprijzen zijn gecorrigeerd naar de hogere dagformat-prijs.
+>
+> **Let op:** de verwacht-omzet van € 60.220 is jaar 2 of jaar 3 — niet het eerste jaar.
+> In jaar 1 is een realistischer doel het voorzichtig scenario of het laagste
+> verwacht-niveau (6–8 sprints, 6–8 analyses). Zie §8 voor cashflowtiming.
 
 ### 5.1 Scenario Voorzichtig — jaar 1
 
 | Post | Bedrag |
 |---|---|
-| Omzet (4 sprints × €3.500 + 2 opl. × €1.200) | **€ 16.400** |
+| Omzet (4 analyses × €750 + 4 sprints × €3.500 + 1 in-company opl. × €2.000) | **€ 19.000** |
 | − Vaste kosten | − € 4.230 |
-| − Variabele kosten (4 × €175) | − € 700 |
-| **= Netto belastbaar inkomen** | **€ 11.470** |
-| − Sociale bijdragen (20,5% × €11.470) | − € 2.351 |
-| **= Fiscaal inkomen** | **€ 9.119** |
-| − Personenbelasting (45%, na aftrek soc.bijdr. als kost) | − € 3.408 |
-| **= Netto beschikbaar** | **≈ € 5.711/jaar** ≈ **€ 476/maand** |
+| − Variabele kosten (4 sprints × €175 + 4 analyses × €50) | − € 900 |
+| **= Netto belastbaar inkomen** | **€ 13.870** |
+| − Sociale bijdragen (20,5% × €13.870) | − € 2.843 |
+| **= Fiscaal inkomen** | **€ 11.027** |
+| − Personenbelasting (45%, na aftrek soc.bijdr. als kost) | − € 4.122 |
+| **= Netto beschikbaar** | **≈ € 6.905/jaar** ≈ **€ 575/maand** |
 | Btw-regime | Vrijgesteld (< €25.000) |
 | Sprints/kwartaal | 1 |
 
-### 5.2 Scenario Verwacht — jaar 2
+> Verbetering t.o.v. rev. 1 (€ 476/maand): de AI-analyses dragen € 3.000 extra omzet bij
+> met lage variabele kosten, wat het nettoresultaat verbetert van € 476 naar € 575/maand.
+
+### 5.2 Scenario Verwacht — jaar 2–3
 
 | Post | Bedrag |
 |---|---|
-| Omzet (8 sprints × €4.750 + 6 opl. × €1.200 + 2 open workshops × €1.500) | **€ 48.200** |
+| Omzet (10 analyses × €750 + 8 sprints × €4.750 + 4 in-company × €2.000 + 2 open workshops × 8 pers. × €420) | **€ 60.220** |
 | − Vaste kosten (inclusief btw-aangifte boekhouder ↑ €250) | − € 4.480 |
-| − Variabele kosten (8 × €175) | − € 1.400 |
-| **= Netto belastbaar inkomen** | **€ 42.320** |
-| − Sociale bijdragen (20,5% × €42.320) | − € 8.676 |
-| **= Fiscaal inkomen** | **€ 33.644** |
-| − Personenbelasting (25%/40%/45% progressief, excl. belastingvrije som) | − € 11.800 (schatting) |
-| **= Netto beschikbaar** | **≈ € 21.844/jaar** ≈ **€ 1.820/maand** |
+| − Variabele kosten (8 sprints × €175 + 10 analyses × €50) | − € 1.900 |
+| **= Netto belastbaar inkomen** | **€ 53.840** |
+| − Sociale bijdragen (20,5% × €53.840) | − € 11.037 |
+| **= Fiscaal inkomen** | **€ 42.803** |
+| − Personenbelasting (25%/40%/45% progressief, excl. belastingvrije som) | − € 15.200 (schatting) |
+| **= Netto beschikbaar** | **≈ € 27.603/jaar** ≈ **€ 2.300/maand** |
 | Btw-regime | Btw-plichtig (> €25.000) — 21% bovenop factuurprijs |
 
-> Doel B (€ 1.500 netto/maand) **bereikt** in verwacht scenario jaar 2.
+> Doel A (€ 1.500 netto/maand) **ruim bereikt** in verwacht scenario. Doel B (€ 4.000/mnd
+> voltijds) nog niet bereikt in bijberoep; dat vereist het optimistisch scenario of de
+> overstap naar hoofdberoep.
 
-### 5.3 Scenario Optimistisch — jaar 3
+### 5.3 Scenario Optimistisch — jaar 3–4
 
 | Post | Bedrag |
 |---|---|
-| Omzet (12 sprints × €5.500 + 10 opl. × €1.200 + 4 open workshops × €1.500) | **€ 84.000** |
+| Omzet (16 analyses × €750 + 12 sprints × €5.500 + 8 in-company × €2.000 + 4 open workshops × 8 pers. × €420) | **€ 107.440** |
 | − Vaste kosten | − € 4.480 |
-| − Variabele kosten (12 × €175) | − € 2.100 |
-| **= Netto belastbaar inkomen** | **€ 77.420** |
-| − Sociale bijdragen (20,5% t/m €75.024 + 14,16% op rest) | − € 15.745 |
-| **= Fiscaal inkomen** | **€ 61.675** |
-| − Personenbelasting (progressief + gemeentebelasting) | − € 25.100 (schatting) |
-| **= Netto beschikbaar** | **≈ € 36.575/jaar** ≈ **€ 3.048/maand** |
+| − Variabele kosten (12 sprints × €175 + 16 analyses × €50) | − € 2.900 |
+| **= Netto belastbaar inkomen** | **€ 100.060** |
+| − Sociale bijdragen (20,5% t/m €75.024 + 14,16% op rest) | − € 18.949 |
+| **= Fiscaal inkomen** | **€ 81.111** |
+| − Personenbelasting (progressief + gemeentebelasting) | − € 33.300 (schatting) |
+| **= Netto beschikbaar** | **≈ € 47.811/jaar** ≈ **€ 3.984/maand** |
 | Btw-regime | Btw-plichtig |
 
-> Bij het optimistisch scenario nadert men de drempel voor voltijds (aanname B: €4.000/maand
-> netto). Tweekoppig team: per persoon ~€ 1.524/maand — nog net niet het voltijds-signaal
-> als inkomen gedeeld wordt.
+> Doel B (€ 4.000/mnd voltijds) vrijwel bereikt. Tweekoppig team: per persoon ~€ 1.992/maand
+> als inkomen gedeeld wordt — dit is het voltijds-signaal als beide partners full-time gaan.
 
 ---
 
@@ -375,25 +464,29 @@ bescherming van het hoofdberoep — voltijds overstappen is dus ook een
 
 ## 7. Kmo-portefeuille — impact op commerciële strategie
 
-### 7.1 De sprint is **niet** subsidieerbaar (nu noch na DV.O)
+### 7.1 De sprint en de AI-analyse zijn **niet** subsidieerbaar
 
 De kmo-portefeuille dekt **opleiding**, niet implementatie/advies (behalve cybersecurity
-advies). Een sprint is primair een implementatietraject. Enkel als de sprint een
-aantoonbaar opleidingscomponent bevat die los gefactureerd wordt, kan dat deelluik
-subsidieerbaar zijn.
+advies). Een sprint is primair een implementatietraject. Een AI-analyse is een
+adviestraject. Geen van beide zijn subsidieerbaar, ook niet na DV.O-registratie.
 
-**Aanbeveling:** splits de factuur van een Sprint Standaard (€ 4.750) in:
+### 7.2 Opleidingen zijn subsidieerbaar — na DV.O
+
+Enkel het opleidingsluik (dagcursus, in-company workshops, verdiepingsmodules) is
+subsidieerbaar. Zolang de DV.O-registratie uitgesteld is, geldt dit niet.
+
+**Aanbeveling wanneer DV.O wél rond is:** splits de factuur van een Sprint Standaard
+(€ 4.750) in:
 - Implementatie + begeleiding: € 3.500 (niet subsidieerbaar)
-- Teamopleiding: € 1.250 (subsidieerbaar na DV.O; kleine onderneming betaalt netto € 875)
+- Teamopleiding: € 1.250 (subsidieerbaar; kleine onderneming betaalt netto € 875)
 
 Zo daalt de netto klantprijs voor het opleidingsluik van € 1.250 naar € 875 — een
 **verkoopargument van € 375 subsidie zonder de implementatieprijs te verlagen.**
 
-### 7.2 Maximaal subsidiebedrag
+### 7.3 Maximaal subsidiebedrag
 
-Klant kan max. € 7.500 subsidie per jaar ontvangen. Bij een catalogusopleiding van
-€ 2.500/dag (in-company, 2 sessies) recupereert de kleine klant € 1.500 — duidelijk
-communiceerbaar.
+Klant kan max. € 7.500 subsidie per jaar ontvangen. Bij een in-company dagcursus van
+€ 2.000 recupereert de kleine klant € 600 (30% subsidie) — duidelijk communiceerbaar.
 
 > Herhaling: dit alles is pas geldig **na afronding DV.O-registratie**. Zolang die er
 > niet is, spreekt Auxilia altijd in de toekomende tijd.
@@ -403,6 +496,17 @@ communiceerbaar.
 ## 8. Cashflowplanning jaar 1
 
 ### 8.1 Betalingsgedrag kmo's en aanbevolen betalingsstructuur
+
+**AI-analyse:**
+
+| Fase | Aanpak |
+|---|---|
+| Offerte getekend | **100% vooraf** of 50% bij start / 50% bij rapport |
+| Betalingstermijn | Max. **15 dagen** (korte opdracht) |
+
+Cashflowvoordeel: de analyse genereert direct inkomsten, vóór een sprint van start gaat.
+
+**Sprint:**
 
 | Fase | Aanpak |
 |---|---|
@@ -418,43 +522,78 @@ communiceerbaar.
 
 Dit beschermt tegen wanbetaling en financiert de lopende kosten.
 
-### 8.2 Kwartaalcashflow jaar 1 (verwacht scenario: 2 sprints/kwartaal)
+### 8.2 Rol van de AI-analyse als cashflowbuffer
 
-| Kwartaal | Omzet (incasso) | Vaste kosten | Sociale bijdragen (voorlopig) | Netto cashflow |
-|---|---|---|---|---|
-| Q1 (jan–mrt) | € 9.500 | € 1.057 | € 409 | **€ 8.034** |
-| Q2 (apr–jun) | € 9.500 | € 1.057 | € 409 | **€ 8.034** |
-| Q3 (jul–sep) | € 9.500 | € 1.057 | € 409 | **€ 8.034** |
-| Q4 (okt–dec) | € 9.500 | € 1.057 | € 409 | **€ 8.034** |
-| **Jaar 1 totaal** | **€ 38.000** | **€ 4.230** | **€ 1.636** | **€ 32.134** |
-| **Belastingprovision (45%)** | | | | **− € 14.460** |
-| **Netto beschikbaar** | | | | **≈ € 17.674** ≈ **€ 1.473/maand** |
+De AI-analyse lost een structureel cashflowprobleem op:
+- Een sprint duurt 4–8 weken; de eerste betaling in een kwartaal kan dus laat vallen.
+- Analyses kosten ~5,5 uur per stuk en worden snel afgerond (1–2 weken).
+- In een kwartaal zonder sprint-start kan Auxilia 2–3 analyses doen: **€ 1.500 – € 2.250
+  extra cashflow** tegen lage inspanning.
+- De analyses kwantificeren zichzelf deels: uit 10 analyses in het verwacht scenario
+  leiden er 4 tot een sprint (conversieratio 40%) — dit is de **bottom-of-funnel
+  voeding** die het sprintvolume op peil houdt.
+
+### 8.3 Kwartaalcashflow jaar 1 (verwacht scenario: jaar 1 transitie)
+
+Aanname jaar 1 transitie: 2 sprints/kwartaal + 2–3 analyses/kwartaal (oplopend volume).
+
+| Kwartaal | Sprints | Analyses | Omzet (incasso) | Vaste kosten | Sociale bijdragen (voorlopig) | Netto cashflow |
+|---|---|---|---|---|---|---|
+| Q1 | 2 × € 4.750 | 2 × € 750 | € 11.000 | € 1.057 | € 409 | **€ 9.534** |
+| Q2 | 2 × € 4.750 | 3 × € 750 | € 11.750 | € 1.057 | € 409 | **€ 10.284** |
+| Q3 | 2 × € 4.750 | 3 × € 750 | € 11.750 | € 1.057 | € 409 | **€ 10.284** |
+| Q4 | 2 × € 4.750 | 2 × € 750 | € 11.000 | € 1.057 | € 409 | **€ 9.534** |
+| **Jaar 1 totaal** | 8 sprints | 10 analyses | **€ 45.500** | **€ 4.230** | **€ 1.636** | **€ 39.634** |
+| **Belastingprovision (45%)** | | | | | | **− € 15.856** |
+| **Netto beschikbaar** | | | | | | **≈ € 23.778** ≈ **€ 1.982/maand** |
 
 > **Let op:** btw-herberekening sociale bijdragen 2 jaar later. Plan een aparte buffer
 > van **€ 200 – € 300/maand** voor de definitieve bijdrageafrekening.
 >
-> **Btw:** bij het verwachte scenario passeert de omzet de € 25.000-drempel in Q2/Q3
-> jaar 1. Zodra die drempel gepasseerd is: btw aanrekenen op nieuwe facturen, kwartaal-
-> aangifte indienen. Gesprek met boekhouder plannen in Q1 over optimale timing.
+> **Btw:** bij het jaar-1 transitiescenario passeert de omzet (€ 45.500) ruimschoots de
+> € 25.000-drempel. Zodra die drempel gepasseerd is: btw aanrekenen op nieuwe facturen,
+> kwartaalaangifte indienen. Gesprek met boekhouder plannen in Q1 over optimale timing.
 
 ---
 
-## 9. Samenvatting kerncijfers
+## 9. Gevoeligheidsanalyse: kritische aannames
+
+De scenario's draaien op een beperkt aantal aannames die de uitkomst sterk bepalen.
+Hieronder staan de drie gevoeligste, met wat er verandert als ze meevallen of tegenvallen.
+
+| Aanname | Planwaarde | Pessimistisch | Optimistisch | Impact op netto/mnd |
+|---|---|---|---|---|
+| **G: conversieratio analyse → sprint** | 40% | 20% (1 op 5) | 60% (3 op 5) | Bij 20%: –€ 6.000 omzet verwacht scenario; bij 60%: +€ 6.000 |
+| **F: prijs AI-analyse** | € 750 | € 500 (lanceringsprijs) | € 950 (meer diepgang) | Verwacht scenario: ±€ 2.500/jaar verschil bij 10 analyses |
+| **C: sprintvolume** | 8 sprints/jaar (verwacht) | 5 sprints/jaar | 10 sprints/jaar | ±€ 14.250 omzet per sprint verschil bij € 4.750 gem. |
+| **Opleidingsvraag** | 4 in-company/jaar (verwacht) | 1 (moeilijk te verkopen zonder DV.O-argument) | 6 | ±€ 10.000 omzet verschil |
+
+**Meest risicovolle aanname:** de conversieratio analyse → sprint (aanname G, 40%). Als
+dit niet uitkomt, genereert de AI-analyse voornamelijk cashflow zonder het sprint-volume
+te voeden. Dan zijn de analyses waardevoller als zelfstandig product dan als funnel.
+Cedric moet dit in het eerste kwartaal meten en eventueel de sprint-propositie aanscherpen.
+
+---
+
+## 10. Samenvatting kerncijfers
 
 | Indicator | Voorzichtig | Verwacht | Optimistisch |
 |---|---|---|---|
-| Jaaromzet | € 16.400 | € 48.200 | € 84.000 |
-| Netto beschikbaar | ≈ € 5.700 | ≈ € 21.800 | ≈ € 36.600 |
-| Netto/maand | ≈ € 476 | ≈ € 1.820 | ≈ € 3.048 |
+| Jaaromzet | € 19.000 | € 60.220 | € 107.440 |
+| Netto beschikbaar | ≈ € 6.905 | ≈ € 27.603 | ≈ € 47.811 |
+| Netto/maand | ≈ € 575 | ≈ € 2.300 | ≈ € 3.984 |
 | Sprints/jaar | 4 | 8 | 12 |
+| AI-analyses/jaar | 4 | 10 | 16 |
+| In-company opleidingen/jaar | 1 | 4 | 8 |
+| Open workshops/jaar | 0 | 2 | 4 |
 | Btw-regime | Vrijgesteld | Plichtig (> €25.000) | Plichtig |
 | Break-even (kosten) | 2 sprints | 1–2 sprints | 1 sprint |
-| Doel A bereikt (€1.500/mnd)? | **Nee** | **Ja (€ 1.820)** | Ruim ja |
-| Doel B bereikt (€4.000/mnd voltijds)? | Nee | Nee (€ 1.820) | **Nadert (€ 3.048)** |
+| Doel A bereikt (€1.500/mnd)? | **Nee** | **Ja (€ 2.300)** | Ruim ja |
+| Doel B bereikt (€4.000/mnd voltijds)? | Nee | Nee (€ 2.300) | **Vrijwel (€ 3.984)** |
 
 ---
 
-## 10. Bronnenlijst
+## 11. Bronnenlijst
 
 | Bron | URL | Geraadpleegd |
 |---|---|---|
@@ -470,8 +609,10 @@ Dit beschermt tegen wanbetaling en financiert de lopende kosten.
 | Accountable — boekhouder kosten | https://www.accountable.eu/nl-be/blog/hoeveel-kost-een-boekhouder/ | 2026-06-12 |
 | hellosafe.be — beroepsaansprakelijkheid | https://hellosafe.be/nl/beroepsaansprakelijkheidsverzekering/beroepsaansprakelijkheidsverzekering-zelfstandigen | 2026-06-12 |
 | Searchlab — AI implementatie kosten | https://searchlab.nl/kosten/wat-kost-ai-implementatie | 2026-06-12 |
-| Expert Academy — prijs studiedag | https://www.expertacademy.be/nl/faq/113/hoeveel-kost-een-studiedag-opleiding-of-training | 2026-06-12 |
-| VR op Locatie — AI workshop prijs | https://vroplocatie.nl/kennisbank/wat-kost-een-gemiddelde-ai-workshop-per-persoon/ | 2026-06-12 |
+| AI voor KMO — AI-scan prijs | https://aivoorkmo.be/ | 2026-06-12 |
+| AI Learning — open sessie prijs | https://ailearning.be/ | 2026-06-12 |
+| Syntra AB — AI-agents prijs | https://www.syntra-ab.be/opleidingen/ai-agents-bouw-je-eigen-digitale-collegas-zonder-een-regel-code | 2026-06-12 |
+| Algida — freelance tarieven 2025 | https://algida.be/freelance-tarieven-2025/ | 2026-06-12 |
 | Elivado — Claude AI kosten | https://elivado.nl/claude-ai-kosten/ | 2026-06-12 |
 | Acerta — verzekering gewaarborgd inkomen | https://www.acerta.be/nl/inspiratie/verzekering-gewaarborgd-inkomen-prijs | 2026-06-12 |
 | Practicali — kleine ondernemingsregeling omzetmelding | https://www.practicali.be/blog/kleine-ondernemingsregeling-nieuwe-omzetmelding-via-de-klantenlisting-uiterlijk-op-31-maart-2026 | 2026-06-12 |
