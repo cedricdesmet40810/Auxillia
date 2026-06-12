@@ -49,8 +49,8 @@ wat het meest verouderd of onvolledig is in je hoofdstuk:
    `business-plan/01-markt.md` (lees dat hoofdstuk als het bestaat) en de geleverde
    waarde? Geef een range met onderbouwing.
 2. Welke prijszetting past bij de opleidingsformats uit
-   `business-plan/02-aanbod-opleidingen.md`: per deelnemer (open workshop), forfait
-   (in-company), inbegrepen in de sprint?
+   `business-plan/02-aanbod-opleidingen.md` (lees dat hoofdstuk als het bestaat): per
+   deelnemer (open workshop), forfait (in-company), inbegrepen in de sprint?
 3. Wat is de kostenstructuur in bijberoep: sociale bijdragen bijberoep,
    verzekeringen (BA uitbating, beroepsaansprakelijkheid), boekhouder, software en
    AI-tooling, vervoer, opleidingsmateriaal?
@@ -61,7 +61,8 @@ wat het meest verouderd of onvolledig is in je hoofdstuk:
    sprints/opleidingen per kwartaal vergt elk scenario?
 6. Bij welke aantoonbare omzet en pipeline is de overstap naar hoofdberoep verantwoord,
    en wat verandert er dan (sociale bijdragen, verzekering gewaarborgd inkomen)?
-7. Hoe beïnvloedt de kmo-portefeuille (30%/20% op het opleidingsluik) de effectieve prijs
+7. Hoe beïnvloedt de kmo-portefeuille (30%/20% op het opleidingsluik per juni 2026 —
+   verifieer de actuele percentages bij VLAIO) de effectieve prijs
    voor de klant, en hoe gebruik je dat in de prijscommunicatie zonder te overdrijven?
    Let op: de DV.O-registratie is er nog niet (zie `business-plan/00-context.md`) —
    subsidiabiliteit is voorwaardelijk tot die rond is.
