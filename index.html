@@ -43,7 +43,7 @@
         { "@type": "Person", "name": "Jonas Mertens" },
         { "@type": "Person", "name": "Lien Vandereyt" }
       ],
-      "knowsAbout": ["AI-automatisering", "AI-implementatie", "AI-opleiding", "procesautomatisering", "kmo-portefeuille"]
+      "knowsAbout": ["AI-automatisering", "AI-implementatie", "AI-opleiding", "procesautomatisering"]
     },
     {
       "@type": "FAQPage",
@@ -57,7 +57,7 @@
         {
           "@type": "Question",
           "name": "Wat kost een traject?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Elke sprint heeft een vaste prijs die we vooraf afspreken — geen uurtje-factuurtje en geen verrassingen achteraf. Het bedrag hangt af van het proces dat we automatiseren. Na een vrijblijvende kennismaking krijg je een voorstel met één vast bedrag. Het opleidingsluik komt vaak in aanmerking voor de kmo-portefeuille." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Elke sprint heeft een vaste prijs die we vooraf afspreken — geen uurtje-factuurtje en geen verrassingen achteraf. Het bedrag hangt af van het proces dat we automatiseren. Na een vrijblijvende kennismaking krijg je een voorstel met één vast bedrag. Afhankelijk van je opleiding en bedrijfsgrootte zijn er soms subsidiekanalen voor AI-opleiding — we bekijken samen wat er in jouw situatie mogelijk is." }
         },
         {
           "@type": "Question",
@@ -362,15 +362,6 @@
   .guarantee .sub{margin:34px auto 0;max-width:52ch;color:rgba(250,247,242,.74);font-size:var(--t-lead);}
 
   /* ---------- Subsidy ---------- */
-  .subsidy{display:grid;grid-template-columns:1.3fr 1fr;gap:52px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:clamp(40px,5vw,64px);}
-  .subsidy .badge{display:inline-flex;align-items:center;gap:9px;font-size:.82rem;font-weight:600;letter-spacing:.04em;color:var(--teal);background:rgba(15,92,90,.07);padding:8px 15px;border-radius:999px;margin-bottom:24px;}
-  .subsidy .badge svg{width:15px;height:15px;}
-  .subsidy h2{font-size:clamp(1.6rem,2.7vw,2.25rem);margin-bottom:18px;}
-  .subsidy p{color:var(--ink-soft);font-size:1.05rem;line-height:1.65;}
-  .subsidy .big{text-align:center;border-left:1px solid var(--line);padding-left:52px;}
-  .subsidy .big .pct{font-family:"Spectral",serif;font-size:clamp(3.4rem,7vw,5rem);color:var(--teal);line-height:1;letter-spacing:-0.03em;}
-  .subsidy .big .pct span{color:var(--clay);}
-  .subsidy .big small{display:block;color:var(--ink-soft);margin-top:10px;font-size:.95rem;}
 
   /* ---------- Versterking-loop (over ons) ---------- */
   .vloop{display:flex;align-items:center;justify-content:center;margin:0 auto clamp(52px,6vw,80px);--T:5.2s;}
@@ -475,8 +466,6 @@
     .step .wk,.step h3,.step p{grid-column:2;}
     .step .wk{margin-top:4px;}
     .step:last-child{padding-bottom:0;}
-    .subsidy{grid-template-columns:1fr;gap:34px;}
-    .subsidy .big{border-left:none;border-top:1px solid var(--line);padding-left:0;padding-top:34px;}
     .about-grid{grid-template-columns:1fr;}
     .faq-grid{grid-template-columns:1fr;gap:34px;}
     .foot-grid{grid-template-columns:1fr 1fr;}
@@ -713,23 +702,6 @@
   </div>
 </section>
 
-<!-- ============ SUBSIDY ============ -->
-<section class="band">
-  <div class="wrap">
-    <div class="subsidy reveal">
-      <div>
-        <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M5 9h9a3 3 0 010 6H6m11-10a3 3 0 00-3-3" stroke-linecap="round" stroke-linejoin="round"/></svg>kmo-portefeuille</span>
-        <h2>Het opleidingsluik vaak deels subsidieerbaar</h2>
-        <p>De opleiding binnen onze trajecten komt vaak in aanmerking voor de kmo-portefeuille. Daarmee recupereer je als kleine onderneming tot 30% van dat opleidingsbedrag via de Vlaamse overheid (middelgrote ondernemingen: 20%). We helpen je nagaan of je in aanmerking komt en loodsen je door de aanvraag.</p>
-      </div>
-      <div class="big">
-        <div class="pct">20–30<span>%</span></div>
-        <small>terug op het opleidingsluik via de kmo-portefeuille</small>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- ============ ABOUT ============ -->
 <section class="band sand-deep" id="over">
   <div class="wrap about-grid">
@@ -795,7 +767,7 @@
       </details>
       <details class="faq">
         <summary>Wat kost een traject?<span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></summary>
-        <div class="ans">Elke sprint heeft een vaste prijs die we vooraf afspreken — geen uurtje-factuurtje en geen verrassingen achteraf. Het bedrag hangt af van het proces dat we automatiseren. Na een vrijblijvende kennismaking krijg je een voorstel met één vast bedrag. Het opleidingsluik komt vaak in aanmerking voor de kmo-portefeuille.</div>
+        <div class="ans">Elke sprint heeft een vaste prijs die we vooraf afspreken — geen uurtje-factuurtje en geen verrassingen achteraf. Het bedrag hangt af van het proces dat we automatiseren. Na een vrijblijvende kennismaking krijg je een voorstel met één vast bedrag. Afhankelijk van je opleiding en bedrijfsgrootte zijn er soms subsidiekanalen voor AI-opleiding — we bekijken samen wat er in jouw situatie mogelijk is.</div>
       </details>
       <details class="faq">
         <summary>Hoeveel tijd kost dit ons team?<span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg></span></summary>

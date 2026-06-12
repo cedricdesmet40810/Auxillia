@@ -44,7 +44,7 @@ en surf naar `http://localhost:8000`.
 - [x] Privacybeleid-pagina toegevoegd (`privacy.html`) en gelinkt in de footer (GDPR).
 - [ ] `robots.txt` en `sitemap.xml` toevoegen zodra het domein vastligt.
 - [ ] LinkedIn-bedrijfspagina aanmaken en weer linken in de footer (link voorlopig verwijderd).
-- [ ] Registreren als kmo-portefeuille dienstverlener (DV.O-nummer via VLAIO-audit) — daarna de subsidiesectie weer aanscherpen. Let op: sinds 1 feb 2026 is enkel **opleiding** subsidieerbaar, geen advies.
+- [ ] ~~Registreren als kmo-portefeuille dienstverlener~~ **Uitgesteld (beslissing 2026-06-12)** — draaiboek staat klaar in `business-plan/05-subsidies-compliance.md` §2; heroverwegen zodra losse opleidingen aantoonbaar verkopen. De subsidiesectie is van de site verwijderd; de FAQ bevat nu een neutrale formulering. Let op: sinds 1 feb 2026 is enkel **opleiding** subsidieerbaar, geen advies.
 - [ ] `mailto:` vervangen door een boekingstool (Calendly/Cal.com) + kort contactformulier.
 - [ ] Overweeg de promofilm als echte `.mp4` te exporteren voor productie — laadt lichter dan de live-animatie (React + Babel in een iframe).
 
