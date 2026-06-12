@@ -43,17 +43,21 @@ wat het meest verouderd of onvolledig is in je hoofdstuk:
    uit met volgorde en tijdsbudget.
 2. Welke partnerships leveren kmo-leads op: boekhouders en accountants, Voka Kempen,
    Unizo, lokale ondernemersverenigingen, gemeentelijke ondernemersloketten? Breng
-   concrete organisaties met contactmogelijkheden in kaart.
+   concrete organisaties met contactmogelijkheden in kaart (lees `business-plan/01-markt.md`
+   als het bestaat voor al gevonden regiocijfers en organisaties).
 3. Welke lokale events, beurzen en netwerkmomenten in de Kempen en Antwerpen passen bij
    Auxilia als bezoeker, exposant of gastspreker?
 4. Hoe ziet een vol te houden LinkedIn-strategie eruit voor een bijberoep: frequentie,
    contentpijlers (cases, misverstanden over AI, mini-tips), persoonlijk profiel vs.
    bedrijfspagina?
 5. Hoe ziet de funnel eruit van eerste contact → vrijblijvende kennismaking → sprint →
-   doorlopende opleiding, en waar haken prospects vermoedelijk af?
+   doorlopende opleiding, en waar haken prospects vermoedelijk af? (Let op: sprintprijs en
+   beschikbare uren zijn nog open vragen in `business-plan/00-context.md` — benoem
+   aannames daarover expliciet.)
 6. Welk referral-mechanisme past bij kmo's (doorverwijspremie, gratis opfrissessie,
    partnerkorting) zonder de nuchtere positionering te schaden?
-7. Hoe zet je de website en de promofilm in deze repo gericht in (call-to-action,
-   boekingstool, SEO voor "AI opleiding kmo" e.d.)? Stem af op de checklist in `README.md`.
+7. Hoe zet je de website en de promofilm gericht in (call-to-action, boekingstool, SEO
+   voor "AI opleiding kmo" e.d.)? De sitebestanden staan in deze repo: `index.html` en
+   `promo.html` in de root. Stem af op de checklist in `README.md`.
 8. Welke KPI's volstaan om de pipeline te sturen: aantal kennismakingen per maand,
    conversie naar sprint, omzet per kanaal?
