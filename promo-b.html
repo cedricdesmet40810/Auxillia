@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Auxilia — Promovideo</title>
+<title>Auxilia — Promovideo (muziek B)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -21,6 +21,18 @@
   #sndBtn.muted .ic-on{display:none;}
   #sndBtn.muted .ic-off{display:block;}
   body.embed #sndBtn{display:none!important;}
+  #expBtn{position:fixed;top:14px;right:118px;z-index:60;display:flex;align-items:center;gap:8px;background:rgba(28,36,34,.55);color:#FAF7F2;border:0;border-radius:999px;padding:9px 14px;font:600 13px "Hanken Grotesk",system-ui,sans-serif;cursor:pointer;backdrop-filter:blur(6px);}
+  #expBtn svg{width:16px;height:16px;display:block;}
+  body.embed #expBtn{display:none!important;}
+  #expOverlay{position:fixed;inset:0;z-index:80;display:none;align-items:center;justify-content:center;background:rgba(28,36,34,.78);backdrop-filter:blur(8px);}
+  #expOverlay.show{display:flex;}
+  .exp-card{background:#FAF7F2;border-radius:18px;padding:34px 38px;width:380px;font-family:"Hanken Grotesk",system-ui,sans-serif;color:#1C2422;box-shadow:0 40px 80px -30px rgba(0,0,0,.5);}
+  .exp-card h3{margin:0 0 6px;font:600 20px "Spectral",Georgia,serif;color:#0F5C5A;}
+  .exp-card p{margin:0 0 18px;font-size:13.5px;line-height:1.5;color:#52605C;}
+  .exp-bar{height:8px;border-radius:4px;background:rgba(28,36,34,.12);overflow:hidden;margin-bottom:10px;}
+  .exp-bar i{display:block;height:100%;width:0%;border-radius:4px;background:#D2691E;transition:width .2s linear;}
+  .exp-status{font-size:13px;color:#52605C;font-variant-numeric:tabular-nums;margin-bottom:18px;}
+  .exp-cancel{background:none;border:1.5px solid rgba(28,36,34,.25);border-radius:999px;padding:8px 18px;font:600 13px "Hanken Grotesk",system-ui,sans-serif;color:#1C2422;cursor:pointer;}
 </style>
 </head>
 <body>
@@ -30,14 +42,29 @@
   <svg class="ic-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M11 5L6.5 9H3v6h3.5L11 19V5z" stroke-linejoin="round"></path><path d="M16 9.5l5 5M21 9.5l-5 5" stroke-linecap="round"></path></svg>
   <span class="lbl">Geluid</span>
 </button>
+<button id="expBtn" aria-label="Download als MP4">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 4v11M7.5 11l4.5 4.5L16.5 11M4.5 19.5h15" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  <span class="lbl">MP4</span>
+</button>
+<div id="expOverlay">
+  <div class="exp-card">
+    <h3>Video renderen</h3>
+    <p>De film wordt beeld voor beeld omgezet naar een MP4 met muziek. Laat dit tabblad open en zichtbaar — dit duurt enkele minuten.</p>
+    <div class="exp-bar"><i id="expBarFill"></i></div>
+    <div class="exp-status" id="expStatus">Voorbereiden…</div>
+    <button class="exp-cancel" id="expCancel">Annuleren</button>
+  </div>
+</div>
 <script>
 /* ── AuxiliaAudio: speelt een echt muziekbestand (promo-music.mp3) gesynct
    met de afspeelkop — play/pauze/scrub/loop volgen de film, met fade-out
    op het einde. Geen bestand aanwezig? Dan blijft de film gewoon stil.
    Uit in embed-modus (stille hero op de site). */
 window.AuxiliaAudio = (function(){
-  const SRC='promo-music.mp3';
-  const VOL=0.85, FILM_END=43.5, FADE_S=1.6;
+  const SRC='promo-music-b.mp3';
+  const VOL=0.85, FILM_END=39.54, FADE_S=1.6;
+  /* start 8 beats (5.28s) in de track: drums vallen zo precies op de reveal (film 8.24s) */
+  const OFFSET=5.28;
   let el=null, btn=null, enabled=false, muted=false, ready=false;
   let lastT=-1, lastAdv=0, unlocked=false;
   function targetVol(t){
@@ -47,7 +74,7 @@ window.AuxiliaAudio = (function(){
   }
   function align(t){
     if(!ready||!el.duration||!isFinite(el.duration)) return;
-    const want=t%el.duration;
+    const want=(t+OFFSET)%el.duration;
     if(Math.abs(el.currentTime-want)>0.35){ try{ el.currentTime=want; }catch(e){} }
   }
   function sync(t){
@@ -150,7 +177,7 @@ const noiseWords = [
 ];
 function SceneNoise(){
   return (
-    <Sprite start={0} end={8}>
+    <Sprite start={0} end={8.24}>
       {({localTime:t}) => {
         const zoom = animate({from:1, to:1.05, start:0, end:8, ease:Easing.linear})(t);
         const scatter = animate({from:0, to:1, start:4.8, end:6.1, ease:Easing.easeInCubic})(t);
@@ -192,7 +219,7 @@ function SceneNoise(){
                 fontFamily:SERIF, fontWeight:600, fontSize:130, color:C.clay,
                 letterSpacing:"-0.02em", whiteSpace:"nowrap",
                 opacity:clamp(hook2In,0,1), transform:`translateY(${(1-clamp(hook2In,0,1))*30}px) scale(${0.7+0.3*hook2In})`,
-              }}>Maar wát?</div>
+              }}>Maar wat?</div>
             </div>
           </div>
         );
@@ -205,7 +232,7 @@ function SceneNoise(){
 function SceneMark(){
   const M = 260;
   return (
-    <Sprite start={8} end={15}>
+    <Sprite start={8.24} end={14.84}>
       {({localTime:t}) => {
         const wipe   = animate({from:100, to:0, start:0, end:0.7, ease:Easing.easeInOutQuart})(t);
         const topY   = animate({from:-480, to:0, start:0.5, end:1.3, ease:Easing.easeOutCubic})(t);
@@ -246,19 +273,19 @@ function SceneMark(){
 /* ════ Scene 3 · Dit nemen we van je over (15 – 24) ════ */
 const moreRows = [
   {d:1.0,  nm:"Offertes",          st:"opgemaakt",   ic:<path d="M6 3.5h8l4 4v13H6v-17zM14 3.5V8h4M9 12h6M9 15.5h6" strokeLinecap="round" strokeLinejoin="round"/>},
-  {d:1.45, nm:"Klantenmails",      st:"beantwoord",  ic:<path d="M3.5 6.5h17v11h-17v-11zM3.5 7l8.5 6 8.5-6" strokeLinejoin="round"/>},
-  {d:1.9,  nm:"Maandrapportering", st:"gegenereerd", ic:<path d="M5 19V10M10.5 19V5M16 19v-7M21 19H3.5" strokeLinecap="round"/>},
-  {d:2.35, nm:"Administratie",     st:"bijgewerkt",  ic:<path d="M4 7.5h6l2 2.5h8v8.5h-16v-11zM4 7.5V18" strokeLinejoin="round"/>},
-  {d:2.8,  nm:"Facturatie",        st:"opgevolgd",   ic:<path d="M7 3.5h10v17l-2.5-1.5-2.5 1.5-2.5-1.5L7 20.5v-17zM10 8h4M10 12h4" strokeLinecap="round" strokeLinejoin="round"/>},
-  {d:3.25, nm:"Planning",          st:"ingepland",   ic:<path d="M4.5 6h15v14h-15V6zM4.5 10h15M8.5 3.5V7M15.5 3.5V7" strokeLinecap="round" strokeLinejoin="round"/>},
+  {d:1.2, nm:"Klantenmails",      st:"beantwoord",  ic:<path d="M3.5 6.5h17v11h-17v-11zM3.5 7l8.5 6 8.5-6" strokeLinejoin="round"/>},
+  {d:1.6,  nm:"Maandrapportering", st:"gegenereerd", ic:<path d="M5 19V10M10.5 19V5M16 19v-7M21 19H3.5" strokeLinecap="round"/>},
+  {d:2.0, nm:"Administratie",     st:"bijgewerkt",  ic:<path d="M4 7.5h6l2 2.5h8v8.5h-16v-11zM4 7.5V18" strokeLinejoin="round"/>},
+  {d:2.4,  nm:"Facturatie",        st:"opgevolgd",   ic:<path d="M7 3.5h10v17l-2.5-1.5-2.5 1.5-2.5-1.5L7 20.5v-17zM10 8h4M10 12h4" strokeLinecap="round" strokeLinejoin="round"/>},
+  {d:2.8, nm:"Planning",          st:"ingepland",   ic:<path d="M4.5 6h15v14h-15V6zM4.5 10h15M8.5 3.5V7M15.5 3.5V7" strokeLinecap="round" strokeLinejoin="round"/>},
 ];
 function SceneMore(){
   return (
-    <Sprite start={15} end={24}>
+    <Sprite start={14.84} end={20.12}>
       {({localTime:t}) => {
         const headIn = animate({from:0, to:1, start:0.3, end:1.0, ease:Easing.easeOutCubic})(t);
-        const exitOp = animate({from:1, to:0, start:8.4, end:9, ease:Easing.easeInCubic})(t);
-        const zoom   = animate({from:1, to:1.03, start:0, end:9, ease:Easing.linear})(t);
+        const exitOp = animate({from:1, to:0, start:4.5, end:5.1, ease:Easing.easeInCubic})(t);
+        const zoom   = animate({from:1, to:1.03, start:0, end:5.28, ease:Easing.linear})(t);
         return (
           <div style={{position:"absolute", inset:0, background:C.sand, opacity:exitOp}}>
             <div style={{position:"absolute", inset:0, transform:`scale(${zoom})`, transformOrigin:"center"}}>
@@ -266,7 +293,7 @@ function SceneMore(){
                 position:"absolute", left:0, right:0, top:104, textAlign:"center",
                 fontFamily:SERIF, fontWeight:500, fontSize:84, color:C.ink, letterSpacing:"-0.02em", whiteSpace:"nowrap",
                 opacity:headIn, transform:`translateY(${(1-headIn)*24}px)`,
-              }}>Dit nemen we van je over.</div>
+              }}>Dit automatiseren we voor je:</div>
 
               {moreRows.map((r,i) => {
                 const rowIn  = animate({from:0, to:1, start:r.d, end:r.d+0.55, ease:Easing.easeOutCubic})(t);
@@ -314,7 +341,7 @@ const weekNodes = [
 function SceneWeeks(){
   const Y = 580;
   return (
-    <Sprite start={24} end={31.5}>
+    <Sprite start={20.12} end={27.38}>
       {({localTime:t}) => {
         const baseIn = animate({from:0, to:1, start:0.3, end:1.0, ease:Easing.easeInOutCubic})(t);
         const prog   = animate({from:0, to:1, start:2.0, end:5.5, ease:Easing.easeInOutQuart})(t);
@@ -377,7 +404,7 @@ function SceneWeeks(){
 /* ════ Scene 5 · De belofte (31.5 – 38.2, teal cover boven outro) ════ */
 function ScenePromise(){
   return (
-    <Sprite start={31.5} end={38.2}>
+    <Sprite start={27.38} end={34.08}>
       {({localTime:t}) => {
         const wipe   = animate({from:100, to:0, start:0, end:0.7, ease:Easing.easeInOutQuart})(t);
         const l1In   = animate({from:0, to:1, start:1.0, end:1.7, ease:Easing.easeOutCubic})(t);
@@ -406,7 +433,7 @@ function ScenePromise(){
 /* ════ Scene 6 · Outro (37.5 – 43.5) ════ */
 function SceneOutro(){
   return (
-    <Sprite start={37.5} end={43.5}>
+    <Sprite start={33.32} end={39.54}>
       {({localTime:t}) => {
         const inOp  = animate({from:0, to:1, start:0.5, end:1.2, ease:Easing.easeOutCubic})(t);
         const tagIn = animate({from:0, to:1, start:1.7, end:2.4, ease:Easing.easeOutCubic})(t);
@@ -452,6 +479,13 @@ function SoundSync(){
   return null;
 }
 
+/* ── geeft de MP4-exporter controle over de afspeelkop ── */
+function ExportBridge(){
+  const tl = useTimeline();
+  React.useEffect(() => { window.__tl = tl; });
+  return null;
+}
+
 function PromoApp(){
   const EMBED = new URLSearchParams(window.location.search).has('embed');
   const REDUCE = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -475,9 +509,10 @@ function PromoApp(){
     return () => clearInterval(iv);
   }, [EMBED]);
   return (
-    <Stage width={1920} height={1080} duration={43.5} background={C.sand} autoplay={!(EMBED && REDUCE)} persistKey={EMBED ? "auxilia-promo-embed" : "auxilia-promo"}>
+    <Stage width={1920} height={1080} duration={39.54} background={C.sand} autoplay={!(EMBED && REDUCE)} persistKey={EMBED ? "auxilia-promo-embed" : "auxilia-promo"}>
       <TimecodeWrapper>
         <SoundSync />
+        <ExportBridge />
         <SceneNoise />
         <SceneMark />
         <SceneMore />
@@ -489,6 +524,131 @@ function PromoApp(){
   );
 }
 ReactDOM.createRoot(document.getElementById("root")).render(<PromoApp />);
+</script>
+<script>
+/* ── MP4-export: rendert de film frame-voor-frame naar 1080p MP4 met muziek.
+   Werkt in Chrome/Edge (WebCodecs). Deterministisch — geen schermopname. */
+(function(){
+  const FPS=30, W=1920, H=1080, DUR=39.54, MUSIC='promo-music-b.mp3', MUSIC_OFFSET=5.28, MUSIC_VOL=0.85, FADE_S=1.6;
+  let busy=false, cancelled=false;
+  const $=function(id){ return document.getElementById(id); };
+  function loadScript(src){
+    return new Promise(function(res,rej){
+      const s=document.createElement('script'); s.src=src;
+      s.onload=res; s.onerror=function(){ rej(new Error('kon '+src+' niet laden')); };
+      document.head.appendChild(s);
+    });
+  }
+  function status(txt,frac){
+    $('expStatus').textContent=txt;
+    if(frac!=null) $('expBarFill').style.width=(frac*100).toFixed(1)+'%';
+  }
+  function nextPaint(){
+    return new Promise(function(res){ requestAnimationFrame(function(){ requestAnimationFrame(res); }); });
+  }
+  async function renderAudio(){
+    const resp=await fetch(MUSIC); if(!resp.ok) return null;
+    const raw=await resp.arrayBuffer();
+    const AC=window.OfflineAudioContext||window.webkitOfflineAudioContext;
+    const probe=new AC(2,48000,48000);
+    const buf=await probe.decodeAudioData(raw);
+    const len=Math.ceil(48000*DUR);
+    const oc=new AC(2,len,48000);
+    const src=oc.createBufferSource(); src.buffer=buf;
+    const g=oc.createGain();
+    g.gain.setValueAtTime(MUSIC_VOL,0);
+    g.gain.setValueAtTime(MUSIC_VOL,Math.max(0,DUR-FADE_S));
+    g.gain.linearRampToValueAtTime(0,DUR);
+    src.connect(g); g.connect(oc.destination);
+    src.start(0,MUSIC_OFFSET);
+    return oc.startRendering();
+  }
+  async function start(){
+    if(busy) return; busy=true; cancelled=false;
+    const overlay=$('expOverlay'); overlay.classList.add('show');
+    const tl=window.__tl;
+    const t0=tl?tl.time:0;
+    try{
+      if(!('VideoEncoder' in window)) throw new Error('Deze browser ondersteunt geen video-export. Gebruik Chrome of Edge.');
+      status('Bibliotheken laden…',0);
+      if(!window.htmlToImage) await loadScript('https://unpkg.com/html-to-image@1.11.11/dist/html-to-image.js');
+      if(!window.Mp4Muxer) await loadScript('https://cdn.jsdelivr.net/npm/mp4-muxer@5.2.2/build/mp4-muxer.min.js');
+      tl.setPlaying(false);
+      const stageNode=document.querySelector('[data-screen-label]').parentElement;
+      status('Lettertypes voorbereiden…',0);
+      const fontCSS=await htmlToImage.getFontEmbedCSS(stageNode);
+      const muxer=new Mp4Muxer.Muxer({
+        target:new Mp4Muxer.ArrayBufferTarget(),
+        video:{codec:'avc',width:W,height:H},
+        audio:{codec:'aac',sampleRate:48000,numberOfChannels:2},
+        fastStart:'in-memory',
+      });
+      const venc=new VideoEncoder({
+        output:function(chunk,meta){ muxer.addVideoChunk(chunk,meta); },
+        error:function(e){ console.error(e); },
+      });
+      venc.configure({codec:'avc1.640028',width:W,height:H,bitrate:9000000,framerate:FPS});
+      /* audio eerst (snel) */
+      status('Muziek renderen…',0);
+      const abuf=await renderAudio();
+      if(abuf){
+        const aenc=new AudioEncoder({
+          output:function(chunk,meta){ muxer.addAudioChunk(chunk,meta); },
+          error:function(e){ console.error(e); },
+        });
+        aenc.configure({codec:'mp4a.40.2',sampleRate:48000,numberOfChannels:2,bitrate:160000});
+        const CH=4800; /* 0.1s per AudioData */
+        const L=abuf.length;
+        const c0=abuf.getChannelData(0), c1=abuf.getChannelData(1);
+        for(let off=0;off<L;off+=CH){
+          const n=Math.min(CH,L-off);
+          const data=new Float32Array(n*2);
+          data.set(c0.subarray(off,off+n),0);
+          data.set(c1.subarray(off,off+n),n);
+          aenc.encode(new AudioData({format:'f32-planar',sampleRate:48000,numberOfFrames:n,numberOfChannels:2,timestamp:Math.round(off/48000*1e6),data:data}));
+        }
+        await aenc.flush(); aenc.close();
+      }
+      /* video frame-voor-frame */
+      const total=Math.ceil(DUR*FPS);
+      const draw=document.createElement('canvas'); draw.width=W; draw.height=H;
+      const dctx=draw.getContext('2d');
+      for(let i=0;i<total;i++){
+        if(cancelled) throw new Error('__cancel');
+        const t=Math.min(i/FPS,DUR-0.001);
+        tl.setTime(t);
+        await nextPaint();
+        const cap=await htmlToImage.toCanvas(stageNode,{width:W,height:H,canvasWidth:W,canvasHeight:H,pixelRatio:1,style:{transform:'none'},fontEmbedCSS:fontCSS,backgroundColor:'#FAF7F2'});
+        dctx.clearRect(0,0,W,H); dctx.drawImage(cap,0,0,W,H);
+        const frame=new VideoFrame(draw,{timestamp:Math.round(i/FPS*1e6),duration:Math.round(1e6/FPS)});
+        venc.encode(frame,{keyFrame:i%60===0});
+        frame.close();
+        if(venc.encodeQueueSize>4) await venc.flush();
+        status('Frame '+(i+1)+' / '+total,(i+1)/total);
+      }
+      status('Bestand samenstellen…',1);
+      await venc.flush(); venc.close();
+      muxer.finalize();
+      const blob=new Blob([muxer.target.buffer],{type:'video/mp4'});
+      const a=document.createElement('a');
+      a.href=URL.createObjectURL(blob); a.download='auxilia-promo.mp4';
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function(){ URL.revokeObjectURL(a.href); },10000);
+      status('Klaar — download gestart',1);
+      setTimeout(function(){ overlay.classList.remove('show'); },1400);
+    }catch(e){
+      overlay.classList.remove('show');
+      if(e.message!=='__cancel') alert('Export mislukt: '+e.message);
+    }finally{
+      if(window.__tl) window.__tl.setTime(t0);
+      busy=false;
+    }
+  }
+  window.addEventListener('DOMContentLoaded',function(){
+    const b=$('expBtn'); if(b) b.addEventListener('click',start);
+    const c=$('expCancel'); if(c) c.addEventListener('click',function(){ cancelled=true; });
+  });
+})();
 </script>
 </body>
 </html>

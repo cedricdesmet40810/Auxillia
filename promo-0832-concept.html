@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Auxilia — Promovideo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<style>
+  /* sand i.p.v. zwart: letterbox-balken vallen weg tegen de site */
+  body{margin:0;overflow:hidden;background:#FAF7F2;}
+  /* embed-modus: geen afspeelbalk, kale film voor inline gebruik op de site */
+  body.embed #root > div > div:last-child{display:none!important;}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" src="animations.jsx"></script>
+<script type="text/babel">
+/* ─── Auxilia promo v2 · 42s · 1920×1080 ─────────────────────────────────
+   Concept: "08:32 → 08:36". Geen abstracte beloften maar één concrete
+   ochtend: een klant mailt, de offerte maakt zichzelf op, vier minuten
+   later staat ze klaar. Daarna: dit doen we ook voor mails, rapportering
+   en administratie — en de afspraak waarmee we het leveren. CTA sluit af.
+─────────────────────────────────────────────────────────────────────────── */
+const C = {
+  sand:"#FAF7F2", sandDeep:"#F1EADE", paper:"#FFFFFF",
+  teal:"#0F5C5A", tealDark:"#0B4543", clay:"#D2691E", claySoft:"#F4DEC8",
+  ink:"#1C2422", inkSoft:"#52605C", inkFaint:"#8A968F",
+  line:"rgba(28,36,34,.12)",
+};
+const SERIF = '"Spectral", Georgia, serif';
+const SANS  = '"Hanken Grotesk", system-ui, sans-serif';
+
+/* ── brand mark: two independently animatable chevrons ── */
+function ChevTop({size, color, sw=7.2, style}){
+  return (
+    <svg width={size} height={size} viewBox="0 0 64 64" fill="none" style={{position:"absolute", left:0, top:0, ...style}}>
+      <path d="M14 31 L32 14 L50 31" stroke={color} strokeWidth={sw} strokeLinecap="round" strokeLinejoin="round"></path>
+    </svg>
+  );
+}
+function ChevBottom({size, color, sw=7.2, style}){
+  return (
+    <svg width={size} height={size} viewBox="0 0 64 64" fill="none" style={{position:"absolute", left:0, top:0, ...style}}>
+      <path d="M14 50 L32 33 L50 50" stroke={color} strokeWidth={sw} strokeLinecap="round" strokeLinejoin="round"></path>
+    </svg>
+  );
+}
+function RankMark({size=64, top=C.teal, bottom=C.clay, sw=7.2, style}){
+  return (
+    <div style={{position:"relative", width:size, height:size, flex:"0 0 auto", ...style}}>
+      <ChevTop size={size} color={top} sw={sw} />
+      <ChevBottom size={size} color={bottom} sw={sw} />
+    </div>
+  );
+}
+
+/* ════ Scene 1 · 08:32 — een klant mailt (0 – 8) ════ */
+const oldMails = [
+  {from:"Fidu Plus boekhouding", sub:"Kwartaalcijfers Q2 ter controle", time:"07:48"},
+  {from:"Leveringen De Wit", sub:"Bevestiging levering #8841", time:"08:11"},
+];
+function SceneMail(){
+  return (
+    <Sprite start={0} end={8}>
+      {({localTime:t}) => {
+        const cardIn  = animate({from:0, to:1, start:0.1, end:0.8, ease:Easing.easeOutCubic})(t);
+        const clockIn = animate({from:0, to:1, start:0.6, end:1.3, ease:Easing.easeOutCubic})(t);
+        const slide   = animate({from:0, to:1, start:1.7, end:2.45, ease:Easing.easeOutCubic})(t);
+        const ping    = 1 + 0.035 * Math.sin(clamp((t-2.35)/0.45,0,1) * Math.PI);
+        const capIn   = animate({from:0, to:1, start:3.2, end:3.9, ease:Easing.easeOutCubic})(t);
+        const exitOp  = animate({from:1, to:0, start:7.4, end:8, ease:Easing.easeInCubic})(t);
+        const zoom    = animate({from:1, to:1.03, start:0, end:8, ease:Easing.linear})(t);
+        return (
+          <div style={{position:"absolute", inset:0, background:C.sand, opacity:exitOp}}>
+            <div style={{position:"absolute", inset:0, transform:`scale(${zoom})`, transformOrigin:"center"}}>
+
+              {/* inbox card */}
+              <div style={{
+                position:"absolute", left:240, top:230, width:900,
+                background:C.paper, borderRadius:22, boxShadow:"0 40px 80px -40px rgba(28,36,34,.35)",
+                padding:"40px 48px 28px", boxSizing:"border-box",
+                opacity:cardIn, transform:`translateY(${(1-cardIn)*40}px)`,
+              }}>
+                <div style={{display:"flex", alignItems:"center", gap:14, marginBottom:26}}>
+                  <span style={{width:10, height:10, borderRadius:"50%", background:C.clay}}></span>
+                  <span style={{fontFamily:SANS, fontWeight:600, fontSize:24, letterSpacing:"0.14em", textTransform:"uppercase", color:C.inkSoft}}>Inbox</span>
+                </div>
+
+                {/* nieuwe mail */}
+                <div style={{
+                  display:"flex", alignItems:"center", gap:22,
+                  background:"rgba(15,92,90,.07)", borderRadius:14, padding:"22px 26px",
+                  opacity:slide, transform:`translateY(${(1-slide)*-34}px) scale(${ping})`,
+                }}>
+                  <span style={{fontFamily:SANS, fontWeight:700, fontSize:20, letterSpacing:"0.08em", color:"#fff", background:C.clay, borderRadius:8, padding:"6px 12px"}}>NIEUW</span>
+                  <div style={{flex:1, minWidth:0}}>
+                    <div style={{fontFamily:SANS, fontWeight:700, fontSize:30, color:C.ink}}>Bouwbedrijf Peeters</div>
+                    <div style={{fontFamily:SANS, fontWeight:500, fontSize:26, color:C.inkSoft, marginTop:4}}>Offerteaanvraag — 14 ramen met plaatsing</div>
+                  </div>
+                  <span style={{fontFamily:SANS, fontWeight:600, fontSize:24, color:C.teal, fontVariantNumeric:"tabular-nums"}}>08:32</span>
+                </div>
+
+                {/* gelezen mails */}
+                {oldMails.map((m,i) => (
+                  <div key={i} style={{display:"flex", alignItems:"center", gap:22, padding:"24px 26px", borderTop: i===0 ? "none" : `1px solid ${C.line}`, opacity:0.55}}>
+                    <div style={{flex:1, minWidth:0}}>
+                      <div style={{fontFamily:SANS, fontWeight:600, fontSize:27, color:C.ink}}>{m.from}</div>
+                      <div style={{fontFamily:SANS, fontWeight:400, fontSize:24, color:C.inkSoft, marginTop:3}}>{m.sub}</div>
+                    </div>
+                    <span style={{fontFamily:SANS, fontWeight:500, fontSize:22, color:C.inkFaint, fontVariantNumeric:"tabular-nums"}}>{m.time}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* klok */}
+              <div style={{position:"absolute", left:1250, top:330, opacity:clockIn, transform:`translateY(${(1-clockIn)*24}px)`}}>
+                <div style={{fontFamily:SANS, fontWeight:600, fontSize:26, letterSpacing:"0.16em", textTransform:"uppercase", color:C.clay, marginBottom:10}}>Maandag</div>
+                <div style={{fontFamily:SERIF, fontWeight:600, fontSize:170, lineHeight:1, color:C.ink, letterSpacing:"-0.03em", fontVariantNumeric:"tabular-nums"}}>08:32</div>
+                <div style={{height:5, width:170, borderRadius:3, background:C.clay, marginTop:24}}></div>
+              </div>
+
+              {/* caption */}
+              <div style={{
+                position:"absolute", left:0, right:0, bottom:96, textAlign:"center",
+                fontFamily:SERIF, fontWeight:500, fontSize:62, color:C.ink, letterSpacing:"-0.015em", whiteSpace:"nowrap",
+                opacity:capIn, transform:`translateY(${(1-capIn)*22}px)`,
+              }}>Een klant vraagt een offerte.</div>
+            </div>
+          </div>
+        );
+      }}
+    </Sprite>
+  );
+}
+
+/* ════ Scene 2 · De offerte maakt zichzelf (8 – 17) ════ */
+const offerteItems = [
+  {lbl:"14 PVC-ramen, driekamerprofiel", prc:"€ 8.940", d:1.2},
+  {lbl:"Plaatsing en afwerking",          prc:"€ 2.980", d:1.8},
+  {lbl:"Werfvervoer en kraan",            prc:"€ 540",   d:2.4},
+];
+function SceneOfferte(){
+  return (
+    <Sprite start={8} end={17}>
+      {({localTime:t}) => {
+        const bgIn    = animate({from:0, to:1, start:0, end:0.5, ease:Easing.easeOutCubic})(t);
+        const cardIn  = animate({from:0, to:1, start:0.3, end:1.0, ease:Easing.easeOutCubic})(t);
+        const total   = animate({from:0, to:12460, start:3.0, end:4.8, ease:Easing.easeInOutQuart})(t);
+        const vanIn   = animate({from:0, to:1, start:3.4, end:4.2, ease:Easing.easeOutCubic})(t);
+        const vanPop  = 1 + 0.05 * Math.sin(clamp((t-4.2)/0.45,0,1) * Math.PI);
+        const barIn   = animate({from:0, to:1, start:4.4, end:5.1, ease:Easing.easeOutCubic})(t);
+        const stampIn = animate({from:0, to:1, start:5.6, end:6.05, ease:Easing.easeOutBack})(t);
+        const kickIn  = animate({from:0, to:1, start:6.4, end:7.1, ease:Easing.easeOutCubic})(t);
+        const exitOp  = animate({from:1, to:0, start:8.5, end:9, ease:Easing.easeInCubic})(t);
+        const zoom    = animate({from:1, to:1.035, start:0.5, end:9, ease:Easing.linear})(t);
+        return (
+          <div style={{position:"absolute", inset:0, background:C.sandDeep, opacity:bgIn*exitOp}}>
+            <div style={{position:"absolute", inset:0, transform:`scale(${zoom})`, transformOrigin:"center"}}>
+
+              {/* offerte-document */}
+              <div style={{
+                position:"absolute", left:240, top:180, width:800, height:680,
+                background:C.paper, borderRadius:22, boxShadow:"0 40px 80px -40px rgba(28,36,34,.35)",
+                padding:"50px 56px", boxSizing:"border-box",
+                opacity:cardIn, transform:`translateY(${(1-cardIn)*40}px)`,
+              }}>
+                <div style={{display:"flex", justifyContent:"space-between", alignItems:"baseline"}}>
+                  <span style={{fontFamily:SANS, fontWeight:600, fontSize:24, letterSpacing:"0.16em", textTransform:"uppercase", color:C.clay}}>Offerte</span>
+                  <span style={{fontFamily:SANS, fontWeight:500, fontSize:24, color:C.inkFaint, fontVariantNumeric:"tabular-nums", whiteSpace:"nowrap"}}>nr. 2026-118</span>
+                </div>
+                <div style={{fontFamily:SERIF, fontWeight:600, fontSize:48, color:C.ink, marginTop:14}}>Bouwbedrijf Peeters</div>
+
+                <div style={{marginTop:36}}>
+                  {offerteItems.map((it,i) => {
+                    const lineIn = animate({from:0, to:1, start:it.d, end:it.d+0.5, ease:Easing.easeOutCubic})(t);
+                    const prcIn  = animate({from:0, to:1, start:it.d+0.45, end:it.d+0.8, ease:Easing.easeOutBack})(t);
+                    return (
+                      <div key={i} style={{display:"flex", justifyContent:"space-between", alignItems:"center", padding:"21px 0", borderBottom:`1px solid ${C.line}`, opacity:lineIn, transform:`translateY(${(1-lineIn)*14}px)`}}>
+                        <span style={{fontFamily:SANS, fontWeight:500, fontSize:29, color:C.ink, whiteSpace:"nowrap"}}>{it.lbl}</span>
+                        <span style={{fontFamily:SANS, fontWeight:700, fontSize:30, color:C.teal, fontVariantNumeric:"tabular-nums", whiteSpace:"nowrap", opacity:clamp(prcIn,0,1), transform:`scale(${0.7+0.3*clamp(prcIn,0,1.2)})`}}>{it.prc}</span>
+                      </div>
+                    );
+                  })}
+                  <div style={{display:"flex", justifyContent:"space-between", alignItems:"baseline", paddingTop:28}}>
+                    <span style={{fontFamily:SANS, fontWeight:600, fontSize:30, color:C.inkSoft, whiteSpace:"nowrap"}}>Totaal excl. btw</span>
+                    <span style={{fontFamily:SERIF, fontWeight:600, fontSize:58, color:C.ink, fontVariantNumeric:"tabular-nums", letterSpacing:"-0.02em", whiteSpace:"nowrap"}}>€ {Math.round(total).toLocaleString('nl-BE')}</span>
+                  </div>
+                </div>
+
+                {/* stempel */}
+                <div style={{
+                  position:"absolute", right:48, bottom:44,
+                  display:"flex", alignItems:"center", gap:14,
+                  background:C.teal, borderRadius:14, padding:"16px 26px",
+                  opacity:clamp(stampIn,0,1), transform:`scale(${0.4+0.6*stampIn}) rotate(${-4*(1-clamp(stampIn,0,1))-2}deg)`,
+                }}>
+                  <RankMark size={40} top={C.sand} bottom={C.clay} sw={8} />
+                  <span style={{fontFamily:SANS, fontWeight:700, fontSize:30, color:C.sand, letterSpacing:"0.02em", whiteSpace:"nowrap"}}>klaar om te verzenden</span>
+                </div>
+              </div>
+
+              {/* rechts: geen tijdsclaim, wel de essentie */}
+              <div style={{position:"absolute", left:1190, top:300, width:640, opacity:cardIn}}>
+                <div style={{fontFamily:SANS, fontWeight:600, fontSize:26, letterSpacing:"0.16em", textTransform:"uppercase", color:C.clay, marginBottom:10}}>Diezelfde ochtend</div>
+                <div style={{fontFamily:SERIF, fontWeight:600, fontSize:150, lineHeight:1, color:C.teal, letterSpacing:"-0.03em", opacity:vanIn, transform:`translateY(${(1-vanIn)*22}px) scale(${vanPop})`, transformOrigin:"left bottom"}}>Vanzelf.</div>
+                <div style={{height:5, width:170, borderRadius:3, background:C.clay, marginTop:24, transform:`scaleX(${barIn})`, transformOrigin:"left"}}></div>
+                <div style={{
+                  fontFamily:SERIF, fontWeight:500, fontSize:54, color:C.ink, marginTop:44, letterSpacing:"-0.015em", lineHeight:1.25,
+                  opacity:kickIn, transform:`translateY(${(1-kickIn)*20}px)`,
+                }}>Geen getyp.<br/><span style={{color:C.inkSoft}}>Geen knip- en plakwerk.</span></div>
+              </div>
+            </div>
+          </div>
+        );
+      }}
+    </Sprite>
+  );
+}
+
+/* ════ Scene 3 · Niet alleen offertes (17 – 25) ════ */
+const moreRows = [
+  {d:1.0, nm:"Klantenmails",      st:"beantwoord",  ic:<path d="M3.5 6.5h17v11h-17v-11zM3.5 7l8.5 6 8.5-6" strokeLinejoin="round"/>},
+  {d:1.7, nm:"Maandrapportering", st:"gegenereerd", ic:<path d="M5 19V10M10.5 19V5M16 19v-7M21 19H3.5" strokeLinecap="round"/>},
+  {d:2.4, nm:"Administratie",     st:"bijgewerkt",  ic:<path d="M4 7.5h6l2 2.5h8v8.5h-16v-11zM4 7.5V18" strokeLinejoin="round"/>},
+];
+function SceneMore(){
+  return (
+    <Sprite start={17} end={25}>
+      {({localTime:t}) => {
+        const headIn = animate({from:0, to:1, start:0.2, end:0.9, ease:Easing.easeOutCubic})(t);
+        const capIn  = animate({from:0, to:1, start:4.3, end:5.0, ease:Easing.easeOutCubic})(t);
+        const exitOp = animate({from:1, to:0, start:7.4, end:8, ease:Easing.easeInCubic})(t);
+        const zoom   = animate({from:1, to:1.03, start:0, end:8, ease:Easing.linear})(t);
+        return (
+          <div style={{position:"absolute", inset:0, background:C.sand, opacity:exitOp}}>
+            <div style={{position:"absolute", inset:0, transform:`scale(${zoom})`, transformOrigin:"center"}}>
+              <div style={{
+                position:"absolute", left:0, right:0, top:160, textAlign:"center",
+                fontFamily:SERIF, fontWeight:500, fontSize:84, color:C.ink, letterSpacing:"-0.02em", whiteSpace:"nowrap",
+                opacity:headIn, transform:`translateY(${(1-headIn)*24}px)`,
+              }}>En niet alleen offertes.</div>
+
+              {moreRows.map((r,i) => {
+                const rowIn  = animate({from:0, to:1, start:r.d, end:r.d+0.55, ease:Easing.easeOutCubic})(t);
+                const chkIn  = animate({from:0, to:1, start:r.d+0.55, end:r.d+0.9, ease:Easing.easeOutBack})(t);
+                return (
+                  <div key={i} style={{
+                    position:"absolute", left:410, top:340+i*150, width:1100, height:122,
+                    background:C.paper, border:`1px solid ${C.line}`, borderRadius:18,
+                    boxShadow:"0 24px 50px -36px rgba(28,36,34,.3)",
+                    display:"flex", alignItems:"center", gap:30, padding:"0 40px", boxSizing:"border-box",
+                    opacity:rowIn, transform:`translateY(${(1-rowIn)*30}px)`,
+                  }}>
+                    <span style={{width:68, height:68, borderRadius:18, background:"rgba(15,92,90,.08)", display:"grid", placeItems:"center", flex:"0 0 auto"}}>
+                      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke={C.teal} strokeWidth="1.7">{r.ic}</svg>
+                    </span>
+                    <span style={{fontFamily:SANS, fontWeight:700, fontSize:38, color:C.ink, flex:1}}>{r.nm}</span>
+                    <span style={{
+                      display:"inline-flex", alignItems:"center", gap:12,
+                      background:"rgba(15,92,90,.08)", borderRadius:999, padding:"12px 26px",
+                      opacity:clamp(chkIn,0,1), transform:`scale(${0.6+0.4*clamp(chkIn,0,1.2)})`,
+                    }}>
+                      <span style={{width:30, height:30, borderRadius:"50%", background:C.clay, display:"grid", placeItems:"center"}}>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3"><path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                      </span>
+                      <span style={{fontFamily:SANS, fontWeight:600, fontSize:29, color:C.teal}}>{r.st}</span>
+                    </span>
+                  </div>
+                );
+              })}
+
+              <div style={{
+                position:"absolute", left:0, right:0, bottom:92, textAlign:"center",
+                fontFamily:SERIF, fontWeight:500, fontSize:58, color:C.inkSoft, letterSpacing:"-0.015em", whiteSpace:"nowrap",
+                opacity:capIn, transform:`translateY(${(1-capIn)*20}px)`,
+              }}>Het werk dat elke dag terugkomt, doet zichzelf.</div>
+            </div>
+          </div>
+        );
+      }}
+    </Sprite>
+  );
+}
+
+/* ════ Scene 4 · De afspraak (25 – 34.8, teal cover boven outro) ════ */
+function ScenePromise(){
+  const M = 200;
+  return (
+    <Sprite start={25} end={34.8}>
+      {({localTime:t}) => {
+        const wipe  = animate({from:100, to:0, start:0, end:0.7, ease:Easing.easeInOutQuart})(t);
+        const topY  = animate({from:-420, to:0, start:0.5, end:1.25, ease:Easing.easeOutCubic})(t);
+        const botY  = animate({from: 420, to:0, start:0.75, end:1.6, ease:Easing.easeOutBack})(t);
+        const l1In  = animate({from:0, to:1, start:1.7, end:2.4, ease:Easing.easeOutCubic})(t);
+        const l2In  = animate({from:0, to:1, start:2.9, end:3.6, ease:Easing.easeOutCubic})(t);
+        const under = animate({from:0, to:1, start:3.8, end:4.5, ease:Easing.easeOutCubic})(t);
+        const pillIn= animate({from:0, to:1, start:5.2, end:5.9, ease:Easing.easeOutCubic})(t);
+        const fadeOut = animate({from:1, to:0, start:8.9, end:9.7, ease:Easing.easeInOutCubic})(t);
+        return (
+          <div style={{position:"absolute", inset:0, zIndex:5, background:C.teal, clipPath:`inset(${wipe}% 0 0 0)`, opacity:fadeOut}}>
+            <div style={{position:"absolute", inset:0, display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", gap:28}}>
+              <div style={{position:"relative", width:M, height:M, marginBottom:8}}>
+                <ChevTop size={M} color={C.sand} sw={7.6} style={{transform:`translateY(${topY}px)`}} />
+                <ChevBottom size={M} color={C.clay} sw={7.6} style={{transform:`translateY(${botY}px)`}} />
+              </div>
+              <div style={{fontFamily:SERIF, fontWeight:600, fontSize:104, color:C.sand, letterSpacing:"-0.02em", whiteSpace:"nowrap", opacity:l1In, transform:`translateY(${(1-l1In)*26}px)`}}>Wij bouwen het.</div>
+              <div style={{position:"relative", whiteSpace:"nowrap", opacity:l2In, transform:`translateY(${(1-l2In)*26}px)`}}>
+                <span style={{fontFamily:SERIF, fontWeight:600, fontSize:104, color:C.sand, letterSpacing:"-0.02em"}}>Wij leiden je team op.</span>
+                <div style={{position:"absolute", left:"6%", right:"6%", bottom:-16, height:8, borderRadius:4, background:C.clay, transform:`scaleX(${under})`, transformOrigin:"left"}}></div>
+              </div>
+              <div style={{display:"flex", gap:20, marginTop:30, opacity:pillIn, transform:`translateY(${(1-pillIn)*18}px)`}}>
+                {["Vaste prijs","Vaste deadline"].map((p,i) => (
+                  <span key={i} style={{fontFamily:SANS, fontWeight:600, fontSize:32, color:C.sand, border:"2px solid rgba(250,247,242,.35)", borderRadius:999, padding:"13px 32px", whiteSpace:"nowrap"}}>{p}</span>
+                ))}
+              </div>
+            </div>
+          </div>
+        );
+      }}
+    </Sprite>
+  );
+}
+
+/* ════ Scene 5 · Outro (33.8 – 42) ════ */
+function SceneOutro(){
+  return (
+    <Sprite start={33.8} end={42}>
+      {({localTime:t}) => {
+        const inOp  = animate({from:0, to:1, start:0.7, end:1.4, ease:Easing.easeOutCubic})(t);
+        const tagIn = animate({from:0, to:1, start:1.9, end:2.6, ease:Easing.easeOutCubic})(t);
+        const ctaIn = animate({from:0, to:1, start:2.5, end:3.2, ease:Easing.easeOutCubic})(t);
+        const urlIn = animate({from:0, to:1, start:3.1, end:3.8, ease:Easing.easeOutCubic})(t);
+        const drift = animate({from:1, to:1.03, start:1, end:8.2, ease:Easing.linear})(t);
+        return (
+          <div style={{position:"absolute", inset:0, background:C.sand}}>
+            <div style={{position:"absolute", inset:0, display:"flex", flexDirection:"column", alignItems:"center", justifyContent:"center", gap:40, transform:`scale(${drift})`}}>
+              <div style={{display:"flex", alignItems:"center", gap:34, whiteSpace:"nowrap", opacity:inOp, transform:`translateY(${(1-inOp)*26}px)`}}>
+                <RankMark size={150} />
+                <span style={{fontFamily:SERIF, fontWeight:600, fontSize:150, color:C.teal, lineHeight:1, letterSpacing:"-0.02em"}}>Auxilia</span>
+              </div>
+              <div style={{fontFamily:SANS, fontWeight:500, fontSize:42, color:C.inkSoft, whiteSpace:"nowrap", opacity:tagIn, transform:`translateY(${(1-tagIn)*18}px)`}}>
+                AI-automatisering voor kmo's
+              </div>
+              <div style={{fontFamily:SANS, fontWeight:600, fontSize:34, color:C.ink, whiteSpace:"nowrap", opacity:ctaIn, transform:`translateY(${(1-ctaIn)*16}px)`}}>
+                Plan een vrijblijvende kennismaking — 30 minuten
+              </div>
+              <div style={{
+                fontFamily:SANS, fontWeight:700, fontSize:32, color:C.teal, letterSpacing:"0.02em",
+                border:`2px solid rgba(15,92,90,.3)`, borderRadius:12, padding:"14px 30px",
+                opacity:urlIn, transform:`translateY(${(1-urlIn)*14}px)`,
+              }}>auxilia.be</div>
+            </div>
+          </div>
+        );
+      }}
+    </Sprite>
+  );
+}
+
+/* ── timestamp label for comments ── */
+function TimecodeWrapper({children}){
+  const t = useTime();
+  return <div data-screen-label={`t=${Math.floor(t)}s`} style={{position:"absolute", inset:0}}>{children}</div>;
+}
+
+function PromoApp(){
+  const EMBED = new URLSearchParams(window.location.search).has('embed');
+  const REDUCE = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  React.useEffect(() => {
+    if (EMBED) document.body.classList.add('embed');
+    // Zelfherstel: de eerste meting kan racen terwijl het iframe nog 0 hoogte
+    // heeft, en de ResizeObserver ín het iframe vuurt niet altijd wanneer het
+    // iframe daarna pas zijn maat krijgt. Blijf hermeten tot de werkelijk
+    // gerenderde schaal aantoonbaar gezond is.
+    const iv = setInterval(() => {
+      const stage = document.querySelector('#root > div');
+      const canvas = stage && stage.firstElementChild && stage.firstElementChild.firstElementChild;
+      let sc = 0;
+      try { sc = new DOMMatrixReadOnly(getComputedStyle(canvas).transform).a; } catch (e) {}
+      const healthy = stage && stage.clientHeight > 100 && sc > 0.06;
+      if (healthy) { clearInterval(iv); return; }
+      if (stage && stage.clientHeight > 0) window.dispatchEvent(new Event('resize'));
+    }, 250);
+    return () => clearInterval(iv);
+  }, [EMBED]);
+  return (
+    <Stage width={1920} height={1080} duration={42} background={C.sand} autoplay={!(EMBED && REDUCE)} persistKey={EMBED ? "auxilia-promo-embed" : "auxilia-promo"}>
+      <TimecodeWrapper>
+        <SceneMail />
+        <SceneOfferte />
+        <SceneMore />
+        <SceneOutro />
+        <ScenePromise />
+      </TimecodeWrapper>
+    </Stage>
+  );
+}
+ReactDOM.createRoot(document.getElementById("root")).render(<PromoApp />);
+</script>
+</body>
+</html>

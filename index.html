@@ -40,8 +40,8 @@
       "areaServed": ["Kempen", "Antwerpen", "Vlaanderen"],
       "address": { "@type": "PostalAddress", "addressRegion": "Antwerpen", "addressCountry": "BE" },
       "founder": [
-        { "@type": "Person", "name": "Jonas Mertens" },
-        { "@type": "Person", "name": "Lien Vandereyt" }
+        { "@type": "Person", "name": "Cedric De Smet" },
+        { "@type": "Person", "name": "Kevin Vaal" }
       ],
       "knowsAbout": ["AI-automatisering", "AI-implementatie", "AI-opleiding", "procesautomatisering"]
     },
@@ -124,7 +124,7 @@
   }
   *{box-sizing:border-box;}
   html{scroll-behavior:smooth;}
-  html,body{overflow-x:clip;}
+  html,body{overflow-x:hidden;}
   body{
     margin:0;background:var(--sand);color:var(--ink);
     font-family:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
@@ -141,6 +141,7 @@
   ::selection{background:var(--clay-soft);}
 
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+  .hero-grid > *,.about-grid > *,.faq-grid > *,.offer-grid > *{min-width:0;}
   .skip-link{position:absolute;left:-9999px;top:0;z-index:200;background:var(--teal);color:var(--sand);padding:12px 20px;border-radius:0 0 10px 0;font-weight:600;}
   .skip-link:focus{left:0;}
   .eyebrow{
@@ -192,7 +193,9 @@
   .vmodal[hidden]{display:none;}
   .vmodal-backdrop{position:absolute;inset:0;background:rgba(11,69,67,.6);backdrop-filter:blur(8px);}
   .vmodal-body{position:relative;width:min(1200px,94vw);}
+  .vmodal-body.portrait{width:min(94vw,calc((100vh - 96px) * 9 / 16));}
   .vframe{width:100%;aspect-ratio:16/9.8;background:#0a0a0a;border-radius:16px;overflow:hidden;box-shadow:0 40px 90px -30px rgba(0,0,0,.6);}
+  .vframe.portrait{aspect-ratio:9/16;}
   .vframe iframe{width:100%;height:100%;border:0;display:block;}
   .vmodal-close{
     position:absolute;top:-18px;right:-18px;width:44px;height:44px;border-radius:50%;
@@ -201,7 +204,7 @@
   }
   .vmodal-close:hover{transform:scale(1.08);}
   .vmodal-close svg{width:18px;height:18px;}
-  @media (max-width:680px){.vmodal-close{top:-54px;right:0;}}
+  @media (max-width:680px){.vmodal{padding:14px;}.vmodal-body{width:100%;}.vmodal-close{top:-54px;right:0;}}
 
   /* ---------- Header ---------- */
   header.site{
@@ -223,12 +226,21 @@
   .nav-links a:hover::after{right:0;}
   .nav-cta{display:flex;align-items:center;gap:14px;}
   .nav-cta .btn{padding:11px 20px;font-size:.94rem;}
+  .bl-short{display:none;}
   .menu-btn{display:none;background:none;border:1px solid var(--line);border-radius:10px;width:46px;height:46px;cursor:pointer;align-items:center;justify-content:center;color:var(--ink);}
   .menu-btn svg{width:20px;height:20px;}
-  .m-menu{display:none;flex-direction:column;padding:6px 28px 24px;border-top:1px solid var(--line-soft);}
-  .m-menu.open{display:flex;}
-  .m-menu a{padding:14px 2px;font-weight:500;color:var(--ink-soft);border-bottom:1px solid var(--line-soft);}
-  .m-menu .btn{margin-top:16px;}
+  .menu-btn .ic-close{display:none;}
+  .menu-btn.is-open .ic-burger{display:none;}
+  .menu-btn.is-open .ic-close{display:block;}
+  .m-menu{display:flex;flex-direction:column;border-top:1px solid transparent;max-height:0;padding:0 28px;overflow:hidden;opacity:0;transform:translateY(-8px);visibility:hidden;transition:max-height .45s var(--ease),opacity .3s var(--ease),transform .35s var(--ease),padding .35s var(--ease),border-color .3s var(--ease),visibility 0s .45s;}
+  .m-menu.open{max-height:480px;padding:8px 28px 26px;opacity:1;transform:none;visibility:visible;border-color:var(--line-soft);transition:max-height .45s var(--ease),opacity .35s var(--ease) .05s,transform .4s var(--ease),padding .35s var(--ease),border-color .3s var(--ease),visibility 0s 0s;}
+  .m-menu a:not(.btn){display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 2px;font-size:1.08rem;font-weight:600;color:var(--ink);border-bottom:1px solid var(--line-soft);}
+  .m-menu a:not(.btn) svg{width:18px;height:18px;color:var(--teal);flex:0 0 auto;}
+  .m-menu .btn{margin-top:18px;width:100%;}
+  .m-note{display:flex;align-items:center;justify-content:center;gap:8px;color:var(--ink-soft);font-size:.88rem;margin-top:13px;}
+  .m-note svg{width:15px;height:15px;color:var(--teal-300);flex:0 0 auto;}
+  .m-scrim{position:fixed;inset:0;background:rgba(11,69,67,.32);z-index:50;opacity:0;pointer-events:none;transition:opacity .35s var(--ease);}
+  .m-scrim.show{opacity:1;pointer-events:auto;}
 
   /* ---------- Hero ---------- */
   .hero{min-height:82vh;display:flex;align-items:center;padding:clamp(56px,7vw,96px) 0;overflow:hidden;}
@@ -277,6 +289,15 @@
   .film-meta{display:flex;align-items:center;justify-content:space-between;gap:14px;color:var(--ink-faint);font-size:.88rem;padding:0 4px;}
   .film-meta .l{display:inline-flex;align-items:center;gap:8px;}
   .film-meta svg{width:15px;height:15px;flex:0 0 auto;}
+  .fm-mob{display:none;}
+  /* branded poster: vervangt de inline film op kleine schermen */
+  .film-poster{position:absolute;inset:0;display:none;background:var(--teal);overflow:hidden;}
+  .film-poster .fp-chev{position:absolute;right:-10%;top:50%;width:62%;height:auto;transform:translateY(-50%);}
+  .fp-inner{position:absolute;inset:0;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;padding:20px 22px;}
+  .fp-play{width:52px;height:52px;border-radius:50%;background:var(--clay);color:#fff;display:grid;place-items:center;margin-bottom:12px;box-shadow:0 12px 26px -12px rgba(0,0,0,.55);}
+  .fp-play svg{width:19px;height:19px;margin-left:2px;}
+  .fp-t{font-family:"Spectral",Georgia,serif;font-weight:500;font-size:1.4rem;color:var(--sand);line-height:1.2;}
+  .fp-s{font-size:.88rem;color:rgba(250,247,242,.7);margin-top:4px;}
 
   /* ---------- Roterend kernwoord (hero) ---------- */
   .hero-rot{font-family:"Spectral",Georgia,serif;font-weight:500;letter-spacing:-0.015em;font-size:clamp(1.35rem,2vw,1.7rem);line-height:1.3;margin-top:20px;}
@@ -472,9 +493,19 @@
     .foot-grid{grid-template-columns:1fr 1fr;}
   }
   @media (max-width:680px){
-    .nav-links,.nav-cta .btn{display:none;}
+    .nav-links{display:none;}
+    .nav-cta{gap:10px;}
+    .nav-cta .btn{padding:10px 14px;font-size:.88rem;}
+    .bl-long{display:none;}
+    .bl-short{display:inline;}
     .menu-btn{display:flex;}
     .m-menu.open{background:var(--sand);}
+    /* inline film → poster: geen zwart vlak en geen zware iframe op gsm */
+    .film-frame iframe{display:none;}
+    .film-poster{display:block;}
+    .film-overlay .ofc{display:none;}
+    .fm-desk{display:none;}
+    .fm-mob{display:inline-flex;}
     .foot-grid{grid-template-columns:1fr;gap:34px;}
     h1.hero-title em{white-space:normal;}
 
@@ -511,6 +542,9 @@
   }
   @media (max-width:480px){
     .wrap{padding:0 22px;}
+    .d-item{flex-wrap:wrap;row-gap:4px;}
+    .d-item .nm{font-size:.9rem;}
+    .d-item .delta{font-size:.88rem;}
     :root{--band:clamp(68px,18vw,84px);}
     .hero-rot{font-size:1.22rem;}
     .founder{padding:20px 18px;gap:16px;}
@@ -538,19 +572,23 @@
       <a href="#faq">FAQ</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-primary" href="#contact">Plan een kennismaking</a>
+      <a class="btn btn-primary" href="#contact"><span class="bl-long">Plan een kennismaking</span><span class="bl-short">Kennismaking</span></a>
       <button class="menu-btn" id="menuBtn" aria-label="Menu openen" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>
+        <svg class="ic-burger" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round"/></svg>
+        <svg class="ic-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6L6 18" stroke-linecap="round"></path></svg>
       </button>
     </div>
   </div>
   <div class="m-menu wrap" id="mMenu">
-    <a href="#pakketten">Pakketten</a>
-    <a href="#aanpak">Aanpak</a>
-    <a href="#faq">FAQ</a>
+    <a href="#pakketten">Pakketten <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <a href="#aanpak">Aanpak <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <a href="#over">Over ons <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+    <a href="#faq">FAQ <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
     <a class="btn btn-primary" href="#contact">Plan een kennismaking</a>
+    <span class="m-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round"></path></svg>30 minuten, vrijblijvend, geen verkooppraatje</span>
   </div>
 </header>
+<div class="m-scrim" id="mScrim"></div>
 
 <main id="main">
 
@@ -572,14 +610,23 @@
     </div>
     <div class="film-stack reveal" data-d="2">
       <div class="film-frame">
-        <iframe src="promo.html?embed=1" title="Auxilia promofilm (speelt stil af)" loading="lazy" tabindex="-1"></iframe>
+        <iframe data-src="promo-b.html?embed=1" title="Auxilia promofilm (speelt stil af)" loading="lazy" tabindex="-1"></iframe>
+        <div class="film-poster">
+          <svg class="fp-chev" viewBox="0 0 64 64" fill="none" aria-hidden="true"><path d="M14 31 L32 14 L50 31" stroke="rgba(250,247,242,.16)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14 50 L32 33 L50 50" stroke="rgba(210,105,30,.55)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <div class="fp-inner">
+            <span class="fp-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5l13 7.5-13 7.5v-15z"></path></svg></span>
+            <span class="fp-t">Bekijk de film</span>
+            <span class="fp-s">Wat we doen, in 44 seconden</span>
+          </div>
+        </div>
         <button class="film-overlay" id="filmOpen" aria-haspopup="dialog" aria-label="Bekijk de film groot, met geluid">
           <span class="ofc" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5l13 7.5-13 7.5v-15z"></path></svg></span>
         </button>
       </div>
       <div class="film-meta">
-        <span class="l"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M11 5L6.5 9H3v6h3.5L11 19V5z" stroke-linejoin="round"></path><path d="M16 9.5l5 5M21 9.5l-5 5" stroke-linecap="round"></path></svg>Speelt stil af — klik voor geluid</span>
-        <span>0:40</span>
+        <span class="l fm-desk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M11 5L6.5 9H3v6h3.5L11 19V5z" stroke-linejoin="round"></path><path d="M16 9.5l5 5M21 9.5l-5 5" stroke-linecap="round"></path></svg>Speelt stil af — klik voor geluid</span>
+        <span class="l fm-mob"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M10 8.5l5 3.5-5 3.5v-7z" stroke-linejoin="round"></path></svg>Tik om af te spelen, met geluid</span>
+        <span>0:44</span>
       </div>
     </div>
   </div>
@@ -766,17 +813,17 @@
     </div>
     <div class="founders reveal" data-d="1">
       <div class="founder">
-        <div class="av" aria-hidden="true">JM</div>
+        <div class="av" aria-hidden="true">CD</div>
         <div>
-          <h3>Jonas Mertens</h3>
+          <h3>Cedric De Smet</h3>
           <div class="role">Automatisering &amp; implementatie</div>
           <p>Bouwt de oplossingen en zorgt dat ze betrouwbaar in je bedrijf draaien.</p>
         </div>
       </div>
       <div class="founder">
-        <div class="av" aria-hidden="true">LV</div>
+        <div class="av" aria-hidden="true">KV</div>
         <div>
-          <h3>Lien Vandereyt</h3>
+          <h3>Kevin Vaal</h3>
           <div class="role">Proces &amp; opleiding</div>
           <p>Vertaalt je werkwijze naar een aanpak die je team zelf kan dragen.</p>
         </div>
@@ -898,20 +945,28 @@
   const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
   onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
 
-  const mb = document.getElementById('menuBtn'), mm = document.getElementById('mMenu');
-  mb.addEventListener('click', () => {
-    const open = mm.classList.toggle('open');
+  const mb = document.getElementById('menuBtn'), mm = document.getElementById('mMenu'), ms = document.getElementById('mScrim');
+  const setMenu = (open) => {
+    mm.classList.toggle('open', open);
+    ms.classList.toggle('show', open);
+    mb.classList.toggle('is-open', open);
     mb.setAttribute('aria-expanded', open);
-  });
-  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    mm.classList.remove('open'); mb.setAttribute('aria-expanded', false);
-  }));
+    mb.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+  };
+  mb.addEventListener('click', () => setMenu(!mm.classList.contains('open')));
+  ms.addEventListener('click', () => setMenu(false));
+  window.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+  mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
 
   // video lightbox
   const vmodal = document.getElementById('vmodal'), vframe = document.getElementById('vframe');
+  const vbody = vmodal.querySelector('.vmodal-body');
   const openVideo = () => {
     try { localStorage.setItem('auxilia-promo:t', '0'); } catch(e) {}
-    vframe.src = 'promo.html';
+    const portrait = window.matchMedia('(max-width:680px)').matches;
+    vframe.src = portrait ? 'promo-b-mobile.html' : 'promo-b.html';
+    vbody.classList.toggle('portrait', portrait);
+    vframe.classList.toggle('portrait', portrait);
     vmodal.hidden = false;
     document.body.style.overflow = 'hidden';
   };
@@ -928,6 +983,12 @@
   // precies wanneer het frame zijn maat krijgt of verandert.
   const filmFrame = document.querySelector('.film-frame');
   const filmIframe = filmFrame.querySelector('iframe');
+  // Op kleine schermen laden we de inline film niet: daar staat een poster en
+  // opent de film via de lightbox — lichter, leesbaar en met geluid.
+  const filmMq = window.matchMedia('(min-width:681px)');
+  const loadFilm = () => { if (filmMq.matches && !filmIframe.getAttribute('src')) filmIframe.src = filmIframe.dataset.src; };
+  loadFilm();
+  if (filmMq.addEventListener) filmMq.addEventListener('change', loadFilm); else filmMq.addListener(loadFilm);
   const pokeFilm = () => {
     try { filmIframe.contentWindow.dispatchEvent(new filmIframe.contentWindow.Event('resize')); } catch(e) {}
   };
